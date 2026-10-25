@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "page": 3,
+  "sheet": {
+    "drawing_number": "660-PI-201",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - Stage 1 Multiflow Clarifier",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90
+  },
+  "equipment": [
+    {"id": "660-EQ-001", "tag": "660-EQ-001", "kind": "clarifier", "name": "TRAIN A MULTIFLO", "bbox": [0.124, 0.326, 0.708, 0.466],
+     "notes": "Six agitated compartments followed by a lamella settling zone with rake",
+     "attributes": {"agitated_compartments": 6}},
+    {"id": "660-PP-003", "tag": "660-PP-003", "kind": "centrifugal_pump", "bbox": [0.69, 0.54, 0.705, 0.555], "name": "Multiflo sludge pump"},
+    {"id": "660-PP-004", "tag": "660-PP-004", "kind": "centrifugal_pump", "bbox": [0.69, 0.595, 0.705, 0.61], "name": "Multiflo sludge pump"}
+  ],
+  "components": [
+    {"id": "SP1", "kind": "sample_point", "bbox": [0.112, 0.33, 0.12, 0.345], "confidence": 0.7},
+    {"id": "VD1", "kind": "manual_valve", "bbox": [0.158, 0.47, 0.168, 0.485], "confidence": 0.8},
+    {"id": "VD2", "kind": "manual_valve", "bbox": [0.303, 0.47, 0.313, 0.485], "confidence": 0.8},
+    {"id": "VD3", "kind": "manual_valve", "bbox": [0.376, 0.47, 0.386, 0.485], "confidence": 0.8},
+    {"id": "VD4", "kind": "manual_valve", "bbox": [0.449, 0.47, 0.459, 0.485], "confidence": 0.8},
+    {"id": "VD5", "kind": "manual_valve", "bbox": [0.522, 0.47, 0.532, 0.485], "confidence": 0.8},
+    {"id": "VS3", "kind": "manual_valve", "bbox": [0.665, 0.543, 0.675, 0.555], "confidence": 0.8},
+    {"id": "VX", "kind": "manual_valve", "bbox": [0.64, 0.562, 0.65, 0.578], "confidence": 0.7, "notes": "Valve on open-ended branch off the sludge suction header (drain/flush connection)"},
+    {"id": "VS4", "kind": "gate_valve", "bbox": [0.655, 0.57, 0.665, 0.585], "confidence": 0.8},
+    {"id": "VD3P", "kind": "manual_valve", "bbox": [0.735, 0.538, 0.745, 0.55], "confidence": 0.8},
+    {"id": "VD4P", "kind": "manual_valve", "bbox": [0.735, 0.592, 0.745, 0.604], "confidence": 0.8},
+    {"id": "VNC", "kind": "gate_valve", "normal_position": "closed", "bbox": [0.77, 0.538, 0.78, 0.548], "notes": "Marked NC"},
+    {"id": "VB", "kind": "gate_valve", "bbox": [0.752, 0.56, 0.762, 0.575], "confidence": 0.8},
+    {"id": "HOSE1", "kind": "flexible_hose", "bbox": [0.76, 0.6, 0.79, 0.61], "confidence": 0.6, "notes": "Rectangle with dashed centre line; read as hose/flexible connection"}
+  ],
+  "instruments": [
+    {"id": "FE-0201", "tag": "FE-0201", "location": "field", "bbox": [0.062, 0.34, 0.078, 0.36], "notes": "Magnetic flowmeter (M) on Multiflo feed"},
+    {"id": "FIT-0201", "tag": "FIT-0201", "location": "field", "bbox": [0.045, 0.34, 0.061, 0.36]},
+    {"id": "PI-0208", "tag": "PI-0208", "location": "field", "measures": {"line": "L_P3"}, "bbox": [0.718, 0.5, 0.732, 0.52], "notes": "With diaphragm seal"},
+    {"id": "PI-0204", "tag": "PI-0204", "location": "field", "measures": {"line": "L_P4"}, "bbox": [0.718, 0.555, 0.732, 0.575], "notes": "With diaphragm seal"},
+    {"id": "FE-0202", "tag": "FE-0202", "location": "field", "bbox": [0.78, 0.51, 0.795, 0.525], "notes": "Magnetic flowmeter on sludge recycle to 660-TK-008"},
+    {"id": "FIT-0202", "tag": "FIT-0202", "location": "field", "bbox": [0.78, 0.49, 0.795, 0.51]},
+    {"id": "FE-0202B", "tag": "FE-0202", "location": "field", "bbox": [0.78, 0.575, 0.795, 0.59], "confidence": 0.85,
+     "notes": "Second magnetic flowmeter on sludge to 660-BX-001; printed with the same tag FE 0202"},
+    {"id": "FIT-0202B", "tag": "FIT-0202", "location": "field", "bbox": [0.78, 0.555, 0.795, 0.57], "confidence": 0.85,
+     "notes": "Printed with the same tag as the transmitter on the TK-008 branch"}
+  ],
+  "lines": [
+    {"id": "L_FEED", "line_number": "14\"-TW-660-001-CSG-NA", "service": "TW", "from": "OPC_TK001", "to": "660-EQ-001", "path": ["FE-0201", "SP1"]},
+    {"id": "L_COAG1", "service": "COAGULANT", "from": "B_COAG", "to": "660-EQ-001", "notes": "NOT IN SERVICE"},
+    {"id": "L_COAG2", "service": "COAGULANT", "from": "B_COAG", "to": "660-EQ-001", "notes": "NOT IN SERVICE"},
+    {"id": "L_OUT", "line_number": "14\"-TW-660-002-CSG-NA", "service": "TW", "from": "660-EQ-001", "to": "OPC_TK002"},
+    {"id": "L_013", "line_number": "8\"-SG-660-013-SSB-NA", "service": "SG", "from": "660-EQ-001", "to": "B_DRAIN", "notes": "From upper nozzle of settling zone to drain/sump"},
+    {"id": "L_D1", "line_number": "2\"-SG-660-022-SSB-NA", "from": "660-EQ-001", "to": "B_DRAIN", "path": ["VD1"]},
+    {"id": "L_D2", "line_number": "2\"-SG-660-009-SSB-NA", "from": "660-EQ-001", "to": "B_DRAIN", "path": ["VD2"]},
+    {"id": "L_D3", "line_number": "2\"-SG-660-010-SSB-NA", "from": "660-EQ-001", "to": "B_DRAIN", "path": ["VD3"]},
+    {"id": "L_D4", "line_number": "2\"-SG-660-011-SSB-NA", "from": "660-EQ-001", "to": "B_DRAIN", "path": ["VD4"]},
+    {"id": "L_D5", "line_number": "2\"-SG-660-012-SSB-NA", "from": "660-EQ-001", "to": "B_DRAIN", "path": ["VD5"]},
+    {"id": "L_UF", "line_number": "4\"-SG-660-001-SSB-NA", "service": "SG (clarifier underflow)", "from": "660-EQ-001", "to": "660-PP-003", "path": ["VS3"]},
+    {"id": "L_VX", "from": {"line": "L_UF"}, "to": "VX", "confidence": 0.7},
+    {"id": "L_UF4", "line_number": "4\"-SG-660-018-SSB-NA", "from": {"line": "L_UF"}, "to": "660-PP-004", "path": ["VS4"]},
+    {"id": "L_P3", "line_number": "4\"-SG-660-003-SSB-NA", "service": "SLUDGE", "from": "660-PP-003", "to": "OPC_TK008", "path": ["VD3P", "VNC", "FE-0202"]},
+    {"id": "L_P4", "line_number": "4\"-SG-660-018-SSB-NA", "from": "660-PP-004", "to": {"line": "L_P3", "after": "VD3P"}, "path": ["VD4P"]},
+    {"id": "L_BX", "line_number": "3\"-SG-660-040-SSB-PF", "service": "SG", "from": {"line": "L_P3", "after": "VD3P"}, "to": "OPC_BX001", "path": ["VB", "HOSE1", "FE-0202B"]}
+  ],
+  "signals": [
+    {"from": "FE-0201", "to": "FIT-0201", "purpose": "measurement"},
+    {"from": "FE-0202", "to": "FIT-0202", "purpose": "measurement"},
+    {"from": "FE-0202B", "to": "FIT-0202B", "purpose": "measurement"}
+  ],
+  "off_page_connectors": [
+    {"id": "OPC_TK001", "direction": "in", "name": "TW 1ST STAGE REACTION TANK 660-TK-001", "other_drawing": "660-PI-200", "other_item": "660-TK-001",
+     "line_number": "14\"-TW-660-001-CSG-NA", "bbox": [0.03, 0.283, 0.075, 0.318]},
+    {"id": "OPC_TK002", "direction": "out", "name": "TW 660-TK-002", "other_drawing": "660-PI-202", "other_item": "660-TK-002",
+     "line_number": "14\"-TW-660-002-CSG-NA", "bbox": [0.87, 0.33, 0.92, 0.348]},
+    {"id": "OPC_TK008", "direction": "out", "name": "SLUDGE LIME REACTION TANK 660-TK-008", "other_drawing": "660-PI-200", "other_item": "660-TK-008",
+     "line_number": "4\"-SG-660-003-SSB-NA", "bbox": [0.87, 0.535, 0.92, 0.57]},
+    {"id": "OPC_BX001", "direction": "out", "name": "SG 660-BX-001", "other_drawing": "660-PI-208", "other_item": "660-BX-001",
+     "line_number": "3\"-SG-660-040-SSB-PF", "bbox": [0.87, 0.6, 0.92, 0.615]}
+  ],
+  "boundaries": [
+    {"id": "B_COAG", "name": "COAGULANT", "direction": "source", "bbox": [0.03, 0.168, 0.075, 0.266], "notes": "Two coagulant feeds, both NOT IN SERVICE, flags carry no drawing number"},
+    {"id": "B_DRAIN", "name": "DRAIN TO SUMP", "direction": "sink", "bbox": [0.15, 0.64, 0.56, 0.7]}
+  ],
+  "tiles_reviewed": ["r1c1", "r1c2", "r1c3", "r1c4", "r2c1", "r2c2", "r2c3", "r2c4", "r3c1", "r3c2", "r3c3", "r3c4"],
+  "unreadable": []
+}

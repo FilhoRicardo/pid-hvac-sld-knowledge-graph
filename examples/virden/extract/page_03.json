@@ -1,0 +1,1479 @@
+{
+ "schema_version": "1.0",
+ "page": 3,
+ "sheet": {
+  "drawing_number": "D-009-0",
+  "title": "Process Grit Removal P&ID",
+  "revision": "0",
+  "drawing_type": "pid",
+  "issue_status": "issued for tender",
+  "rotation": 0,
+  "legend_notes": [
+   "Virden WWTF Phase 2 upgrades (MWSB #1302)",
+   "Greyed items are existing",
+   "Grit room and cake room are classified areas (Cl. I, Div. 1)",
+   "Note 1 applies to the ball check valves"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "GCB-1700",
+   "tag": "GCB-1700",
+   "kind": "separator",
+   "name": "Grit chamber (vortex) with mixer MX-1701",
+   "bbox": [
+    0.293,
+    0.604,
+    0.316,
+    0.634
+   ]
+  },
+  {
+   "id": "MX-1701",
+   "tag": "MX-1701",
+   "kind": "agitator",
+   "name": "Grit chamber mixer",
+   "bbox": [
+    0.293,
+    0.579,
+    0.316,
+    0.609
+   ],
+   "part_of": "GCB-1700"
+  },
+  {
+   "id": "GTP-1910",
+   "tag": "GTP-1910",
+   "kind": "slurry_pump",
+   "name": "Grit pump",
+   "bbox": [
+    0.443,
+    0.592,
+    0.466,
+    0.621
+   ]
+  },
+  {
+   "id": "GTP-1920",
+   "tag": "GTP-1920",
+   "kind": "slurry_pump",
+   "name": "Grit pump",
+   "bbox": [
+    0.443,
+    0.67,
+    0.466,
+    0.7
+   ]
+  },
+  {
+   "id": "GCL-2000",
+   "tag": "GCL-2000",
+   "kind": "screen",
+   "name": "Grit classifier (cyclone + screw)",
+   "bbox": [
+    0.633,
+    0.662,
+    0.656,
+    0.691
+   ]
+  },
+  {
+   "id": "BIN-2000",
+   "tag": "BIN-2000",
+   "kind": "bin",
+   "name": "Grit bin",
+   "bbox": [
+    0.661,
+    0.674,
+    0.684,
+    0.704
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "KGV-1701",
+   "kind": "knife_gate_valve",
+   "tag": "KGV-1701",
+   "bbox": [
+    0.226,
+    0.561,
+    0.236,
+    0.574
+   ]
+  },
+  {
+   "id": "KGV-1702",
+   "kind": "motor_operated_valve",
+   "tag": "KGV-1702",
+   "bbox": [
+    0.233,
+    0.479,
+    0.243,
+    0.492
+   ],
+   "actuator": "electric",
+   "name": "Grit chamber bypass knife gate valve",
+   "loop": "Z-1702"
+  },
+  {
+   "id": "KGV-1703",
+   "kind": "knife_gate_valve",
+   "tag": "KGV-1703",
+   "bbox": [
+    0.339,
+    0.561,
+    0.349,
+    0.574
+   ]
+  },
+  {
+   "id": "PLV-1705",
+   "kind": "plug_valve",
+   "tag": "PLV-1705",
+   "bbox": [
+    0.344,
+    0.593,
+    0.355,
+    0.606
+   ],
+   "name": "Grit chamber drain"
+  },
+  {
+   "id": "BAV-1701",
+   "kind": "ball_valve",
+   "tag": "BAV-1701",
+   "bbox": [
+    0.175,
+    0.63,
+    0.186,
+    0.644
+   ]
+  },
+  {
+   "id": "STR-1701",
+   "kind": "strainer",
+   "tag": "STR-1701",
+   "bbox": [
+    0.215,
+    0.63,
+    0.225,
+    0.644
+   ]
+  },
+  {
+   "id": "SNV-1701",
+   "kind": "solenoid_valve",
+   "tag": "SNV-1701",
+   "bbox": [
+    0.251,
+    0.63,
+    0.261,
+    0.644
+   ],
+   "actuator": "solenoid"
+  },
+  {
+   "id": "BAV-1702",
+   "kind": "ball_valve",
+   "tag": "BAV-1702",
+   "bbox": [
+    0.276,
+    0.63,
+    0.286,
+    0.644
+   ]
+  },
+  {
+   "id": "PLV-1910",
+   "kind": "plug_valve",
+   "tag": "PLV-1910",
+   "bbox": [
+    0.409,
+    0.6,
+    0.42,
+    0.613
+   ]
+  },
+  {
+   "id": "PLV-1920",
+   "kind": "plug_valve",
+   "tag": "PLV-1920",
+   "bbox": [
+    0.409,
+    0.695,
+    0.42,
+    0.708
+   ]
+  },
+  {
+   "id": "DS1911",
+   "kind": "other",
+   "bbox": [
+    0.483,
+    0.6,
+    0.493,
+    0.613
+   ],
+   "name": "Diaphragm seal"
+  },
+  {
+   "id": "DS1921",
+   "kind": "other",
+   "bbox": [
+    0.483,
+    0.678,
+    0.493,
+    0.691
+   ],
+   "name": "Diaphragm seal"
+  },
+  {
+   "id": "BCV-1910",
+   "kind": "check_valve",
+   "tag": "BCV-1910",
+   "bbox": [
+    0.501,
+    0.6,
+    0.511,
+    0.613
+   ],
+   "name": "Ball check valve (note 1)"
+  },
+  {
+   "id": "BCV-1920",
+   "kind": "check_valve",
+   "tag": "BCV-1920",
+   "bbox": [
+    0.501,
+    0.678,
+    0.511,
+    0.691
+   ],
+   "name": "Ball check valve (note 1)"
+  },
+  {
+   "id": "PLV-1912",
+   "kind": "plug_valve",
+   "tag": "PLV-1912",
+   "bbox": [
+    0.524,
+    0.6,
+    0.534,
+    0.613
+   ]
+  },
+  {
+   "id": "PLV-1922",
+   "kind": "plug_valve",
+   "tag": "PLV-1922",
+   "bbox": [
+    0.524,
+    0.678,
+    0.534,
+    0.691
+   ]
+  },
+  {
+   "id": "PLV-1915",
+   "kind": "plug_valve",
+   "tag": "PLV-1915",
+   "bbox": [
+    0.55,
+    0.55,
+    0.56,
+    0.564
+   ]
+  },
+  {
+   "id": "ARV-1915",
+   "kind": "relief_valve",
+   "tag": "ARV-1915",
+   "bbox": [
+    0.55,
+    0.54,
+    0.56,
+    0.553
+   ],
+   "name": "Air release valve"
+  },
+  {
+   "id": "RED_50x150",
+   "kind": "reducer",
+   "bbox": [
+    0.578,
+    0.658,
+    0.589,
+    0.671
+   ],
+   "size": "50x150"
+  },
+  {
+   "id": "BAV-2001",
+   "kind": "ball_valve",
+   "tag": "BAV-2001",
+   "bbox": [
+    0.598,
+    0.685,
+    0.608,
+    0.698
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LE-1701",
+   "tag": "LE-1701",
+   "location": "field",
+   "bbox": [
+    0.284,
+    0.533,
+    0.296,
+    0.548
+   ],
+   "measures": {
+    "item": "GCB-1700"
+   }
+  },
+  {
+   "id": "LIT-1701",
+   "tag": "LIT-1701",
+   "location": "field",
+   "bbox": [
+    0.284,
+    0.514,
+    0.296,
+    0.529
+   ]
+  },
+  {
+   "id": "PI-1911",
+   "tag": "PI-1911",
+   "location": "field",
+   "bbox": [
+    0.482,
+    0.57,
+    0.494,
+    0.585
+   ],
+   "measures": {
+    "line": "L_P10",
+    "after": "DS1911"
+   }
+  },
+  {
+   "id": "PI-1921",
+   "tag": "PI-1921",
+   "location": "field",
+   "bbox": [
+    0.482,
+    0.657,
+    0.494,
+    0.672
+   ],
+   "measures": {
+    "line": "L_P20",
+    "after": "DS1921"
+   }
+  },
+  {
+   "id": "LSHH-1723",
+   "tag": "LSHH-1723",
+   "location": "field",
+   "name": "Flood alarm - capacitive type level switch",
+   "bbox": [
+    0.142,
+    0.415,
+    0.154,
+    0.43
+   ],
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AE-1721",
+   "tag": "AE-1721",
+   "location": "field",
+   "name": "Methane",
+   "bbox": [
+    0.179,
+    0.445,
+    0.191,
+    0.46
+   ],
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AIT-1721",
+   "tag": "AIT-1721",
+   "location": "field",
+   "name": "Methane",
+   "bbox": [
+    0.179,
+    0.415,
+    0.191,
+    0.43
+   ]
+  },
+  {
+   "id": "AE-1722",
+   "tag": "AE-1722",
+   "location": "field",
+   "name": "H2S",
+   "bbox": [
+    0.217,
+    0.445,
+    0.229,
+    0.46
+   ],
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AIT-1722",
+   "tag": "AIT-1722",
+   "location": "field",
+   "name": "H2S",
+   "bbox": [
+    0.217,
+    0.415,
+    0.229,
+    0.43
+   ]
+  },
+  {
+   "id": "XAH-1721",
+   "tag": "XAH-1721",
+   "location": "local_panel",
+   "name": "Methane alarm high (LCP-7)",
+   "bbox": [
+    0.188,
+    0.318,
+    0.199,
+    0.333
+   ]
+  },
+  {
+   "id": "XAH-1722",
+   "tag": "XAH-1722",
+   "location": "local_panel",
+   "name": "H2S alarm high (LCP-7)",
+   "bbox": [
+    0.217,
+    0.333,
+    0.229,
+    0.348
+   ]
+  },
+  {
+   "id": "EL-1700",
+   "tag": "EL-1700",
+   "location": "local_panel",
+   "name": "Gas detection STROBE (LCP-7)",
+   "bbox": [
+    0.261,
+    0.327,
+    0.272,
+    0.342
+   ],
+   "confidence": 0.6,
+   "notes": "Strobe printed 'EL' without a number"
+  },
+  {
+   "id": "EL-1700A",
+   "tag": "EL-1700A",
+   "location": "local_panel",
+   "name": "Power on",
+   "bbox": [
+    0.367,
+    0.314,
+    0.378,
+    0.329
+   ]
+  },
+  {
+   "id": "EL-1700B",
+   "tag": "EL-1700B",
+   "location": "local_panel",
+   "name": "General alarm",
+   "bbox": [
+    0.393,
+    0.314,
+    0.404,
+    0.329
+   ]
+  },
+  {
+   "id": "HS-1700",
+   "tag": "HS-1700",
+   "location": "local_panel",
+   "name": "Reset",
+   "bbox": [
+    0.419,
+    0.314,
+    0.43,
+    0.329
+   ]
+  },
+  {
+   "id": "EL-1701",
+   "tag": "EL-1701",
+   "location": "local_panel",
+   "name": "Paddles running",
+   "bbox": [
+    0.445,
+    0.314,
+    0.457,
+    0.329
+   ]
+  },
+  {
+   "id": "EL-1701A",
+   "tag": "EL-1701A",
+   "location": "local_panel",
+   "name": "SNV-1701 open",
+   "bbox": [
+    0.472,
+    0.314,
+    0.483,
+    0.329
+   ]
+  },
+  {
+   "id": "EL-1701B",
+   "tag": "EL-1701B",
+   "location": "local_panel",
+   "name": "Paddles fault",
+   "bbox": [
+    0.498,
+    0.314,
+    0.51,
+    0.329
+   ]
+  },
+  {
+   "id": "HS-1701",
+   "tag": "HS-1701",
+   "location": "local_panel",
+   "name": "H/O/A paddles",
+   "bbox": [
+    0.524,
+    0.314,
+    0.535,
+    0.329
+   ]
+  },
+  {
+   "id": "EL-1900A",
+   "tag": "EL-1900A",
+   "location": "local_panel",
+   "name": "Pump running",
+   "bbox": [
+    0.367,
+    0.347,
+    0.378,
+    0.362
+   ]
+  },
+  {
+   "id": "EL-1900B",
+   "tag": "EL-1900B",
+   "location": "local_panel",
+   "name": "Pump fault",
+   "bbox": [
+    0.393,
+    0.347,
+    0.404,
+    0.362
+   ]
+  },
+  {
+   "id": "EL-1900C",
+   "tag": "EL-1900C",
+   "location": "local_panel",
+   "name": "Pump low vacuum",
+   "bbox": [
+    0.419,
+    0.347,
+    0.43,
+    0.362
+   ]
+  },
+  {
+   "id": "HS-1900",
+   "tag": "HS-1900",
+   "location": "local_panel",
+   "name": "H/O/A grit pumps",
+   "bbox": [
+    0.445,
+    0.347,
+    0.457,
+    0.362
+   ]
+  },
+  {
+   "id": "EL-2000A",
+   "tag": "EL-2000A",
+   "location": "local_panel",
+   "name": "Grit screw running",
+   "bbox": [
+    0.472,
+    0.347,
+    0.483,
+    0.362
+   ]
+  },
+  {
+   "id": "EL-2000B",
+   "tag": "EL-2000B",
+   "location": "local_panel",
+   "name": "Grit screw fault",
+   "bbox": [
+    0.498,
+    0.347,
+    0.51,
+    0.362
+   ]
+  },
+  {
+   "id": "HS-2000",
+   "tag": "HS-2000",
+   "location": "local_panel",
+   "name": "H/O/A grit screw",
+   "bbox": [
+    0.524,
+    0.347,
+    0.535,
+    0.362
+   ]
+  },
+  {
+   "id": "HS-2000B-GC",
+   "tag": "HS-2000B",
+   "location": "local_panel",
+   "name": "E-STOP (CP-1700B grit chamber)",
+   "bbox": [
+    0.612,
+    0.302,
+    0.623,
+    0.317
+   ]
+  },
+  {
+   "id": "HS-1701A",
+   "tag": "HS-1701A",
+   "location": "local_panel",
+   "name": "H/O/A mixer (CP-1701)",
+   "bbox": [
+    0.663,
+    0.302,
+    0.675,
+    0.317
+   ]
+  },
+  {
+   "id": "HS-2000B-MX",
+   "tag": "HS-2000B",
+   "location": "local_panel",
+   "name": "E-STOP (CP-1701 mixer)",
+   "bbox": [
+    0.686,
+    0.302,
+    0.698,
+    0.317
+   ]
+  },
+  {
+   "id": "HS-2000A",
+   "tag": "HS-2000A",
+   "location": "local_panel",
+   "name": "H/O/A screw (CP-2000)",
+   "bbox": [
+    0.734,
+    0.302,
+    0.746,
+    0.317
+   ]
+  },
+  {
+   "id": "HS-2000B",
+   "tag": "HS-2000B",
+   "location": "local_panel",
+   "name": "E-STOP (CP-2000 screw)",
+   "bbox": [
+    0.757,
+    0.302,
+    0.768,
+    0.317
+   ]
+  },
+  {
+   "id": "XS-1700-ES",
+   "tag": "XS-1700",
+   "location": "plc",
+   "name": "Grit chamber E-stop (DI)",
+   "bbox": [
+    0.612,
+    0.331,
+    0.623,
+    0.346
+   ]
+  },
+  {
+   "id": "HSI-1701",
+   "tag": "HSI-1701",
+   "location": "plc",
+   "name": "Mixer H/O/A (DI)",
+   "bbox": [
+    0.663,
+    0.331,
+    0.675,
+    0.346
+   ]
+  },
+  {
+   "id": "XS-1701",
+   "tag": "XS-1701",
+   "location": "plc",
+   "name": "Mixer E-stop (DI)",
+   "bbox": [
+    0.688,
+    0.331,
+    0.7,
+    0.346
+   ]
+  },
+  {
+   "id": "HSI-2000",
+   "tag": "HSI-2000",
+   "location": "plc",
+   "name": "Screw H/O/A (DI)",
+   "bbox": [
+    0.734,
+    0.331,
+    0.746,
+    0.346
+   ]
+  },
+  {
+   "id": "XS-2000",
+   "tag": "XS-2000",
+   "location": "plc",
+   "name": "Screw E-stop (DI)",
+   "bbox": [
+    0.758,
+    0.331,
+    0.769,
+    0.346
+   ]
+  },
+  {
+   "id": "LAH-1723",
+   "tag": "LAH-1723",
+   "location": "plc",
+   "name": "High-high level (flood) alarm",
+   "bbox": [
+    0.143,
+    0.232,
+    0.154,
+    0.247
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "AI-1721",
+   "tag": "AI-1721",
+   "location": "plc",
+   "name": "Methane gas (AI)",
+   "bbox": [
+    0.168,
+    0.232,
+    0.179,
+    0.247
+   ]
+  },
+  {
+   "id": "XA-1721",
+   "tag": "XA-1721",
+   "location": "plc",
+   "name": "AIT-1721 fault",
+   "bbox": [
+    0.18,
+    0.232,
+    0.192,
+    0.247
+   ]
+  },
+  {
+   "id": "XAH-1721B",
+   "tag": "XAH-1721",
+   "location": "plc",
+   "name": "Gas alarm high",
+   "bbox": [
+    0.194,
+    0.232,
+    0.205,
+    0.247
+   ]
+  },
+  {
+   "id": "AI-1722",
+   "tag": "AI-1722",
+   "location": "plc",
+   "name": "H2S gas (AI)",
+   "bbox": [
+    0.219,
+    0.232,
+    0.23,
+    0.247
+   ]
+  },
+  {
+   "id": "XA-1722",
+   "tag": "XA-1722",
+   "location": "plc",
+   "name": "AIT-1722 fault",
+   "bbox": [
+    0.232,
+    0.232,
+    0.244,
+    0.247
+   ]
+  },
+  {
+   "id": "XAH-1722B",
+   "tag": "XAH-1722",
+   "location": "plc",
+   "name": "Gas alarm high",
+   "bbox": [
+    0.245,
+    0.232,
+    0.256,
+    0.247
+   ]
+  },
+  {
+   "id": "ZIO-1702",
+   "tag": "ZIO-1702",
+   "location": "plc",
+   "name": "KGV-1702 opened",
+   "bbox": [
+    0.277,
+    0.232,
+    0.288,
+    0.247
+   ],
+   "loop": "Z-1702"
+  },
+  {
+   "id": "ZIC-1702",
+   "tag": "ZIC-1702",
+   "location": "plc",
+   "name": "KGV-1702 closed",
+   "bbox": [
+    0.29,
+    0.232,
+    0.302,
+    0.247
+   ],
+   "loop": "Z-1702"
+  },
+  {
+   "id": "XSO-1702",
+   "tag": "XSO-1702",
+   "location": "plc",
+   "name": "KGV-1702 open cmd (DO)",
+   "bbox": [
+    0.304,
+    0.232,
+    0.315,
+    0.247
+   ],
+   "loop": "Z-1702"
+  },
+  {
+   "id": "XSC-1702",
+   "tag": "XSC-1702",
+   "location": "plc",
+   "name": "KGV-1702 close cmd (DO)",
+   "bbox": [
+    0.316,
+    0.232,
+    0.328,
+    0.247
+   ],
+   "loop": "Z-1702"
+  },
+  {
+   "id": "LI-1701",
+   "tag": "LI-1701",
+   "location": "plc",
+   "name": "Grit chamber level (AI)",
+   "bbox": [
+    0.344,
+    0.232,
+    0.355,
+    0.247
+   ]
+  },
+  {
+   "id": "LAH-1701",
+   "tag": "LAH-1701",
+   "location": "plc",
+   "name": "High level alarm",
+   "bbox": [
+    0.357,
+    0.232,
+    0.368,
+    0.247
+   ]
+  },
+  {
+   "id": "XI-1700",
+   "tag": "XI-1700",
+   "location": "plc",
+   "name": "Grit system running",
+   "bbox": [
+    0.496,
+    0.232,
+    0.508,
+    0.247
+   ]
+  },
+  {
+   "id": "XA-1700",
+   "tag": "XA-1700",
+   "location": "plc",
+   "name": "Grit system alarm",
+   "bbox": [
+    0.509,
+    0.232,
+    0.52,
+    0.247
+   ]
+  },
+  {
+   "id": "XS-1700",
+   "tag": "XS-1700",
+   "location": "plc",
+   "name": "Grit system start/stop (DO)",
+   "bbox": [
+    0.522,
+    0.232,
+    0.534,
+    0.247
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_HW",
+   "from": "OPC_HW",
+   "to": "GCB-1700",
+   "path": [
+    "KGV-1701"
+   ],
+   "line_number": "400-RWW-H1",
+   "service": "SCREENED WASTEWATER"
+  },
+  {
+   "id": "L_SEPS",
+   "from": "OPC_SEPS",
+   "to": "GCB-1700",
+   "path": [],
+   "line_number": "100-SEPS-E1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_BYP",
+   "from": {
+    "line": "L_HW"
+   },
+   "to": {
+    "line": "L_OUT",
+    "after": "KGV-1703"
+   },
+   "path": [
+    "KGV-1702"
+   ],
+   "line_number": "400-RWW-H1",
+   "service": "BYPASS"
+  },
+  {
+   "id": "L_OUT",
+   "from": "GCB-1700",
+   "to": "OPC_PPE",
+   "path": [
+    "KGV-1703"
+   ],
+   "line_number": "400-PPE-E1",
+   "service": "DEGRITTED WASTEWATER"
+  },
+  {
+   "id": "L_PSW",
+   "from": "B_PSW",
+   "to": "GCB-1700",
+   "path": [
+    "BAV-1701",
+    "STR-1701",
+    "SNV-1701",
+    "BAV-1702"
+   ],
+   "line_number": "40-PSW-E1",
+   "service": "PLANT SERVICE WATER"
+  },
+  {
+   "id": "L_GRIT",
+   "from": "GCB-1700",
+   "to": "GTP-1910",
+   "path": [
+    "PLV-1910"
+   ],
+   "line_number": "100-GT-F3-C",
+   "service": "GRIT SLURRY"
+  },
+  {
+   "id": "L_DRN",
+   "from": {
+    "line": "L_GRIT"
+   },
+   "to": "B_DRAIN",
+   "path": [
+    "PLV-1705"
+   ],
+   "line_number": "80-DR-F3-C"
+  },
+  {
+   "id": "L_GRIT2",
+   "from": {
+    "line": "L_GRIT"
+   },
+   "to": "GTP-1920",
+   "path": [
+    "PLV-1920"
+   ],
+   "line_number": "100-GT-F3-C",
+   "service": "GRIT SLURRY"
+  },
+  {
+   "id": "L_P10",
+   "from": "GTP-1910",
+   "to": "GCL-2000",
+   "path": [
+    "DS1911",
+    "BCV-1910",
+    "PLV-1912"
+   ],
+   "line_number": "100-ARL-F3-C",
+   "service": "GRIT SLURRY"
+  },
+  {
+   "id": "L_P20",
+   "from": "GTP-1920",
+   "to": {
+    "line": "L_P10",
+    "after": "PLV-1912"
+   },
+   "path": [
+    "DS1921",
+    "BCV-1920",
+    "PLV-1922"
+   ],
+   "line_number": "100-ARL-F3-C",
+   "service": "GRIT SLURRY"
+  },
+  {
+   "id": "L_ARV",
+   "from": {
+    "line": "L_P10",
+    "after": "PLV-1912"
+   },
+   "to": "B_VENT",
+   "path": [
+    "PLV-1915",
+    "ARV-1915"
+   ],
+   "line_number": "50-ARL-H1"
+  },
+  {
+   "id": "L_SUP",
+   "from": "GCL-2000",
+   "to": "OPC_DR",
+   "path": [],
+   "line_number": "150-SUP-E1",
+   "service": "CLASSIFIER SUPERNATANT",
+   "notes": "Cyclone overflow"
+  },
+  {
+   "id": "L_OF",
+   "from": "GCL-2000",
+   "to": {
+    "line": "L_SUP"
+   },
+   "path": [],
+   "line_number": "150-OF-E1",
+   "service": "CLASSIFIER OVERFLOW"
+  },
+  {
+   "id": "L_CLDR",
+   "from": "GCL-2000",
+   "to": {
+    "line": "L_SUP"
+   },
+   "path": [
+    "BAV-2001",
+    "RED_50x150"
+   ],
+   "line_number": "50-DRN-E1"
+  },
+  {
+   "id": "L_GRITOUT",
+   "from": "GCL-2000",
+   "to": "BIN-2000",
+   "path": [],
+   "service": "WASHED GRIT"
+  },
+  {
+   "id": "L_TRUCK",
+   "from": "BIN-2000",
+   "to": "B_TRUCK",
+   "path": [],
+   "service": "GRIT"
+  }
+ ],
+ "signals": [
+  {
+   "from": "LE-1701",
+   "to": "LIT-1701",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-1701",
+   "to": "LI-1701",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-1701",
+   "to": "LAH-1701",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AE-1721",
+   "to": "AIT-1721",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1721",
+   "to": "AI-1721",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1721",
+   "to": "XA-1721",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AIT-1721",
+   "to": "XAH-1721",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AE-1722",
+   "to": "AIT-1722",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1722",
+   "to": "AI-1722",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1722",
+   "to": "XA-1722",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AIT-1722",
+   "to": "XAH-1722",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XAH-1721",
+   "to": "EL-1700",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XAH-1722",
+   "to": "EL-1700",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "LSHH-1723",
+   "to": "LAH-1723",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XSO-1702",
+   "to": "KGV-1702",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XSC-1702",
+   "to": "KGV-1702",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "KGV-1702",
+   "to": "ZIO-1702",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "KGV-1702",
+   "to": "ZIC-1702",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "HS-1701",
+   "to": "MX-1701",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1701A",
+   "to": "MX-1701",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-2000B-MX",
+   "to": "MX-1701",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "HS-1900",
+   "to": "GTP-1910",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1900",
+   "to": "GTP-1920",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-2000",
+   "to": "GCL-2000",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-2000A",
+   "to": "GCL-2000",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-2000B",
+   "to": "GCL-2000",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "HS-2000B-GC",
+   "to": "XS-1700-ES",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "HS-1701A",
+   "to": "HSI-1701",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "HS-2000B-MX",
+   "to": "XS-1701",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "HS-2000A",
+   "to": "HSI-2000",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "HS-2000B",
+   "to": "XS-2000",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "XS-1700",
+   "to": "MX-1701",
+   "type": "electrical",
+   "purpose": "control"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_HW",
+   "direction": "in",
+   "name": "RWW 1 D-007 HEADWORKS",
+   "other_drawing": "D-007",
+   "bbox": [
+    0.115,
+    0.549,
+    0.14,
+    0.582
+   ],
+   "line_number": "400-RWW-H1"
+  },
+  {
+   "id": "OPC_SEPS",
+   "direction": "in",
+   "name": "SEPS 1 D-008 SEPTAGE PUMP",
+   "other_drawing": "D-008",
+   "bbox": [
+    0.115,
+    0.518,
+    0.14,
+    0.551
+   ],
+   "line_number": "100-SEPS-E1"
+  },
+  {
+   "id": "OPC_DR",
+   "direction": "out",
+   "name": "DR 1 D-010 PLANT LIFT STATION",
+   "other_drawing": "D-010",
+   "bbox": [
+    0.74,
+    0.512,
+    0.765,
+    0.545
+   ],
+   "line_number": "150-DR-E1"
+  },
+  {
+   "id": "OPC_PPE",
+   "direction": "out",
+   "name": "PPE 2 D-010 PLANT LIFT STATION",
+   "other_drawing": "D-010",
+   "bbox": [
+    0.74,
+    0.759,
+    0.765,
+    0.792
+   ],
+   "line_number": "400-PPE-E1"
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_PSW",
+   "name": "PSW PLANT SERVICE WATER",
+   "direction": "source",
+   "bbox": [
+    0.121,
+    0.62,
+    0.147,
+    0.653
+   ]
+  },
+  {
+   "id": "B_DRAIN",
+   "name": "DRAIN",
+   "direction": "sink",
+   "bbox": [
+    0.337,
+    0.611,
+    0.362,
+    0.644
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "B_VENT",
+   "name": "Air release (vent)",
+   "direction": "sink",
+   "bbox": [
+    0.542,
+    0.52,
+    0.568,
+    0.553
+   ]
+  },
+  {
+   "id": "B_TRUCK",
+   "name": "SLD TRUCK OUT",
+   "direction": "sink",
+   "bbox": [
+    0.74,
+    0.672,
+    0.765,
+    0.705
+   ]
+  },
+  {
+   "id": "B_ROOM",
+   "name": "GRIT ROOM (atmosphere)",
+   "direction": "area",
+   "bbox": [
+    0.179,
+    0.429,
+    0.204,
+    0.462
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5",
+  "r4c1",
+  "r4c2",
+  "r4c3",
+  "r4c4",
+  "r4c5"
+ ],
+ "unreadable": [
+  "Three E-stop pushbuttons printed with the same tag HS-2000B (CP-1700B, CP-1701, CP-2000)"
+ ]
+}

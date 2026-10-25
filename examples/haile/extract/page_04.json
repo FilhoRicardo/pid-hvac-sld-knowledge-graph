@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "page": 4,
+  "sheet": {
+    "drawing_number": "660-PI-202",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - Stage 1 Clearwell, Stage 2 Reaction Tank",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90
+  },
+  "equipment": [
+    {"id": "660-TK-002", "tag": "660-TK-002", "kind": "tank", "name": "1ST STAGE CLEARWELL", "bbox": [0.204, 0.565, 0.31, 0.75]},
+    {"id": "660-PP-005", "tag": "660-PP-005", "kind": "centrifugal_pump", "bbox": [0.43, 0.638, 0.447, 0.655]},
+    {"id": "660-PP-006", "tag": "660-PP-006", "kind": "centrifugal_pump", "bbox": [0.43, 0.777, 0.447, 0.795]},
+    {"id": "660-TK-003", "tag": "660-TK-003", "kind": "agitated_tank", "name": "2ND STAGE REACTION TANK", "bbox": [0.656, 0.38, 0.76, 0.56]}
+  ],
+  "components": [
+    {"id": "V_OF", "kind": "manual_valve", "bbox": [0.18, 0.725, 0.19, 0.738], "confidence": 0.8, "notes": "Valve on 660-TK-002 bottom drain"},
+    {"id": "V_T5", "kind": "manual_valve", "bbox": [0.316, 0.705, 0.326, 0.716], "confidence": 0.8, "notes": "Tank outlet valve, filled-dot symbol"},
+    {"id": "V_T6", "kind": "manual_valve", "bbox": [0.316, 0.725, 0.326, 0.736], "confidence": 0.8, "notes": "Tank outlet valve, filled-dot symbol"},
+    {"id": "R_S5", "kind": "reducer", "bbox": [0.408, 0.643, 0.415, 0.652]},
+    {"id": "R_S6", "kind": "reducer", "bbox": [0.408, 0.782, 0.415, 0.792]},
+    {"id": "V_SD5", "kind": "manual_valve", "bbox": [0.396, 0.655, 0.406, 0.67], "confidence": 0.8, "notes": "Suction drain valve"},
+    {"id": "V_SD6", "kind": "manual_valve", "bbox": [0.396, 0.795, 0.406, 0.81], "confidence": 0.8, "notes": "Suction drain valve"},
+    {"id": "R_D5", "kind": "reducer", "bbox": [0.455, 0.638, 0.462, 0.648]},
+    {"id": "R_D6", "kind": "reducer", "bbox": [0.455, 0.778, 0.462, 0.788]},
+    {"id": "CV5", "kind": "check_valve", "bbox": [0.466, 0.636, 0.476, 0.65]},
+    {"id": "CV6", "kind": "check_valve", "bbox": [0.466, 0.776, 0.476, 0.79]},
+    {"id": "V_D5", "kind": "manual_valve", "bbox": [0.502, 0.638, 0.512, 0.65], "confidence": 0.8, "notes": "Filled-dot valve with slash"},
+    {"id": "V_D6", "kind": "manual_valve", "bbox": [0.502, 0.777, 0.512, 0.79], "confidence": 0.8, "notes": "Filled-dot valve with slash"},
+    {"id": "SP3", "kind": "sample_point", "bbox": [0.643, 0.538, 0.651, 0.552], "confidence": 0.7}
+  ],
+  "instruments": [
+    {"id": "LIT-0301", "tag": "LIT-0301", "location": "field", "measures": {"item": "660-TK-002"}, "bbox": [0.335, 0.678, 0.35, 0.695]},
+    {"id": "PI-0502", "tag": "PI-0502", "location": "field", "measures": {"line": "L_P5", "after": "CV5"}, "bbox": [0.47, 0.588, 0.485, 0.605], "notes": "With diaphragm seal and isolation valve"},
+    {"id": "PI-0502B", "tag": "PI-0502", "location": "field", "measures": {"line": "L_P6", "after": "CV6"}, "bbox": [0.47, 0.727, 0.485, 0.745], "notes": "Same tag printed on the PP-006 discharge gauge"},
+    {"id": "LIT-0101", "tag": "LIT-0101", "location": "field", "bbox": [0.73, 0.33, 0.745, 0.348]},
+    {"id": "LE-0101", "tag": "LE-0101", "location": "field", "measures": {"item": "660-TK-003"}, "bbox": [0.73, 0.348, 0.745, 0.366]},
+    {"id": "AIT-0101", "tag": "AIT-0101", "location": "field", "bbox": [0.747, 0.33, 0.762, 0.348], "name": "pH"},
+    {"id": "AE-0101", "tag": "AE-0101", "location": "field", "measures": {"item": "660-TK-003"}, "bbox": [0.747, 0.348, 0.762, 0.366], "name": "pH"}
+  ],
+  "lines": [
+    {"id": "L_IN", "line_number": "14\"-TW-660-002-PEA17-NA", "service": "TW", "from": "OPC_EQ001", "to": "660-TK-002"},
+    {"id": "L_OVF", "line_number": "16\"-TW-660-003-PEA17-NA", "service": "TW", "from": "660-TK-002", "to": "B_DRAIN", "notes": "From upper nozzle; destination not shown (arrow only)", "confidence": 0.7},
+    {"id": "L_BD", "from": "660-TK-002", "to": "B_DRAIN", "path": ["V_OF"], "confidence": 0.75},
+    {"id": "L_S5", "line_number": "12\"-TW-660-004-SSB-NA", "from": "660-TK-002", "to": "660-PP-005", "path": ["V_T5", "R_S5"]},
+    {"id": "L_SD5", "from": {"line": "L_S5", "after": "V_T5"}, "to": "B_DRAIN", "path": ["V_SD5"], "confidence": 0.75},
+    {"id": "L_S6", "line_number": "12\"-TW-660-005-SSB-NA", "from": "660-TK-002", "to": "660-PP-006", "path": ["V_T6", "R_S6"]},
+    {"id": "L_SD6", "from": {"line": "L_S6", "after": "V_T6"}, "to": "B_DRAIN", "path": ["V_SD6"], "confidence": 0.75},
+    {"id": "L_P5", "line_number": "12\"-TW-660-007-PEA17-NA", "service": "TW", "from": "660-PP-005", "to": "660-TK-003", "path": ["R_D5", "CV5", "V_D5"]},
+    {"id": "L_P6", "from": "660-PP-006", "to": {"line": "L_P5", "after": "V_D5"}, "path": ["R_D6", "CV6", "V_D6"]},
+    {"id": "L_ML", "line_number": "1\"-ML-660-001-CSG-NA", "service": "MILK OF LIME", "from": "OPC_MOL", "to": "660-TK-003"},
+    {"id": "L_SG", "line_number": "2\"-SG-660-007-SSB-ET", "service": "SLUDGE (lamella sludge recycle)", "from": "OPC_LSR", "to": "660-TK-003", "notes": "NOT IN SERVICE"},
+    {"id": "L_CO", "line_number": "1/2\"-CO-660-011-PLB-ET", "service": "METAL PRECIPITANT TMT-15", "from": "OPC_TMT", "to": "660-TK-003"},
+    {"id": "L_MP", "line_number": "1/2\"-MP-660-005-PLB-ET", "service": "MP", "from": "B_MP", "to": "660-TK-003", "notes": "NOT IN SERVICE; source flag left blank"},
+    {"id": "L_OUT", "line_number": "12\"-TW-660-008-PEA17-NA", "service": "TW", "from": "660-TK-003", "to": "OPC_203"},
+    {"id": "L_SP3", "from": "660-TK-003", "to": "SP3", "confidence": 0.7}
+  ],
+  "signals": [],
+  "off_page_connectors": [
+    {"id": "OPC_EQ001", "direction": "in", "name": "TW 660-EQ-001", "other_drawing": "660-PI-201", "other_item": "660-EQ-001",
+     "line_number": "14\"-TW-660-002-PEA17-NA", "bbox": [0.03, 0.54, 0.075, 0.56]},
+    {"id": "OPC_MOL", "direction": "in", "name": "MILK OF LIME - LIME FEED LOOP", "other_drawing": "800-PI-016",
+     "line_number": "1\"-ML-660-001-CSG-NA", "bbox": [0.03, 0.2, 0.075, 0.218]},
+    {"id": "OPC_LSR", "direction": "in", "name": "SLUDGE - LAMELLA SLUDGE RECYCLE", "other_drawing": "660-PI-203",
+     "line_number": "2\"-SG-660-007-SSB-ET", "bbox": [0.03, 0.243, 0.075, 0.26]},
+    {"id": "OPC_TMT", "direction": "in", "name": "METAL PRECIPITANT TMT-15", "other_drawing": "660-PI-211",
+     "line_number": "1/2\"-CO-660-011-PLB-ET", "bbox": [0.03, 0.286, 0.075, 0.303]},
+    {"id": "OPC_203", "direction": "out", "name": "TW 660-PI-203", "other_drawing": "660-PI-203",
+     "line_number": "12\"-TW-660-008-PEA17-NA", "bbox": [0.87, 0.405, 0.92, 0.418]}
+  ],
+  "boundaries": [
+    {"id": "B_DRAIN", "name": "DRAIN (unlabelled)", "direction": "sink", "confidence": 0.7, "bbox": [0.16, 0.74, 0.41, 0.83]},
+    {"id": "B_MP", "name": "MP feed (flag unlabelled)", "direction": "source", "confidence": 0.6, "bbox": [0.03, 0.33, 0.075, 0.345]}
+  ],
+  "tiles_reviewed": ["r1c1", "r1c2", "r1c3", "r1c4", "r2c1", "r2c2", "r2c3", "r2c4", "r3c1", "r3c2", "r3c3", "r3c4"],
+  "unreadable": []
+}

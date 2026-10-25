@@ -1,0 +1,1552 @@
+{
+ "schema_version": "1.0",
+ "page": 2,
+ "sheet": {
+  "drawing_number": "M702",
+  "title": "P&ID Pumping Stations (Ruttan Mine Site Remediation, Contract C-700)",
+  "revision": "0",
+  "drawing_type": "pid",
+  "rotation": 90,
+  "legend_notes": [
+   "Details: 1 Pumping Station 1 (open pit), 2 Pumping Station 2 (raw water), 3 Mill Pond Discharge, 4 Surge Anticipation Relief Valve",
+   "Brehaut Lake discharge shown dashed as FUTURE",
+   "Each submersible pump has HS (S/S), SK, SC, YSX run-status and fault, YI, YAX and two XC control panels linked by a communication line"
+  ],
+  "issue_status": "as-built"
+ },
+ "equipment": [
+  {
+   "id": "RUTTAN OPEN PIT",
+   "kind": "pond",
+   "name": "RUTTAN OPEN PIT (EL 280.0 max / 245.0 min MASL)",
+   "bbox": [
+    0.376,
+    0.606,
+    0.829,
+    0.767
+   ]
+  },
+  {
+   "id": "MILL POND",
+   "kind": "pond",
+   "name": "MILL POND (EL 285.76 m)",
+   "bbox": [
+    0.436,
+    0.173,
+    0.528,
+    0.208
+   ]
+  },
+  {
+   "id": "RUTTAN LAKE",
+   "kind": "pond",
+   "name": "RUTTAN LAKE",
+   "bbox": [
+    0.14,
+    0.239,
+    0.236,
+    0.268
+   ]
+  },
+  {
+   "id": "BREHAUT LAKE",
+   "kind": "pond",
+   "name": "BREHAUT LAKE (FUTURE)",
+   "status": "future",
+   "bbox": [
+    0.147,
+    0.351,
+    0.239,
+    0.38
+   ]
+  },
+  {
+   "id": "RAW WATER POND",
+   "kind": "pond",
+   "name": "RAW WATER POND",
+   "bbox": [
+    0.612,
+    0.116,
+    0.727,
+    0.144
+   ]
+  },
+  {
+   "id": "PU-3",
+   "tag": "PU-3",
+   "kind": "centrifugal_pump",
+   "name": "Raw water pump (100 GPM, 20 PSI), in sea can",
+   "bbox": [
+    0.654,
+    0.231,
+    0.676,
+    0.26
+   ],
+   "attributes": {
+    "capacity": "100 GPM",
+    "head": "20 PSI"
+   }
+  },
+  {
+   "id": "PU-4",
+   "tag": "PU-4",
+   "kind": "centrifugal_pump",
+   "name": "Raw water pump (100 GPM, 20 PSI)",
+   "bbox": [
+    0.692,
+    0.219,
+    0.714,
+    0.248
+   ],
+   "attributes": {
+    "capacity": "100 GPM",
+    "head": "20 PSI"
+   }
+  },
+  {
+   "id": "MOBILE PUMP STATION",
+   "kind": "package_unit",
+   "name": "VENDOR SKID MOBILE PUMP STATION",
+   "bbox": [
+    0.746,
+    0.267,
+    0.781,
+    0.282
+   ]
+  },
+  {
+   "id": "PU-1",
+   "tag": "PU-1",
+   "kind": "sump_pump",
+   "name": "Submersible pump with integral check valve",
+   "bbox": [
+    0.52,
+    0.615,
+    0.536,
+    0.672
+   ]
+  },
+  {
+   "id": "PU-2",
+   "tag": "PU-2",
+   "kind": "sump_pump",
+   "name": "Submersible pump with integral check valve",
+   "bbox": [
+    0.575,
+    0.615,
+    0.59,
+    0.672
+   ]
+  },
+  {
+   "id": "PU-14",
+   "tag": "PU-14",
+   "kind": "sump_pump",
+   "name": "Submersible pump with integral check valve",
+   "bbox": [
+    0.625,
+    0.615,
+    0.64,
+    0.672
+   ]
+  },
+  {
+   "id": "PU-15",
+   "tag": "PU-15",
+   "kind": "sump_pump",
+   "name": "Submersible pump with integral check valve",
+   "bbox": [
+    0.686,
+    0.615,
+    0.702,
+    0.672
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "FV_PU3",
+   "kind": "check_valve",
+   "name": "4\" foot valve",
+   "bbox": [
+    0.654,
+    0.122,
+    0.663,
+    0.134
+   ]
+  },
+  {
+   "id": "FV_PU4",
+   "kind": "check_valve",
+   "name": "4\" foot valve",
+   "bbox": [
+    0.689,
+    0.122,
+    0.698,
+    0.134
+   ]
+  },
+  {
+   "id": "CK_PU3",
+   "kind": "check_valve",
+   "size": "4\"",
+   "bbox": [
+    0.657,
+    0.266,
+    0.663,
+    0.276
+   ]
+  },
+  {
+   "id": "CK_PU4",
+   "kind": "check_valve",
+   "size": "4\"",
+   "bbox": [
+    0.689,
+    0.257,
+    0.695,
+    0.267
+   ]
+  },
+  {
+   "id": "GV_PU4",
+   "kind": "gate_valve",
+   "size": "4\"",
+   "bbox": [
+    0.689,
+    0.281,
+    0.695,
+    0.29
+   ]
+  },
+  {
+   "id": "GV_SR3",
+   "kind": "gate_valve",
+   "bbox": [
+    0.424,
+    0.512,
+    0.432,
+    0.521
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "SARV-3",
+   "kind": "relief_valve",
+   "name": "Surge anticipating relief valve (Singer 106-RPS-L&H 2 1/2\")",
+   "bbox": [
+    0.44,
+    0.512,
+    0.45,
+    0.524
+   ],
+   "attributes": {
+    "pilots": "low and high surge pressure pilots"
+   }
+  },
+  {
+   "id": "GV_SR4",
+   "kind": "gate_valve",
+   "bbox": [
+    0.429,
+    0.446,
+    0.438,
+    0.455
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "SARV-4",
+   "kind": "relief_valve",
+   "name": "Surge anticipating relief valve (Singer 106-RPS-L&H 2 1/2\")",
+   "bbox": [
+    0.45,
+    0.446,
+    0.459,
+    0.458
+   ],
+   "attributes": {
+    "pilots": "low and high surge pressure pilots"
+   }
+  },
+  {
+   "id": "RED_UP_15",
+   "kind": "reducer",
+   "size": "14\"x8\"",
+   "bbox": [
+    0.671,
+    0.356,
+    0.677,
+    0.367
+   ]
+  },
+  {
+   "id": "RED_LOW_END",
+   "kind": "reducer",
+   "size": "14\"x8\"",
+   "bbox": [
+    0.656,
+    0.417,
+    0.662,
+    0.427
+   ]
+  },
+  {
+   "id": "RED_PU-1",
+   "kind": "reducer",
+   "size": "8\"x6\"",
+   "bbox": [
+    0.525,
+    0.565,
+    0.531,
+    0.573
+   ]
+  },
+  {
+   "id": "TAP_PU-1",
+   "kind": "other",
+   "name": "8\" TAP",
+   "bbox": [
+    0.525,
+    0.487,
+    0.531,
+    0.495
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "RED_PU-2",
+   "kind": "reducer",
+   "size": "8\"x6\"",
+   "bbox": [
+    0.579,
+    0.565,
+    0.585,
+    0.573
+   ]
+  },
+  {
+   "id": "TAP_PU-2",
+   "kind": "other",
+   "name": "8\" TAP",
+   "bbox": [
+    0.579,
+    0.487,
+    0.585,
+    0.495
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "RED_PU-14",
+   "kind": "reducer",
+   "size": "8\"x6\"",
+   "bbox": [
+    0.629,
+    0.565,
+    0.636,
+    0.573
+   ]
+  },
+  {
+   "id": "TAP_PU-14",
+   "kind": "other",
+   "name": "8\" TAP",
+   "bbox": [
+    0.629,
+    0.487,
+    0.636,
+    0.495
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "RED_PU-15",
+   "kind": "reducer",
+   "size": "8\"x6\"",
+   "bbox": [
+    0.691,
+    0.565,
+    0.697,
+    0.573
+   ]
+  },
+  {
+   "id": "TAP_PU-15",
+   "kind": "other",
+   "name": "8\" TAP",
+   "bbox": [
+    0.691,
+    0.487,
+    0.697,
+    0.495
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "instruments": [
+  {
+   "id": "HS-1A",
+   "tag": "HS-1A",
+   "location": "field",
+   "name": "Start/stop at pump",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-1B",
+   "tag": "HS-1B",
+   "location": "main_panel",
+   "name": "Start/stop in control room",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SK-1",
+   "tag": "SK-1",
+   "location": "main_panel",
+   "name": "Speed control station",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SC-1",
+   "tag": "SC-1",
+   "location": "local_panel",
+   "name": "Speed control (VFD)",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-1A",
+   "tag": "YSX-1A",
+   "location": "local_panel",
+   "name": "Fault event switch",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-1B",
+   "tag": "YSX-1B",
+   "location": "local_panel",
+   "name": "Run status event switch",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YI-1B",
+   "tag": "YI-1B",
+   "location": "main_panel",
+   "name": "Run status indication",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YAX-1A",
+   "tag": "YAX-1A",
+   "location": "main_panel",
+   "name": "Fault alarm",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-1A",
+   "tag": "XC-1A",
+   "location": "local_panel",
+   "name": "Control panel (field)",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-1B",
+   "tag": "XC-1B",
+   "location": "main_panel",
+   "name": "Control panel (control room)",
+   "loop": "S-1",
+   "bbox": [
+    0.284,
+    0.532,
+    0.421,
+    0.639
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-2A",
+   "tag": "HS-2A",
+   "location": "field",
+   "name": "Start/stop at pump",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-2B",
+   "tag": "HS-2B",
+   "location": "main_panel",
+   "name": "Start/stop in control room",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SK-2",
+   "tag": "SK-2",
+   "location": "main_panel",
+   "name": "Speed control station",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SC-2",
+   "tag": "SC-2",
+   "location": "local_panel",
+   "name": "Speed control (VFD)",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-2A",
+   "tag": "YSX-2A",
+   "location": "local_panel",
+   "name": "Fault event switch",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-2B",
+   "tag": "YSX-2B",
+   "location": "local_panel",
+   "name": "Run status event switch",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YI-2B",
+   "tag": "YI-2B",
+   "location": "main_panel",
+   "name": "Run status indication",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YAX-2A",
+   "tag": "YAX-2A",
+   "location": "main_panel",
+   "name": "Fault alarm",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-2A",
+   "tag": "XC-2A",
+   "location": "local_panel",
+   "name": "Control panel (field)",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-2B",
+   "tag": "XC-2B",
+   "location": "main_panel",
+   "name": "Control panel (control room)",
+   "loop": "S-2",
+   "bbox": [
+    0.328,
+    0.664,
+    0.469,
+    0.771
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-14A",
+   "tag": "HS-14A",
+   "location": "field",
+   "name": "Start/stop at pump",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-14B",
+   "tag": "HS-14B",
+   "location": "main_panel",
+   "name": "Start/stop in control room",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SK-14",
+   "tag": "SK-14",
+   "location": "main_panel",
+   "name": "Speed control station",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SC-14",
+   "tag": "SC-14",
+   "location": "local_panel",
+   "name": "Speed control (VFD)",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-14A",
+   "tag": "YSX-14A",
+   "location": "local_panel",
+   "name": "Fault event switch",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-14B",
+   "tag": "YSX-14B",
+   "location": "local_panel",
+   "name": "Run status event switch",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YI-14B",
+   "tag": "YI-14B",
+   "location": "main_panel",
+   "name": "Run status indication",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YAX-14A",
+   "tag": "YAX-14A",
+   "location": "main_panel",
+   "name": "Fault alarm",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-14A",
+   "tag": "XC-14A",
+   "location": "local_panel",
+   "name": "Control panel (field)",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-14B",
+   "tag": "XC-14B",
+   "location": "main_panel",
+   "name": "Control panel (control room)",
+   "loop": "S-14",
+   "bbox": [
+    0.408,
+    0.714,
+    0.548,
+    0.846
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-15A",
+   "tag": "HS-15A",
+   "location": "field",
+   "name": "Start/stop at pump",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-15B",
+   "tag": "HS-15B",
+   "location": "main_panel",
+   "name": "Start/stop in control room",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SK-15",
+   "tag": "SK-15",
+   "location": "main_panel",
+   "name": "Speed control station",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "SC-15",
+   "tag": "SC-15",
+   "location": "local_panel",
+   "name": "Speed control (VFD)",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-15A",
+   "tag": "YSX-15A",
+   "location": "local_panel",
+   "name": "Fault event switch",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YSX-15B",
+   "tag": "YSX-15B",
+   "location": "local_panel",
+   "name": "Run status event switch",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YI-15B",
+   "tag": "YI-15B",
+   "location": "main_panel",
+   "name": "Run status indication",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "YAX-15A",
+   "tag": "YAX-15A",
+   "location": "main_panel",
+   "name": "Fault alarm",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-15A",
+   "tag": "XC-15A",
+   "location": "local_panel",
+   "name": "Control panel (field)",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "XC-15B",
+   "tag": "XC-15B",
+   "location": "main_panel",
+   "name": "Control panel (control room)",
+   "loop": "S-15",
+   "bbox": [
+    0.682,
+    0.705,
+    0.823,
+    0.813
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HS-P3",
+   "tag": "HS-P3",
+   "location": "field",
+   "name": "PU-3 switch",
+   "bbox": [
+    0.605,
+    0.235,
+    0.616,
+    0.25
+   ]
+  },
+  {
+   "id": "HS-P4",
+   "tag": "HS-P4",
+   "location": "field",
+   "name": "PU-4 switch",
+   "bbox": [
+    0.732,
+    0.227,
+    0.744,
+    0.242
+   ]
+  },
+  {
+   "id": "PG_SR3",
+   "location": "field",
+   "name": "Pressure gauge on surge relief branch",
+   "measures": {
+    "line": "L_SR3"
+   },
+   "bbox": [
+    0.096,
+    0.672,
+    0.102,
+    0.685
+   ],
+   "confidence": 0.6,
+   "function": "PI"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_PU-1",
+   "line_number": "8\"-CTW-010",
+   "service": "CONTAMINATED WATER",
+   "from": "PU-1",
+   "to": {
+    "line": "L_HDR_LOW"
+   },
+   "path": [
+    "RED_PU-1",
+    "TAP_PU-1"
+   ],
+   "notes": "6\"-CTW-007 from the pump, 8\"-CTW-010 riser to the header"
+  },
+  {
+   "id": "L_PU-2",
+   "line_number": "8\"-CTW-009",
+   "service": "CONTAMINATED WATER",
+   "from": "PU-2",
+   "to": {
+    "line": "L_HDR_UP"
+   },
+   "path": [
+    "RED_PU-2",
+    "TAP_PU-2"
+   ],
+   "notes": "6\"-CTW-008 from the pump, 8\"-CTW-009 riser to the header"
+  },
+  {
+   "id": "L_PU-14",
+   "line_number": "8\"-CTW-008",
+   "service": "CONTAMINATED WATER",
+   "from": "PU-14",
+   "to": {
+    "line": "L_HDR_LOW"
+   },
+   "path": [
+    "RED_PU-14",
+    "TAP_PU-14"
+   ],
+   "notes": "6\"-CTW-009 from the pump, 8\"-CTW-008 riser to the header"
+  },
+  {
+   "id": "L_PU-15",
+   "line_number": "8\"-CTW-007",
+   "service": "CONTAMINATED WATER",
+   "from": "PU-15",
+   "to": {
+    "line": "L_HDR_UP"
+   },
+   "path": [
+    "RED_PU-15",
+    "TAP_PU-15"
+   ],
+   "notes": "6\"-CTW-007 from the pump, 8\"-CTW-007 riser to the header"
+  },
+  {
+   "id": "L_HDR_UP",
+   "line_number": "14\"-CTW-003",
+   "service": "CONTAMINATED WATER (header)",
+   "from": "PU-15",
+   "to": "OPC_CTW3",
+   "path": [
+    "RED_UP_15"
+   ],
+   "notes": "Upper 14\" header; PU-15 enters at the right end; three spare 8\" blind branches"
+  },
+  {
+   "id": "L_HDR_LOW",
+   "line_number": "14\"-CTW-004",
+   "service": "CONTAMINATED WATER (header)",
+   "from": "B_SPARE_LOW",
+   "to": "OPC_CTW4",
+   "path": [
+    "RED_LOW_END"
+   ],
+   "notes": "Lower 14\" header; right end 14\"x8\" to 8\" blind"
+  },
+  {
+   "id": "L_SR3",
+   "line_number": "2\"-CTW-005",
+   "service": "SURGE RELIEF",
+   "from": {
+    "line": "L_HDR_UP"
+   },
+   "to": "RUTTAN OPEN PIT",
+   "path": [
+    "GV_SR3",
+    "SARV-3"
+   ],
+   "notes": "TO RUTTAN OPEN PIT (detail 4)"
+  },
+  {
+   "id": "L_SR4",
+   "line_number": "2\"-CTW-006",
+   "service": "SURGE RELIEF",
+   "from": {
+    "line": "L_HDR_LOW"
+   },
+   "to": "RUTTAN OPEN PIT",
+   "path": [
+    "GV_SR4",
+    "SARV-4"
+   ],
+   "notes": "TO RUTTAN OPEN PIT (detail 4)"
+  },
+  {
+   "id": "L_TW2",
+   "line_number": "14\"-TW-002",
+   "service": "TREATED WATER",
+   "from": "OPC_TW2",
+   "to": "MILL POND"
+  },
+  {
+   "id": "L_TW1",
+   "line_number": "14\"-TW-001",
+   "service": "TREATED WATER",
+   "from": "OPC_TW1",
+   "to": "MILL POND"
+  },
+  {
+   "id": "L_TW4",
+   "line_number": "14\"-TW-004",
+   "service": "TREATED WATER (gravity discharge)",
+   "from": "MILL POND",
+   "to": "RUTTAN LAKE"
+  },
+  {
+   "id": "L_TW3",
+   "line_number": "14\"-TW-003",
+   "service": "TREATED WATER (gravity discharge)",
+   "from": "MILL POND",
+   "to": "RUTTAN LAKE"
+  },
+  {
+   "id": "L_TW4F",
+   "service": "TREATED WATER (future)",
+   "from": {
+    "line": "L_TW4"
+   },
+   "to": "BREHAUT LAKE",
+   "status": "future"
+  },
+  {
+   "id": "L_TW3F",
+   "service": "TREATED WATER (future)",
+   "from": {
+    "line": "L_TW3"
+   },
+   "to": "BREHAUT LAKE",
+   "status": "future"
+  },
+  {
+   "id": "L_RW1",
+   "line_number": "4\"-RW-001",
+   "service": "RAW WATER",
+   "from": "RAW WATER POND",
+   "to": "PU-3",
+   "path": [
+    "FV_PU3"
+   ]
+  },
+  {
+   "id": "L_RW2",
+   "line_number": "4\"-RW-002",
+   "service": "RAW WATER",
+   "from": "RAW WATER POND",
+   "to": "PU-4",
+   "path": [
+    "FV_PU4"
+   ]
+  },
+  {
+   "id": "L_RW6",
+   "line_number": "4\"-RW-006",
+   "service": "RAW WATER",
+   "from": "PU-3",
+   "to": "OPC_RW",
+   "path": [
+    "CK_PU3"
+   ],
+   "notes": "4\"-RW-004 from PU-3 joins RW-005 into 4\"-RW-006"
+  },
+  {
+   "id": "L_RW5",
+   "line_number": "4\"-RW-005",
+   "service": "RAW WATER",
+   "from": "PU-4",
+   "to": {
+    "line": "L_RW6",
+    "after": "CK_PU3"
+   },
+   "path": [
+    "CK_PU4",
+    "GV_PU4"
+   ]
+  },
+  {
+   "id": "L_RW3",
+   "line_number": "4\"-RW-003",
+   "service": "RAW WATER",
+   "from": "MOBILE PUMP STATION",
+   "to": {
+    "line": "L_RW5",
+    "after": "CK_PU4"
+   },
+   "flow_direction": "inferred"
+  }
+ ],
+ "signals": [
+  {
+   "from": "HS-1B",
+   "to": "XC-1B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SK-1",
+   "to": "XC-1B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-1B",
+   "to": "XC-1A",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-1A",
+   "to": "SC-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1A",
+   "to": "SC-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SC-1",
+   "to": "PU-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "YSX-1A",
+   "to": "XC-1A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "YSX-1B",
+   "to": "XC-1A",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-1B",
+   "to": "YI-1B",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-1B",
+   "to": "YAX-1A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "HS-2B",
+   "to": "XC-2B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SK-2",
+   "to": "XC-2B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-2B",
+   "to": "XC-2A",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-2A",
+   "to": "SC-2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-2A",
+   "to": "SC-2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SC-2",
+   "to": "PU-2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "YSX-2A",
+   "to": "XC-2A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "YSX-2B",
+   "to": "XC-2A",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-2B",
+   "to": "YI-2B",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-2B",
+   "to": "YAX-2A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "HS-14B",
+   "to": "XC-14B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SK-14",
+   "to": "XC-14B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-14B",
+   "to": "XC-14A",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-14A",
+   "to": "SC-14",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-14A",
+   "to": "SC-14",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SC-14",
+   "to": "PU-14",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "YSX-14A",
+   "to": "XC-14A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "YSX-14B",
+   "to": "XC-14A",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-14B",
+   "to": "YI-14B",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-14B",
+   "to": "YAX-14A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "HS-15B",
+   "to": "XC-15B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SK-15",
+   "to": "XC-15B",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-15B",
+   "to": "XC-15A",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "XC-15A",
+   "to": "SC-15",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-15A",
+   "to": "SC-15",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SC-15",
+   "to": "PU-15",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "YSX-15A",
+   "to": "XC-15A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "YSX-15B",
+   "to": "XC-15A",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-15B",
+   "to": "YI-15B",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "XC-15B",
+   "to": "YAX-15A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "HS-P3",
+   "to": "PU-3",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-P4",
+   "to": "PU-4",
+   "type": "electrical",
+   "purpose": "control"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_TW2",
+   "direction": "in",
+   "name": "TREATED WATER M701",
+   "other_drawing": "M701",
+   "line_number": "14\"-TW-002",
+   "bbox": [
+    0.062,
+    0.388,
+    0.118,
+    0.408
+   ]
+  },
+  {
+   "id": "OPC_TW1",
+   "direction": "in",
+   "name": "TREATED WATER M701",
+   "other_drawing": "M701",
+   "line_number": "14\"-TW-001",
+   "bbox": [
+    0.062,
+    0.422,
+    0.118,
+    0.441
+   ]
+  },
+  {
+   "id": "OPC_CTW4",
+   "direction": "out",
+   "name": "CONTAMINATED WATER M701",
+   "other_drawing": "M701",
+   "line_number": "14\"-CTW-004",
+   "bbox": [
+    0.062,
+    0.455,
+    0.118,
+    0.474
+   ]
+  },
+  {
+   "id": "OPC_CTW3",
+   "direction": "out",
+   "name": "CONTAMINATED WATER M701",
+   "other_drawing": "M701",
+   "line_number": "14\"-CTW-003",
+   "bbox": [
+    0.062,
+    0.489,
+    0.118,
+    0.508
+   ]
+  },
+  {
+   "id": "OPC_RW",
+   "direction": "out",
+   "name": "RAW WATER M701",
+   "other_drawing": "M701",
+   "line_number": "4\"-RW-006",
+   "bbox": [
+    0.721,
+    0.318,
+    0.765,
+    0.337
+   ]
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_SPARE_LOW",
+   "name": "Lower header spare 8\" blind end",
+   "direction": "source",
+   "confidence": 0.6,
+   "bbox": [
+    0.663,
+    0.417,
+    0.676,
+    0.433
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Surge relief valve internal pilot piping (detail 4) not modelled item by item",
+  "Destination of spare 8\" blind branches on both headers (none shown)"
+ ]
+}

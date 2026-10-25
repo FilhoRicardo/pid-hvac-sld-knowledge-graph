@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "page": 6,
+  "sheet": {
+    "drawing_number": "660-PI-204",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - 2nd Stage Clearwell Tank and Transfer Pumps",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90
+  },
+  "equipment": [
+    {"id": "660-TK-004", "tag": "660-TK-004", "kind": "tank", "name": "2ND STAGE CLEARWELL", "bbox": [0.171, 0.359, 0.276, 0.549]},
+    {"id": "660-PP-009", "tag": "660-PP-009", "kind": "centrifugal_pump", "name": "Clearwell transfer pump", "bbox": [0.397, 0.432, 0.412, 0.452]},
+    {"id": "660-PP-010", "tag": "660-PP-010", "kind": "centrifugal_pump", "name": "Clearwell transfer pump", "bbox": [0.397, 0.572, 0.412, 0.592]}
+  ],
+  "components": [
+    {"id": "V_BD", "kind": "manual_valve", "bbox": [0.153, 0.517, 0.163, 0.53], "confidence": 0.8, "notes": "Bottom drain valve"},
+    {"id": "V_T9", "kind": "manual_valve", "bbox": [0.283, 0.495, 0.293, 0.508], "confidence": 0.8},
+    {"id": "V_T10", "kind": "manual_valve", "bbox": [0.283, 0.517, 0.293, 0.53], "confidence": 0.8},
+    {"id": "V_SD9", "kind": "manual_valve", "bbox": [0.364, 0.455, 0.374, 0.47], "confidence": 0.8},
+    {"id": "V_SD10", "kind": "manual_valve", "bbox": [0.364, 0.595, 0.374, 0.61], "confidence": 0.8},
+    {"id": "R_S9", "kind": "reducer", "bbox": [0.375, 0.438, 0.382, 0.448]},
+    {"id": "R_S10", "kind": "reducer", "bbox": [0.375, 0.577, 0.382, 0.587]},
+    {"id": "R_D9", "kind": "reducer", "bbox": [0.418, 0.433, 0.425, 0.443]},
+    {"id": "R_D10", "kind": "reducer", "bbox": [0.418, 0.572, 0.425, 0.582]},
+    {"id": "CV9", "kind": "check_valve", "bbox": [0.426, 0.43, 0.436, 0.445]},
+    {"id": "CV10", "kind": "check_valve", "bbox": [0.426, 0.57, 0.436, 0.585]},
+    {"id": "V_D9", "kind": "manual_valve", "bbox": [0.468, 0.431, 0.478, 0.444], "confidence": 0.8},
+    {"id": "V_D10", "kind": "manual_valve", "bbox": [0.468, 0.57, 0.478, 0.584], "confidence": 0.8},
+    {"id": "V_AE", "kind": "manual_valve", "bbox": [0.522, 0.39, 0.532, 0.4], "confidence": 0.7, "notes": "Sample valve to turbidity analyser AE-0601"},
+    {"id": "V_HDR", "kind": "manual_valve", "bbox": [0.548, 0.431, 0.558, 0.444], "confidence": 0.8},
+    {"id": "SB1", "kind": "other", "bbox": [0.752, 0.43, 0.758, 0.445], "confidence": 0.7, "notes": "Flanged spec break: 8\" TW (SSB) to 8\" PW (HDPE)"}
+  ],
+  "instruments": [
+    {"id": "LIT-0601", "tag": "LIT-0601", "location": "field", "measures": {"item": "660-TK-004"}, "bbox": [0.3, 0.47, 0.316, 0.49]},
+    {"id": "PI-0602", "tag": "PI-0602", "location": "field", "measures": {"line": "L_P9", "after": "CV9"}, "bbox": [0.437, 0.378, 0.452, 0.398], "notes": "With diaphragm seal and isolation valve"},
+    {"id": "PI-0602B", "tag": "PI-0602", "location": "field", "measures": {"line": "L_P10", "after": "CV10"}, "bbox": [0.437, 0.517, 0.452, 0.537], "notes": "Same tag printed on the PP-010 discharge gauge"},
+    {"id": "AE-0601", "tag": "AE-0601", "location": "field", "name": "TURBIDITY", "measures": {"line": "L_P9", "after": "V_D9"}, "bbox": [0.52, 0.355, 0.535, 0.375]},
+    {"id": "AIT-0601", "tag": "AIT-0601", "location": "field", "name": "TURBIDITY", "bbox": [0.52, 0.337, 0.535, 0.355]},
+    {"id": "FE-0601", "tag": "FE-0601", "location": "field", "bbox": [0.563, 0.4, 0.577, 0.418], "notes": "Magnetic flowmeter on MF feed"},
+    {"id": "FIT-0601", "tag": "FIT-0601", "location": "field", "bbox": [0.563, 0.383, 0.577, 0.4]}
+  ],
+  "lines": [
+    {"id": "L_SBS", "line_number": "1/2\"-CH-660-202-PE-NA", "service": "SBS", "from": "OPC_SBS", "to": "660-TK-004"},
+    {"id": "L_XR", "line_number": "6\"-PW-660-109-HDPE-NA", "service": "XR", "from": "OPC_XR", "to": "660-TK-004"},
+    {"id": "L_IN", "line_number": "12\"-TW-660-009-PEA17-NA", "service": "TW", "from": "OPC_EQ002", "to": "660-TK-004"},
+    {"id": "L_OVF", "line_number": "16\"-TW-660-011-PEA17-NA", "from": "660-TK-004", "to": "B_DRAIN", "confidence": 0.7, "notes": "Overflow from upper nozzle; destination not shown"},
+    {"id": "L_BD", "from": "660-TK-004", "to": "B_DRAIN", "path": ["V_BD"], "confidence": 0.75},
+    {"id": "L_S9", "line_number": "12\"-TW-660-010-SSB-NA", "from": "660-TK-004", "to": "660-PP-009", "path": ["V_T9", "R_S9"]},
+    {"id": "L_SD9", "from": {"line": "L_S9", "after": "V_T9"}, "to": "B_DRAIN", "path": ["V_SD9"], "confidence": 0.75},
+    {"id": "L_S10", "line_number": "12\"-TW-660-012-SSB-NA", "from": "660-TK-004", "to": "660-PP-010", "path": ["V_T10", "R_S10"]},
+    {"id": "L_SD10", "from": {"line": "L_S10", "after": "V_T10"}, "to": "B_DRAIN", "path": ["V_SD10"], "confidence": 0.75},
+    {"id": "L_P9", "line_number": "8\"-TW-660-014-SSB-NA", "service": "TW (MF feed)", "from": "660-PP-009", "to": "OPC_MF",
+     "path": ["R_D9", "CV9", "V_D9", "V_HDR", "FE-0601", "SB1"], "notes": "Becomes 8\"-PW-660-100-HDPE-NA after the spec break"},
+    {"id": "L_P10", "from": "660-PP-010", "to": {"line": "L_P9", "after": "V_D9"}, "path": ["R_D10", "CV10", "V_D10"]},
+    {"id": "L_AE", "from": {"line": "L_P9", "after": "V_D9"}, "to": "V_AE", "confidence": 0.7, "notes": "Analyser sample tap"}
+  ],
+  "signals": [
+    {"from": "FE-0601", "to": "FIT-0601", "purpose": "measurement"},
+    {"from": "AE-0601", "to": "AIT-0601", "purpose": "measurement"}
+  ],
+  "off_page_connectors": [
+    {"id": "OPC_SBS", "direction": "in", "name": "CH SBS SUPPLY", "other_drawing": "660-PI-202A",
+     "line_number": "1/2\"-CH-660-202-PE-NA", "bbox": [0.03, 0.205, 0.075, 0.222]},
+    {"id": "OPC_XR", "direction": "in", "name": "PW 660-MF-101/102 (XR)", "other_drawing": "660-PI-206", "other_item": "660-MF-101/102",
+     "line_number": "6\"-PW-660-109-HDPE-NA", "bbox": [0.03, 0.235, 0.075, 0.252]},
+    {"id": "OPC_EQ002", "direction": "in", "name": "TW 660-EQ-002", "other_drawing": "660-PI-203", "other_item": "660-EQ-002",
+     "line_number": "12\"-TW-660-009-PEA17-NA", "bbox": [0.03, 0.265, 0.075, 0.282]},
+    {"id": "OPC_MF", "direction": "out", "name": "TW 660-MF-101/102", "other_drawing": "660-PI-205", "other_item": "660-MF-101/102",
+     "line_number": "8\"-PW-660-100-HDPE-NA", "bbox": [0.87, 0.432, 0.92, 0.448]}
+  ],
+  "boundaries": [
+    {"id": "B_DRAIN", "name": "DRAIN (unlabelled)", "direction": "sink", "confidence": 0.7, "bbox": [0.13, 0.52, 0.375, 0.62]}
+  ],
+  "tiles_reviewed": ["r1c1", "r1c2", "r1c3", "r1c4", "r2c1", "r2c2", "r2c3", "r2c4", "r3c1", "r3c2", "r3c3", "r3c4"],
+  "unreadable": []
+}

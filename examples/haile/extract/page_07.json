@@ -1,0 +1,806 @@
+{
+  "schema_version": "1.0",
+  "page": 7,
+  "sheet": {
+    "drawing_number": "660-PI-205",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - Microfiltration 660-MF-101",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90,
+    "legend_notes": [
+      "MF system by PALL (vendor package, dashed boundary)",
+      "Plant air line drawn with double hatch marks"
+    ]
+  },
+  "equipment": [
+    {
+      "id": "660-MF-101",
+      "tag": "660-MF-101",
+      "kind": "membrane_filter",
+      "name": "MF CONTAINER 55",
+      "bbox": [
+        0.185,
+        0.398,
+        0.44,
+        0.57
+      ],
+      "attributes": {
+        "vendor_package": "MF SYSTEM BY PALL"
+      }
+    },
+    {
+      "id": "660-CIP-101",
+      "tag": "660-CIP-101",
+      "kind": "package_unit",
+      "name": "MF CIP",
+      "bbox": [
+        0.445,
+        0.398,
+        0.58,
+        0.57
+      ],
+      "attributes": {
+        "vendor_package": "MF SYSTEM BY PALL"
+      }
+    },
+    {
+      "id": "660-CP-101",
+      "tag": "660-CP-101",
+      "kind": "positive_displacement_pump",
+      "name": "Citric acid AOD pump",
+      "bbox": [
+        0.658,
+        0.43,
+        0.67,
+        0.455
+      ]
+    },
+    {
+      "id": "660-CP-102",
+      "tag": "660-CP-102",
+      "kind": "positive_displacement_pump",
+      "name": "Caustic AOD pump",
+      "bbox": [
+        0.732,
+        0.43,
+        0.744,
+        0.455
+      ]
+    },
+    {
+      "id": "660-CP-103",
+      "tag": "660-CP-103",
+      "kind": "positive_displacement_pump",
+      "name": "Bleach AOD pump",
+      "bbox": [
+        0.805,
+        0.43,
+        0.817,
+        0.455
+      ]
+    },
+    {
+      "id": "DRUM_CIT",
+      "kind": "tank",
+      "name": "CITRIC ACID drum",
+      "bbox": [
+        0.654,
+        0.47,
+        0.676,
+        0.505
+      ]
+    },
+    {
+      "id": "DRUM_CAU",
+      "kind": "tank",
+      "name": "CAUSTIC drum",
+      "bbox": [
+        0.727,
+        0.47,
+        0.749,
+        0.505
+      ]
+    },
+    {
+      "id": "DRUM_BLE",
+      "kind": "tank",
+      "name": "BLEACH drum",
+      "bbox": [
+        0.8,
+        0.47,
+        0.822,
+        0.505
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "HV-103",
+      "tag": "HV-103",
+      "kind": "manual_valve",
+      "bbox": [
+        0.102,
+        0.13,
+        0.115,
+        0.145
+      ]
+    },
+    {
+      "id": "R_86",
+      "kind": "reducer",
+      "size": "8\"x6\"",
+      "bbox": [
+        0.392,
+        0.134,
+        0.4,
+        0.144
+      ]
+    },
+    {
+      "id": "BFP-100",
+      "tag": "BFP-100",
+      "kind": "backflow_preventer",
+      "bbox": [
+        0.275,
+        0.316,
+        0.29,
+        0.326
+      ]
+    },
+    {
+      "id": "ACV-100",
+      "tag": "ACV-100",
+      "kind": "on_off_valve",
+      "actuator": "electric",
+      "bbox": [
+        0.44,
+        0.345,
+        0.47,
+        0.365
+      ],
+      "confidence": 0.7,
+      "notes": "Valve tagged ACV 100 on potable water to MF CIP; actuator type not shown"
+    },
+    {
+      "id": "HV-106",
+      "tag": "HV-106",
+      "kind": "manual_valve",
+      "bbox": [
+        0.64,
+        0.284,
+        0.652,
+        0.297
+      ]
+    },
+    {
+      "id": "HV-107",
+      "tag": "HV-107",
+      "kind": "manual_valve",
+      "bbox": [
+        0.676,
+        0.284,
+        0.688,
+        0.297
+      ]
+    },
+    {
+      "id": "CV-103",
+      "tag": "CV-103",
+      "kind": "check_valve",
+      "bbox": [
+        0.697,
+        0.284,
+        0.709,
+        0.297
+      ]
+    },
+    {
+      "id": "HV-108",
+      "tag": "HV-108",
+      "kind": "manual_valve",
+      "bbox": [
+        0.714,
+        0.256,
+        0.726,
+        0.268
+      ]
+    },
+    {
+      "id": "HV-109",
+      "tag": "HV-109",
+      "kind": "manual_valve",
+      "bbox": [
+        0.75,
+        0.256,
+        0.762,
+        0.268
+      ]
+    },
+    {
+      "id": "CV-104",
+      "tag": "CV-104",
+      "kind": "check_valve",
+      "bbox": [
+        0.771,
+        0.256,
+        0.783,
+        0.268
+      ]
+    },
+    {
+      "id": "HV-110",
+      "tag": "HV-110",
+      "kind": "manual_valve",
+      "bbox": [
+        0.787,
+        0.226,
+        0.799,
+        0.238
+      ]
+    },
+    {
+      "id": "HV-111",
+      "tag": "HV-111",
+      "kind": "manual_valve",
+      "bbox": [
+        0.822,
+        0.226,
+        0.834,
+        0.238
+      ]
+    },
+    {
+      "id": "CV-105",
+      "tag": "CV-105",
+      "kind": "check_valve",
+      "bbox": [
+        0.843,
+        0.226,
+        0.855,
+        0.238
+      ]
+    },
+    {
+      "id": "HV-102",
+      "tag": "HV-102",
+      "kind": "manual_valve",
+      "bbox": [
+        0.18,
+        0.675,
+        0.192,
+        0.688
+      ]
+    },
+    {
+      "id": "R_12",
+      "kind": "reducer",
+      "size": "1\"x1/2\"",
+      "bbox": [
+        0.222,
+        0.665,
+        0.232,
+        0.675
+      ]
+    },
+    {
+      "id": "HV-100",
+      "tag": "HV-100",
+      "kind": "manual_valve",
+      "bbox": [
+        0.243,
+        0.638,
+        0.255,
+        0.65
+      ],
+      "notes": "Isolation valve for PIT-100"
+    },
+    {
+      "id": "HV-101",
+      "tag": "HV-101",
+      "kind": "manual_valve",
+      "bbox": [
+        0.203,
+        0.632,
+        0.215,
+        0.645
+      ],
+      "notes": "Vent/drain valve on PIT-100 tap"
+    }
+  ],
+  "instruments": [
+    {
+      "id": "PIT-100",
+      "tag": "PIT-100",
+      "location": "field",
+      "measures": {
+        "line": "L_FEED",
+        "after": "HV-102"
+      },
+      "bbox": [
+        0.222,
+        0.61,
+        0.235,
+        0.627
+      ],
+      "notes": "MF feed pressure; tapped through 1\"x1/2\" reducer with isolation valve HV-100"
+    }
+  ],
+  "lines": [
+    {
+      "id": "L_FEED",
+      "line_number": "8\"-PW-660-100-HDPE-NA",
+      "service": "PW (MF feed)",
+      "from": "OPC_FEED",
+      "to": "OPC_MF102",
+      "path": [
+        "HV-102"
+      ],
+      "notes": "Feed header continues to 660-MF-102"
+    },
+    {
+      "id": "L_MFIN",
+      "line_number": "8\"-PW-660-101-HDPE-NA",
+      "from": {
+        "line": "L_FEED",
+        "after": "HV-102"
+      },
+      "to": "660-MF-101"
+    },
+    {
+      "id": "L_PIT",
+      "from": {
+        "line": "L_FEED",
+        "after": "HV-102"
+      },
+      "to": "HV-100",
+      "path": [
+        "R_12"
+      ],
+      "confidence": 0.8,
+      "notes": "Instrument tap"
+    },
+    {
+      "id": "L_HV101",
+      "from": {
+        "line": "L_PIT",
+        "after": "R_12"
+      },
+      "to": "HV-101",
+      "confidence": 0.7
+    },
+    {
+      "id": "L_FL",
+      "line_number": "8\"-FL-660-104-HDPE-NA",
+      "service": "FL",
+      "from": "OPC_FL208",
+      "to": "OPC_FL102",
+      "path": [
+        "HV-103",
+        "R_86"
+      ],
+      "notes": "Becomes 6\"-FL-660-104-HDPE-NA after the 8x6 reducer"
+    },
+    {
+      "id": "L_FL105",
+      "line_number": "6\"-FL-660-105-HDPE-NA",
+      "service": "FL",
+      "from": {
+        "line": "L_FL",
+        "after": "R_86"
+      },
+      "to": "660-MF-101"
+    },
+    {
+      "id": "L_PA",
+      "line_number": "1\"-PA-660-120-CS-NA",
+      "service": "PLANT AIR",
+      "from": "OPC_PA_IN",
+      "to": "OPC_PA_OUT"
+    },
+    {
+      "id": "L_PA_AOD",
+      "service": "PLANT AIR",
+      "from": {
+        "line": "L_PA"
+      },
+      "to": "B_AOD_AIR",
+      "notes": "Air supply TO EACH AOD PUMP"
+    },
+    {
+      "id": "L_HW",
+      "line_number": "2\"-HW-660-140-HDPE-NA",
+      "service": "POTABLE WATER",
+      "from": "OPC_HW_IN",
+      "to": "OPC_HW_OUT",
+      "path": [
+        "BFP-100"
+      ]
+    },
+    {
+      "id": "L_HWCIP",
+      "service": "POTABLE WATER",
+      "from": {
+        "line": "L_HW",
+        "after": "BFP-100"
+      },
+      "to": "660-CIP-101",
+      "path": [
+        "ACV-100"
+      ]
+    },
+    {
+      "id": "L_CIPOVF",
+      "line_number": "4\"-WW-660-106-HDPE-NA",
+      "service": "WW (CIP overflow)",
+      "from": "660-MF-101",
+      "to": "OPC_CIPOVF"
+    },
+    {
+      "id": "L_CIT_S",
+      "from": "DRUM_CIT",
+      "to": "660-CP-101"
+    },
+    {
+      "id": "L_CAU_S",
+      "from": "DRUM_CAU",
+      "to": "660-CP-102"
+    },
+    {
+      "id": "L_BLE_S",
+      "from": "DRUM_BLE",
+      "to": "660-CP-103"
+    },
+    {
+      "id": "L_CIT",
+      "line_number": "5/8\"-CH-660-130-PE-NA",
+      "service": "CITRIC",
+      "from": "660-CP-101",
+      "to": "660-CIP-101",
+      "path": [
+        "HV-106"
+      ]
+    },
+    {
+      "id": "L_CIT2",
+      "service": "CITRIC",
+      "from": {
+        "line": "L_CIT"
+      },
+      "to": "OPC_CIT",
+      "path": [
+        "HV-107",
+        "CV-103"
+      ]
+    },
+    {
+      "id": "L_CAU",
+      "line_number": "5/8\"-CH-660-131-PE-NA",
+      "service": "CAUSTIC",
+      "from": "660-CP-102",
+      "to": "660-CIP-101",
+      "path": [
+        "HV-108"
+      ]
+    },
+    {
+      "id": "L_CAU2",
+      "service": "CAUSTIC",
+      "from": {
+        "line": "L_CAU"
+      },
+      "to": "OPC_CAU",
+      "path": [
+        "HV-109",
+        "CV-104"
+      ]
+    },
+    {
+      "id": "L_BLE",
+      "line_number": "5/8\"-CH-660-132-PE-NA",
+      "service": "BLEACH",
+      "from": "660-CP-103",
+      "to": "660-CIP-101",
+      "path": [
+        "HV-110"
+      ]
+    },
+    {
+      "id": "L_BLE2",
+      "service": "BLEACH",
+      "from": {
+        "line": "L_BLE"
+      },
+      "to": "OPC_BLE",
+      "path": [
+        "HV-111",
+        "CV-105"
+      ]
+    },
+    {
+      "id": "L_VENT",
+      "from": "660-CIP-101",
+      "to": "B_VENT"
+    },
+    {
+      "id": "L_FILT",
+      "line_number": "8\"-FL-660-102-HDPE-NA",
+      "service": "FILTRATE",
+      "from": "660-MF-101",
+      "to": "OPC_FILT"
+    },
+    {
+      "id": "L_ASRF",
+      "line_number": "8\"-WW-660-108-HDPE-NA",
+      "service": "AS/RF",
+      "from": "660-MF-101",
+      "to": "OPC_ASRF"
+    },
+    {
+      "id": "L_XR",
+      "line_number": "6\"-PW-660-109-HDPE-NA",
+      "service": "XR",
+      "from": "660-MF-101",
+      "to": "OPC_XR"
+    },
+    {
+      "id": "L_CIPDR",
+      "line_number": "4\"-WW-660-110-HDPE-NA",
+      "service": "CIP DRAIN",
+      "from": "660-MF-101",
+      "to": "OPC_CIPDR"
+    }
+  ],
+  "signals": [],
+  "off_page_connectors": [
+    {
+      "id": "OPC_FEED",
+      "direction": "in",
+      "name": "PW 660-PI-204 8\"-TW-660-014-SSB-NA",
+      "other_drawing": "660-PI-204",
+      "line_number": "8\"-PW-660-100-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.674,
+        0.075,
+        0.688
+      ]
+    },
+    {
+      "id": "OPC_FL208",
+      "direction": "in",
+      "name": "FL 660-PU-13/14",
+      "other_drawing": "660-PI-208",
+      "other_item": "660-PU-13/14",
+      "line_number": "8\"-FL-660-104-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.133,
+        0.075,
+        0.147
+      ]
+    },
+    {
+      "id": "OPC_FL102",
+      "direction": "out",
+      "name": "FL 660-MF-102",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-MF-102",
+      "line_number": "6\"-FL-660-104-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.13,
+        0.92,
+        0.145
+      ]
+    },
+    {
+      "id": "OPC_PA_OUT",
+      "direction": "out",
+      "name": "PA 660-MF-102",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-MF-102",
+      "line_number": "1\"-PA-660-120-CS-NA",
+      "bbox": [
+        0.87,
+        0.16,
+        0.92,
+        0.175
+      ]
+    },
+    {
+      "id": "OPC_CIPOVF",
+      "direction": "out",
+      "name": "WW 660-S-100 (CIP OVERFLOW)",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-S-100",
+      "line_number": "4\"-WW-660-106-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.186,
+        0.92,
+        0.2
+      ]
+    },
+    {
+      "id": "OPC_BLE",
+      "direction": "out",
+      "name": "CH BLEACH",
+      "other_drawing": "660-PI-206",
+      "bbox": [
+        0.87,
+        0.222,
+        0.92,
+        0.236
+      ]
+    },
+    {
+      "id": "OPC_CAU",
+      "direction": "out",
+      "name": "CH CAUSTIC",
+      "other_drawing": "660-PI-206",
+      "bbox": [
+        0.87,
+        0.252,
+        0.92,
+        0.266
+      ]
+    },
+    {
+      "id": "OPC_CIT",
+      "direction": "out",
+      "name": "CH CITRIC",
+      "other_drawing": "660-PI-206",
+      "bbox": [
+        0.87,
+        0.282,
+        0.92,
+        0.296
+      ]
+    },
+    {
+      "id": "OPC_HW_OUT",
+      "direction": "out",
+      "name": "HW POTABLE",
+      "other_drawing": "660-PI-206",
+      "bbox": [
+        0.87,
+        0.312,
+        0.92,
+        0.326
+      ]
+    },
+    {
+      "id": "OPC_FILT",
+      "direction": "out",
+      "name": "FL 660-MF-102 (FILTRATE)",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-MF-102",
+      "line_number": "8\"-FL-660-102-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.52,
+        0.92,
+        0.535
+      ]
+    },
+    {
+      "id": "OPC_ASRF",
+      "direction": "out",
+      "name": "WW 660-S-100 (AS/RF)",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-S-100",
+      "line_number": "8\"-WW-660-108-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.596,
+        0.92,
+        0.61
+      ]
+    },
+    {
+      "id": "OPC_XR",
+      "direction": "out",
+      "name": "PW 660-TK-004 (XR)",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-TK-004",
+      "line_number": "6\"-PW-660-109-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.62,
+        0.92,
+        0.634
+      ]
+    },
+    {
+      "id": "OPC_CIPDR",
+      "direction": "out",
+      "name": "WW 660-S-100 (CIP DRAIN)",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-S-100",
+      "line_number": "4\"-WW-660-110-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.645,
+        0.92,
+        0.659
+      ]
+    },
+    {
+      "id": "OPC_MF102",
+      "direction": "out",
+      "name": "PW 660-MF-102",
+      "other_drawing": "660-PI-206",
+      "other_item": "660-MF-102",
+      "line_number": "8\"-PW-660-100-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.67,
+        0.92,
+        0.684
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "B_AOD_AIR",
+      "name": "PLANT AIR TO EACH AOD PUMP",
+      "direction": "sink",
+      "bbox": [
+        0.615,
+        0.425,
+        0.655,
+        0.45
+      ]
+    },
+    {
+      "id": "B_VENT",
+      "name": "VENT (MF CIP)",
+      "direction": "sink",
+      "bbox": [
+        0.545,
+        0.375,
+        0.565,
+        0.39
+      ]
+    },
+    {
+      "id": "OPC_PA_IN",
+      "name": "PA EXIST LINE PLANT AIR",
+      "direction": "source",
+      "bbox": [
+        0.035,
+        0.163,
+        0.075,
+        0.177
+      ],
+      "notes": "Existing utility line (flag has no drawing number)"
+    },
+    {
+      "id": "OPC_HW_IN",
+      "name": "HW EXIST LINE POTABLE WATER",
+      "direction": "source",
+      "bbox": [
+        0.035,
+        0.316,
+        0.075,
+        0.33
+      ],
+      "notes": "Existing utility line (flag has no drawing number)"
+    }
+  ],
+  "tiles_reviewed": [
+    "r1c1",
+    "r1c2",
+    "r1c3",
+    "r1c4",
+    "r2c1",
+    "r2c2",
+    "r2c3",
+    "r2c4",
+    "r3c1",
+    "r3c2",
+    "r3c3",
+    "r3c4"
+  ],
+  "unreadable": []
+}

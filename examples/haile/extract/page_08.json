@@ -1,0 +1,581 @@
+{
+  "schema_version": "1.0",
+  "page": 8,
+  "sheet": {
+    "drawing_number": "660-PI-206",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - Microfiltration 660-MF-102",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90,
+    "legend_notes": [
+      "MF system by PALL (vendor package, dashed boundary)",
+      "Project title: Haile Gold Project WTP Modification"
+    ]
+  },
+  "equipment": [
+    {
+      "id": "660-MF-102",
+      "tag": "660-MF-102",
+      "kind": "membrane_filter",
+      "name": "MF CONTAINER 56",
+      "bbox": [
+        0.185,
+        0.398,
+        0.44,
+        0.57
+      ],
+      "attributes": {
+        "vendor_package": "MF SYSTEM BY PALL"
+      }
+    },
+    {
+      "id": "660-CIP-102",
+      "tag": "660-CIP-102",
+      "kind": "package_unit",
+      "name": "MF CIP",
+      "bbox": [
+        0.445,
+        0.398,
+        0.58,
+        0.57
+      ],
+      "attributes": {
+        "vendor_package": "MF SYSTEM BY PALL"
+      }
+    },
+    {
+      "id": "660-S-100",
+      "tag": "660-S-100",
+      "kind": "sump",
+      "name": "SUMP",
+      "bbox": [
+        0.612,
+        0.8,
+        0.76,
+        0.865
+      ]
+    },
+    {
+      "id": "660-SP-101",
+      "tag": "660-SP-101",
+      "kind": "sump_pump",
+      "bbox": [
+        0.683,
+        0.82,
+        0.697,
+        0.865
+      ]
+    },
+    {
+      "id": "660-SP-102",
+      "tag": "660-SP-102",
+      "kind": "sump_pump",
+      "bbox": [
+        0.717,
+        0.82,
+        0.731,
+        0.865
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "ACV-101",
+      "tag": "ACV-101",
+      "kind": "on_off_valve",
+      "actuator": "electric",
+      "bbox": [
+        0.44,
+        0.345,
+        0.47,
+        0.36
+      ],
+      "confidence": 0.7,
+      "notes": "Valve tagged ACV 101 on potable water to MF CIP; actuator type not shown"
+    },
+    {
+      "id": "HV-104",
+      "tag": "HV-104",
+      "kind": "manual_valve",
+      "bbox": [
+        0.678,
+        0.718,
+        0.69,
+        0.73
+      ]
+    },
+    {
+      "id": "CV-100",
+      "tag": "CV-100",
+      "kind": "check_valve",
+      "bbox": [
+        0.678,
+        0.738,
+        0.69,
+        0.75
+      ]
+    },
+    {
+      "id": "HV-105",
+      "tag": "HV-105",
+      "kind": "manual_valve",
+      "bbox": [
+        0.713,
+        0.718,
+        0.725,
+        0.73
+      ]
+    },
+    {
+      "id": "CV-101",
+      "tag": "CV-101",
+      "kind": "check_valve",
+      "bbox": [
+        0.713,
+        0.738,
+        0.725,
+        0.75
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "id": "HHL",
+      "tag": "HHL",
+      "location": "field",
+      "measures": {
+        "item": "660-S-100"
+      },
+      "name": "Sump high-high level switch",
+      "confidence": 0.7,
+      "bbox": [
+        0.745,
+        0.81,
+        0.77,
+        0.822
+      ],
+      "notes": "Float switch labelled HHL only (no ISA tag printed)"
+    },
+    {
+      "id": "HL",
+      "tag": "HL",
+      "location": "field",
+      "measures": {
+        "item": "660-S-100"
+      },
+      "name": "Sump high level switch",
+      "confidence": 0.7,
+      "bbox": [
+        0.745,
+        0.825,
+        0.77,
+        0.837
+      ],
+      "notes": "Float switch labelled HL only"
+    },
+    {
+      "id": "LL",
+      "tag": "LL",
+      "location": "field",
+      "measures": {
+        "item": "660-S-100"
+      },
+      "name": "Sump low level switch",
+      "confidence": 0.7,
+      "bbox": [
+        0.745,
+        0.84,
+        0.77,
+        0.852
+      ],
+      "notes": "Float switch labelled LL only"
+    }
+  ],
+  "lines": [
+    {
+      "id": "L_FL104",
+      "line_number": "6\"-FL-660-104-HDPE-NA",
+      "service": "FL",
+      "from": "OPC_FL104",
+      "to": "660-MF-102"
+    },
+    {
+      "id": "L_CIPOVF",
+      "line_number": "4\"-WW-660-106-HDPE-NA",
+      "service": "WW (CIP overflow)",
+      "from": "OPC_CIPOVF",
+      "to": "660-S-100"
+    },
+    {
+      "id": "L_107",
+      "line_number": "4\"-WW-660-107-HDPE-NA",
+      "service": "WW (CIP overflow)",
+      "from": "660-MF-102",
+      "to": {
+        "line": "L_CIPOVF"
+      }
+    },
+    {
+      "id": "L_FILT",
+      "line_number": "8\"-FL-660-102-HDPE-NA",
+      "service": "FILTRATE",
+      "from": "OPC_FILT101",
+      "to": "OPC_TK006"
+    },
+    {
+      "id": "L_103",
+      "line_number": "8\"-FL-660-103-HDPE-NA",
+      "service": "FILTRATE",
+      "from": "660-MF-102",
+      "to": {
+        "line": "L_FILT"
+      }
+    },
+    {
+      "id": "L_BLE",
+      "line_number": "5/8\"-CH-660-132-PE-NA",
+      "service": "BLEACH",
+      "from": "OPC_BLE",
+      "to": "660-CIP-102"
+    },
+    {
+      "id": "L_CAU",
+      "line_number": "5/8\"-CH-660-131-PE-NA",
+      "service": "CAUSTIC",
+      "from": "OPC_CAU",
+      "to": "660-CIP-102"
+    },
+    {
+      "id": "L_CIT",
+      "line_number": "5/8\"-CH-660-130-PE-NA",
+      "service": "CITRIC",
+      "from": "OPC_CIT",
+      "to": "660-CIP-102"
+    },
+    {
+      "id": "L_HW",
+      "line_number": "2\"-HW-660-140-HDPE-NA",
+      "service": "POTABLE WATER",
+      "from": "OPC_HW",
+      "to": "660-CIP-102",
+      "path": [
+        "ACV-101"
+      ]
+    },
+    {
+      "id": "L_VENT",
+      "from": "660-CIP-102",
+      "to": "B_VENT"
+    },
+    {
+      "id": "L_FEED",
+      "line_number": "8\"-PW-660-100-HDPE-NA",
+      "service": "MF FEED",
+      "from": "OPC_FEED",
+      "to": "660-MF-102"
+    },
+    {
+      "id": "L_ASRF",
+      "line_number": "8\"-WW-660-108-HDPE-NA",
+      "service": "AS/RF",
+      "from": "OPC_ASRF",
+      "to": "660-S-100"
+    },
+    {
+      "id": "L_113",
+      "line_number": "8\"-WW-660-113-HDPE-NA",
+      "service": "AS/RF",
+      "from": "660-MF-102",
+      "to": "660-S-100"
+    },
+    {
+      "id": "L_XR",
+      "line_number": "6\"-PW-660-109-HDPE-NA",
+      "service": "XR",
+      "from": "OPC_XR101",
+      "to": "OPC_TK004"
+    },
+    {
+      "id": "L_111",
+      "line_number": "6\"-PW-660-111-HDPE-NA",
+      "service": "XR",
+      "from": "660-MF-102",
+      "to": {
+        "line": "L_XR"
+      }
+    },
+    {
+      "id": "L_CIPDR",
+      "line_number": "4\"-WW-660-110-HDPE-NA",
+      "service": "CIP DRAIN",
+      "from": "OPC_CIPDR",
+      "to": "660-S-100"
+    },
+    {
+      "id": "L_112",
+      "line_number": "4\"-WW-660-112-HDPE-NA",
+      "service": "CIP DRAIN",
+      "from": "660-MF-102",
+      "to": {
+        "line": "L_CIPDR"
+      }
+    },
+    {
+      "id": "L_SP101",
+      "line_number": "4\"-WW-660-114-HDPE-NA",
+      "service": "WW",
+      "from": "660-SP-101",
+      "to": "OPC_POND",
+      "path": [
+        "HV-104",
+        "CV-100"
+      ],
+      "notes": "TO POND A-19"
+    },
+    {
+      "id": "L_SP102",
+      "line_number": "4\"-WW-660-115-HDPE-NA",
+      "service": "WW",
+      "from": "660-SP-102",
+      "to": {
+        "line": "L_SP101",
+        "after": "CV-100"
+      },
+      "path": [
+        "HV-105",
+        "CV-101"
+      ]
+    },
+    {
+      "id": "L_S_SP101",
+      "from": "660-S-100",
+      "to": "660-SP-101"
+    },
+    {
+      "id": "L_S_SP102",
+      "from": "660-S-100",
+      "to": "660-SP-102"
+    }
+  ],
+  "signals": [],
+  "off_page_connectors": [
+    {
+      "id": "OPC_FL104",
+      "direction": "in",
+      "name": "FL 660-PU-13/14",
+      "other_drawing": "660-PI-205",
+      "other_item": "660-PU-13/14",
+      "line_number": "6\"-FL-660-104-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.113,
+        0.075,
+        0.127
+      ]
+    },
+    {
+      "id": "OPC_CIPOVF",
+      "direction": "in",
+      "name": "WW CIP OVERFLOW",
+      "other_drawing": "660-PI-205",
+      "line_number": "4\"-WW-660-106-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.168,
+        0.075,
+        0.182
+      ]
+    },
+    {
+      "id": "OPC_FILT101",
+      "direction": "in",
+      "name": "FL MF-101",
+      "other_drawing": "660-PI-205",
+      "other_item": "660-MF-101",
+      "line_number": "8\"-FL-660-102-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.196,
+        0.075,
+        0.21
+      ]
+    },
+    {
+      "id": "OPC_BLE",
+      "direction": "in",
+      "name": "CH BLEACH",
+      "other_drawing": "660-PI-205",
+      "line_number": "5/8\"-CH-660-132-PE-NA",
+      "bbox": [
+        0.035,
+        0.219,
+        0.075,
+        0.233
+      ]
+    },
+    {
+      "id": "OPC_CAU",
+      "direction": "in",
+      "name": "CH CAUSTIC",
+      "other_drawing": "660-PI-205",
+      "line_number": "5/8\"-CH-660-131-PE-NA",
+      "bbox": [
+        0.035,
+        0.249,
+        0.075,
+        0.263
+      ]
+    },
+    {
+      "id": "OPC_CIT",
+      "direction": "in",
+      "name": "CH CITRIC",
+      "other_drawing": "660-PI-205",
+      "line_number": "5/8\"-CH-660-130-PE-NA",
+      "bbox": [
+        0.035,
+        0.279,
+        0.075,
+        0.293
+      ]
+    },
+    {
+      "id": "OPC_HW",
+      "direction": "in",
+      "name": "HW POTABLE WATER",
+      "other_drawing": "660-PI-205",
+      "line_number": "2\"-HW-660-140-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.315,
+        0.075,
+        0.329
+      ]
+    },
+    {
+      "id": "OPC_ASRF",
+      "direction": "in",
+      "name": "WW MF-101",
+      "other_drawing": "660-PI-205",
+      "other_item": "660-MF-101",
+      "line_number": "8\"-WW-660-108-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.64,
+        0.075,
+        0.654
+      ]
+    },
+    {
+      "id": "OPC_XR101",
+      "direction": "in",
+      "name": "PW MF-101",
+      "other_drawing": "660-PI-205",
+      "other_item": "660-MF-101",
+      "line_number": "6\"-PW-660-109-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.675,
+        0.075,
+        0.689
+      ]
+    },
+    {
+      "id": "OPC_CIPDR",
+      "direction": "in",
+      "name": "WW MF-101",
+      "other_drawing": "660-PI-205",
+      "other_item": "660-MF-101",
+      "line_number": "4\"-WW-660-110-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.709,
+        0.075,
+        0.723
+      ]
+    },
+    {
+      "id": "OPC_FEED",
+      "direction": "in",
+      "name": "PW 660-PP-009/010",
+      "other_drawing": "660-PI-205",
+      "other_item": "660-PP-009/010",
+      "line_number": "8\"-PW-660-100-HDPE-NA",
+      "bbox": [
+        0.035,
+        0.739,
+        0.075,
+        0.753
+      ]
+    },
+    {
+      "id": "OPC_TK006",
+      "direction": "out",
+      "name": "FL 660-TK-006 (FILTRATE)",
+      "other_drawing": "660-PI-207",
+      "other_item": "660-TK-006",
+      "line_number": "8\"-FL-660-102-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.195,
+        0.92,
+        0.21
+      ]
+    },
+    {
+      "id": "OPC_TK004",
+      "direction": "out",
+      "name": "PW 660-TK-004 (XR)",
+      "other_drawing": "660-PI-204",
+      "other_item": "660-TK-004",
+      "line_number": "6\"-PW-660-109-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.675,
+        0.92,
+        0.689
+      ]
+    },
+    {
+      "id": "OPC_POND",
+      "direction": "out",
+      "name": "TO POND A-19",
+      "other_item": "POND A-19",
+      "line_number": "4\"-WW-660-114-HDPE-NA",
+      "bbox": [
+        0.87,
+        0.535,
+        0.93,
+        0.55
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "B_VENT",
+      "name": "VENT (MF CIP)",
+      "direction": "sink",
+      "bbox": [
+        0.545,
+        0.375,
+        0.565,
+        0.39
+      ]
+    }
+  ],
+  "tiles_reviewed": [
+    "r1c1",
+    "r1c2",
+    "r1c3",
+    "r1c4",
+    "r2c1",
+    "r2c2",
+    "r2c3",
+    "r2c4",
+    "r3c1",
+    "r3c2",
+    "r3c3",
+    "r3c4"
+  ],
+  "unreadable": []
+}

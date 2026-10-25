@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "page": 9,
+  "sheet": {
+    "drawing_number": "660-PI-207",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - Backwash Tank & Adjust Tank",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90
+  },
+  "equipment": [
+    {"id": "660-TK-006", "tag": "660-TK-006", "kind": "tank", "name": "BACKWASH TANK", "bbox": [0.337, 0.36, 0.442, 0.55]},
+    {"id": "660-TK-007", "tag": "660-TK-007", "kind": "agitated_tank", "name": "pH NEUTRALIZATION TANK", "bbox": [0.583, 0.36, 0.688, 0.55]},
+    {"id": "660-PP-013", "tag": "660-PP-013", "kind": "centrifugal_pump", "name": "Backwash pump", "bbox": [0.553, 0.655, 0.568, 0.675]},
+    {"id": "660-PP-014", "tag": "660-PP-014", "kind": "centrifugal_pump", "name": "Backwash pump", "bbox": [0.553, 0.765, 0.568, 0.785]}
+  ],
+  "components": [
+    {"id": "SB_FL", "kind": "other", "bbox": [0.2, 0.305, 0.215, 0.32], "confidence": 0.7, "notes": "Flanged spec break HDPE to SSB"},
+    {"id": "V_BD6", "kind": "manual_valve", "bbox": [0.318, 0.525, 0.328, 0.538], "confidence": 0.8},
+    {"id": "V_T13", "kind": "manual_valve", "bbox": [0.448, 0.497, 0.458, 0.51], "confidence": 0.8},
+    {"id": "V_T14", "kind": "manual_valve", "bbox": [0.448, 0.52, 0.458, 0.533], "confidence": 0.8},
+    {"id": "V_SD13", "kind": "manual_valve", "bbox": [0.517, 0.667, 0.527, 0.682], "confidence": 0.8},
+    {"id": "V_SD14", "kind": "manual_valve", "bbox": [0.517, 0.775, 0.527, 0.79], "confidence": 0.8},
+    {"id": "R_S13", "kind": "reducer", "bbox": [0.53, 0.66, 0.537, 0.67]},
+    {"id": "R_S14", "kind": "reducer", "bbox": [0.53, 0.77, 0.537, 0.78]},
+    {"id": "R_D13", "kind": "reducer", "bbox": [0.57, 0.655, 0.577, 0.665]},
+    {"id": "R_D14", "kind": "reducer", "bbox": [0.57, 0.765, 0.577, 0.775]},
+    {"id": "CV13", "kind": "check_valve", "bbox": [0.595, 0.653, 0.605, 0.667]},
+    {"id": "CV14", "kind": "check_valve", "bbox": [0.595, 0.763, 0.605, 0.777]},
+    {"id": "V_D13", "kind": "manual_valve", "bbox": [0.636, 0.653, 0.646, 0.667], "confidence": 0.8},
+    {"id": "V_D14", "kind": "manual_valve", "bbox": [0.636, 0.763, 0.646, 0.777], "confidence": 0.8},
+    {"id": "SB_BW", "kind": "other", "bbox": [0.775, 0.655, 0.785, 0.67], "confidence": 0.7, "notes": "Flanged spec break 8\" BW (SSB) to 8\" FL (HDPE)"},
+    {"id": "V_BD7", "kind": "manual_valve", "bbox": [0.565, 0.53, 0.575, 0.543], "confidence": 0.8, "notes": "Bottom drain valve; no line drawn beyond it"}
+  ],
+  "instruments": [
+    {"id": "LIT-1001", "tag": "LIT-1001", "location": "field", "measures": {"item": "660-TK-006"}, "bbox": [0.468, 0.478, 0.483, 0.495]},
+    {"id": "AE-1001", "tag": "AE-1001", "location": "field", "name": "pH", "measures": {"item": "660-TK-007"}, "bbox": [0.603, 0.345, 0.618, 0.362]},
+    {"id": "AIT-1001", "tag": "AIT-1001", "location": "field", "name": "pH", "bbox": [0.603, 0.326, 0.618, 0.343]},
+    {"id": "LIT-1002", "tag": "LIT-1002", "location": "field", "measures": {"item": "660-TK-007"}, "bbox": [0.648, 0.345, 0.663, 0.362]},
+    {"id": "PI-1102", "tag": "PI-1102", "location": "field", "measures": {"line": "L_P13", "after": "CV13"}, "bbox": [0.602, 0.605, 0.617, 0.625]},
+    {"id": "PI-1102B", "tag": "PI-1102", "location": "field", "measures": {"line": "L_P14", "after": "CV14"}, "bbox": [0.602, 0.71, 0.617, 0.73]},
+    {"id": "FE-1101", "tag": "FE-1101", "location": "field", "bbox": [0.665, 0.625, 0.68, 0.645], "notes": "Magnetic flowmeter on backwash supply"},
+    {"id": "FIT-1101", "tag": "FIT-1101", "location": "field", "bbox": [0.665, 0.605, 0.68, 0.625]}
+  ],
+  "lines": [
+    {"id": "L_FILT", "line_number": "8\"-FL-660-102-HDPE-NA", "service": "FILTRATE", "from": "OPC_FILT", "to": "660-TK-006", "path": ["SB_FL"],
+     "notes": "Becomes 8\"-FL-660-001-SSB-NA after the spec break"},
+    {"id": "L_ACID", "line_number": "1/2\"-SA-660-108-CSE-ET", "service": "pH ADJUST", "from": "OPC_PH", "to": "660-TK-007"},
+    {"id": "L_OVF6", "line_number": "14\"-FL-660-007-PEA17-NA", "from": "660-TK-006", "to": "B_DRAIN", "confidence": 0.7, "notes": "Overflow; destination not shown"},
+    {"id": "L_BD6", "from": "660-TK-006", "to": "B_DRAIN", "path": ["V_BD6"], "confidence": 0.75},
+    {"id": "L_TR", "line_number": "12\"-FL-660-030-PLB-NA", "service": "FL", "from": "660-TK-006", "to": "660-TK-007"},
+    {"id": "L_OUT", "line_number": "12\"-TW-660-031-PLA-NA", "service": "TW", "from": "660-TK-007", "to": "OPC_BX002"},
+    {"id": "L_BD7", "from": "660-TK-007", "to": "V_BD7", "confidence": 0.7},
+    {"id": "L_S13", "line_number": "12\"-BW-660-001-SSB-NA", "service": "BW", "from": "660-TK-006", "to": "660-PP-013", "path": ["V_T13", "R_S13"]},
+    {"id": "L_SD13", "from": {"line": "L_S13", "after": "V_T13"}, "to": "B_DRAIN", "path": ["V_SD13"], "confidence": 0.75},
+    {"id": "L_S14", "line_number": "12\"-BW-660-002-SSB-NA", "service": "BW", "from": "660-TK-006", "to": "660-PP-014", "path": ["V_T14", "R_S14"]},
+    {"id": "L_SD14", "from": {"line": "L_S14", "after": "V_T14"}, "to": "B_DRAIN", "path": ["V_SD14"], "confidence": 0.75},
+    {"id": "L_P13", "line_number": "8\"-BW-660-004-SSB-NA", "service": "BW (backwash supply to MF)", "from": "660-PP-013", "to": "OPC_MF",
+     "path": ["R_D13", "CV13", "V_D13", "FE-1101", "SB_BW"], "notes": "Becomes 8\"-FL-660-104-HDPE-NA after the spec break"},
+    {"id": "L_P14", "from": "660-PP-014", "to": {"line": "L_P13", "after": "V_D13"}, "path": ["R_D14", "CV14", "V_D14"]}
+  ],
+  "signals": [
+    {"from": "FE-1101", "to": "FIT-1101", "purpose": "measurement"},
+    {"from": "AE-1001", "to": "AIT-1001", "purpose": "measurement"}
+  ],
+  "off_page_connectors": [
+    {"id": "OPC_PH", "direction": "in", "name": "CH pH ADJUST", "other_drawing": "660-PI-212", "line_number": "1/2\"-SA-660-108-CSE-ET", "bbox": [0.03, 0.14, 0.075, 0.155]},
+    {"id": "OPC_FILT", "direction": "in", "name": "CH MF-101/102 (filtrate)", "other_drawing": "660-PI-206", "other_item": "660-MF-101/102", "line_number": "8\"-FL-660-102-HDPE-NA", "bbox": [0.03, 0.302, 0.075, 0.318]},
+    {"id": "OPC_BX002", "direction": "out", "name": "TE 660-BX-002", "other_drawing": "660-PI-209", "other_item": "660-BX-002", "line_number": "12\"-TW-660-031-PLA-NA", "bbox": [0.87, 0.398, 0.92, 0.412]},
+    {"id": "OPC_MF", "direction": "out", "name": "FL MF-101/102 (backwash)", "other_drawing": "660-PI-205", "other_item": "660-MF-101/102", "line_number": "8\"-FL-660-104-HDPE-NA", "bbox": [0.87, 0.656, 0.92, 0.67]}
+  ],
+  "boundaries": [
+    {"id": "B_DRAIN", "name": "DRAIN (unlabelled)", "direction": "sink", "confidence": 0.7, "bbox": [0.29, 0.53, 0.53, 0.81]}
+  ],
+  "tiles_reviewed": ["r1c1", "r1c2", "r1c3", "r1c4", "r2c1", "r2c2", "r2c3", "r2c4", "r3c1", "r3c2", "r3c3", "r3c4"],
+  "unreadable": []
+}

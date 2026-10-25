@@ -1,0 +1,1604 @@
+{
+ "schema_version": "1.0",
+ "page": 2,
+ "sheet": {
+  "drawing_number": "D-008-0",
+  "title": "Process Septage Receiving Station P&ID",
+  "revision": "0",
+  "drawing_type": "pid",
+  "issue_status": "issued for tender",
+  "rotation": 0,
+  "legend_notes": [
+   "Virden WWTF Phase 2 upgrades (MWSB #1302)",
+   "Greyed items are existing",
+   "Cake room is a classified area (Cl. I, Div. 1); lower equipment room non-classified",
+   "Instrument numbers 1-6 on pump discharge are 'TYP OF 2' I/O references"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "SEPTAGE TRUCK",
+   "tag": "SEPTAGE TRUCK",
+   "kind": "other",
+   "name": "SEPTAGE TRUCK (septage loading area)",
+   "bbox": [
+    0.132,
+    0.563,
+    0.155,
+    0.592
+   ]
+  },
+  {
+   "id": "RT-1610",
+   "tag": "RT-1610",
+   "kind": "screen",
+   "name": "Rock trap (septage receiving station package)",
+   "bbox": [
+    0.263,
+    0.612,
+    0.286,
+    0.642
+   ]
+  },
+  {
+   "id": "GRD-1620",
+   "tag": "GRD-1620",
+   "kind": "mill",
+   "name": "Grinder (septage receiving station package)",
+   "bbox": [
+    0.316,
+    0.596,
+    0.339,
+    0.625
+   ]
+  },
+  {
+   "id": "TK-1630",
+   "tag": "TK-1630",
+   "kind": "tank",
+   "name": "SEPTAGE TANK",
+   "bbox": [
+    0.47,
+    0.592,
+    0.493,
+    0.621
+   ]
+  },
+  {
+   "id": "SEP-1640",
+   "tag": "SEP-1640",
+   "kind": "positive_displacement_pump",
+   "name": "Septage pump",
+   "bbox": [
+    0.588,
+    0.633,
+    0.611,
+    0.663
+   ]
+  },
+  {
+   "id": "SEP-1650",
+   "tag": "SEP-1650",
+   "kind": "positive_displacement_pump",
+   "name": "Septage pump",
+   "bbox": [
+    0.588,
+    0.744,
+    0.611,
+    0.774
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "BAV-1602",
+   "kind": "ball_valve",
+   "tag": "BAV-1602",
+   "bbox": [
+    0.179,
+    0.593,
+    0.189,
+    0.606
+   ]
+  },
+  {
+   "id": "PLV-1611",
+   "kind": "plug_valve",
+   "tag": "PLV-1611",
+   "bbox": [
+    0.205,
+    0.601,
+    0.216,
+    0.615
+   ],
+   "actuator": "electric",
+   "name": "Motorized plug valve (station inlet)"
+  },
+  {
+   "id": "BAV-1605",
+   "kind": "ball_valve",
+   "tag": "BAV-1605",
+   "bbox": [
+    0.421,
+    0.593,
+    0.431,
+    0.606
+   ]
+  },
+  {
+   "id": "PLV-1641",
+   "kind": "plug_valve",
+   "tag": "PLV-1641",
+   "bbox": [
+    0.545,
+    0.643,
+    0.555,
+    0.656
+   ]
+  },
+  {
+   "id": "DS1641",
+   "kind": "other",
+   "bbox": [
+    0.564,
+    0.643,
+    0.575,
+    0.656
+   ],
+   "name": "Diaphragm seal"
+  },
+  {
+   "id": "DS1642",
+   "kind": "other",
+   "bbox": [
+    0.612,
+    0.643,
+    0.622,
+    0.656
+   ],
+   "name": "Diaphragm seal"
+  },
+  {
+   "id": "CHV-1641",
+   "kind": "check_valve",
+   "tag": "CHV-1641",
+   "bbox": [
+    0.623,
+    0.645,
+    0.633,
+    0.658
+   ]
+  },
+  {
+   "id": "PLV-1642",
+   "kind": "plug_valve",
+   "tag": "PLV-1642",
+   "bbox": [
+    0.642,
+    0.643,
+    0.652,
+    0.656
+   ]
+  },
+  {
+   "id": "PLV-1651",
+   "kind": "plug_valve",
+   "tag": "PLV-1651",
+   "bbox": [
+    0.545,
+    0.746,
+    0.555,
+    0.759
+   ]
+  },
+  {
+   "id": "DS1651",
+   "kind": "other",
+   "bbox": [
+    0.564,
+    0.746,
+    0.575,
+    0.759
+   ],
+   "name": "Diaphragm seal"
+  },
+  {
+   "id": "DS1652",
+   "kind": "other",
+   "bbox": [
+    0.612,
+    0.746,
+    0.622,
+    0.759
+   ],
+   "name": "Diaphragm seal"
+  },
+  {
+   "id": "CHV-1651",
+   "kind": "check_valve",
+   "tag": "CHV-1651",
+   "bbox": [
+    0.623,
+    0.748,
+    0.633,
+    0.762
+   ]
+  },
+  {
+   "id": "PLV-1652",
+   "kind": "plug_valve",
+   "tag": "PLV-1652",
+   "bbox": [
+    0.642,
+    0.746,
+    0.652,
+    0.759
+   ]
+  },
+  {
+   "id": "ARV-1645",
+   "kind": "relief_valve",
+   "tag": "ARV-1645",
+   "bbox": [
+    0.658,
+    0.608,
+    0.668,
+    0.621
+   ],
+   "name": "Air release valve, 50 mm"
+  },
+  {
+   "id": "PLV-1645",
+   "kind": "plug_valve",
+   "tag": "PLV-1645",
+   "bbox": [
+    0.658,
+    0.62,
+    0.668,
+    0.634
+   ]
+  },
+  {
+   "id": "PLV-1643",
+   "kind": "plug_valve",
+   "tag": "PLV-1643",
+   "bbox": [
+    0.674,
+    0.616,
+    0.684,
+    0.63
+   ],
+   "name": "Flushing water valve"
+  },
+  {
+   "id": "RED_100x65",
+   "kind": "reducer",
+   "bbox": [
+    0.677,
+    0.643,
+    0.688,
+    0.656
+   ],
+   "size": "100x65"
+  },
+  {
+   "id": "RED_65x100",
+   "kind": "reducer",
+   "bbox": [
+    0.708,
+    0.643,
+    0.718,
+    0.656
+   ],
+   "size": "65x100"
+  },
+  {
+   "id": "BAV-1615",
+   "kind": "ball_valve",
+   "tag": "BAV-1615",
+   "bbox": [
+    0.198,
+    0.488,
+    0.208,
+    0.502
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "id": "ZT-1611",
+   "tag": "ZT-1611",
+   "location": "field",
+   "bbox": [
+    0.217,
+    0.558,
+    0.228,
+    0.573
+   ],
+   "measures": {
+    "item": "PLV-1611"
+   }
+  },
+  {
+   "id": "ZC-1611",
+   "tag": "ZC-1611",
+   "location": "local_panel",
+   "bbox": [
+    0.217,
+    0.573,
+    0.228,
+    0.587
+   ]
+  },
+  {
+   "id": "ZS-1611",
+   "tag": "ZS-1611",
+   "location": "field",
+   "name": "Open/closed limit switch",
+   "bbox": [
+    0.23,
+    0.573,
+    0.242,
+    0.587
+   ],
+   "measures": {
+    "item": "PLV-1611"
+   }
+  },
+  {
+   "id": "FE-1601",
+   "tag": "FE-1601",
+   "location": "field",
+   "bbox": [
+    0.371,
+    0.583,
+    0.382,
+    0.597
+   ]
+  },
+  {
+   "id": "FIT-1601",
+   "tag": "FIT-1601",
+   "location": "field",
+   "bbox": [
+    0.371,
+    0.545,
+    0.382,
+    0.56
+   ]
+  },
+  {
+   "id": "LE-1631",
+   "tag": "LE-1631",
+   "location": "field",
+   "bbox": [
+    0.451,
+    0.562,
+    0.462,
+    0.577
+   ],
+   "measures": {
+    "item": "TK-1630"
+   }
+  },
+  {
+   "id": "LIT-1631",
+   "tag": "LIT-1631",
+   "location": "field",
+   "bbox": [
+    0.451,
+    0.525,
+    0.462,
+    0.54
+   ]
+  },
+  {
+   "id": "LSL-1631",
+   "tag": "LSL-1631",
+   "location": "field",
+   "bbox": [
+    0.467,
+    0.562,
+    0.479,
+    0.577
+   ],
+   "measures": {
+    "item": "TK-1630"
+   }
+  },
+  {
+   "id": "LSH-1632",
+   "tag": "LSH-1632",
+   "location": "field",
+   "bbox": [
+    0.483,
+    0.562,
+    0.495,
+    0.577
+   ],
+   "measures": {
+    "item": "TK-1630"
+   }
+  },
+  {
+   "id": "PSL-1641",
+   "tag": "PSL-1641",
+   "location": "field",
+   "bbox": [
+    0.564,
+    0.624,
+    0.575,
+    0.639
+   ],
+   "measures": {
+    "line": "L_S40",
+    "after": "DS1641"
+   }
+  },
+  {
+   "id": "TS-1640",
+   "tag": "TS-1640",
+   "location": "field",
+   "name": "Motor temperature switch",
+   "bbox": [
+    0.594,
+    0.618,
+    0.605,
+    0.633
+   ],
+   "measures": {
+    "item": "SEP-1640"
+   }
+  },
+  {
+   "id": "PSH-1642",
+   "tag": "PSH-1642",
+   "location": "field",
+   "bbox": [
+    0.612,
+    0.624,
+    0.623,
+    0.639
+   ],
+   "measures": {
+    "line": "L_P40",
+    "after": "DS1642"
+   }
+  },
+  {
+   "id": "PSL-1651",
+   "tag": "PSL-1651",
+   "location": "field",
+   "bbox": [
+    0.564,
+    0.735,
+    0.575,
+    0.75
+   ],
+   "measures": {
+    "line": "L_S50",
+    "after": "DS1651"
+   }
+  },
+  {
+   "id": "TS-1650",
+   "tag": "TS-1650",
+   "location": "field",
+   "name": "Motor temperature switch",
+   "bbox": [
+    0.594,
+    0.729,
+    0.605,
+    0.744
+   ],
+   "measures": {
+    "item": "SEP-1650"
+   }
+  },
+  {
+   "id": "PSH-1652",
+   "tag": "PSH-1652",
+   "location": "field",
+   "bbox": [
+    0.612,
+    0.735,
+    0.623,
+    0.75
+   ],
+   "measures": {
+    "line": "L_P50",
+    "after": "DS1652"
+   }
+  },
+  {
+   "id": "FE-1641",
+   "tag": "FE-1641",
+   "location": "field",
+   "bbox": [
+    0.695,
+    0.624,
+    0.706,
+    0.639
+   ]
+  },
+  {
+   "id": "FIT-1641",
+   "tag": "FIT-1641",
+   "location": "field",
+   "bbox": [
+    0.695,
+    0.587,
+    0.706,
+    0.601
+   ]
+  },
+  {
+   "id": "AE-1621",
+   "tag": "AE-1621",
+   "location": "field",
+   "name": "Methane",
+   "bbox": [
+    0.231,
+    0.445,
+    0.242,
+    0.46
+   ],
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AIT-1621",
+   "tag": "AIT-1621",
+   "location": "field",
+   "name": "Methane",
+   "bbox": [
+    0.231,
+    0.415,
+    0.242,
+    0.43
+   ]
+  },
+  {
+   "id": "AE-1622",
+   "tag": "AE-1622",
+   "location": "field",
+   "name": "H2S",
+   "bbox": [
+    0.268,
+    0.445,
+    0.279,
+    0.46
+   ],
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AIT-1622",
+   "tag": "AIT-1622",
+   "location": "field",
+   "name": "H2S",
+   "bbox": [
+    0.268,
+    0.415,
+    0.279,
+    0.43
+   ]
+  },
+  {
+   "id": "HS-1620",
+   "tag": "HS-1620",
+   "location": "local_panel",
+   "name": "Grinder HOA (CP-1620)",
+   "bbox": [
+    0.253,
+    0.313,
+    0.264,
+    0.328
+   ]
+  },
+  {
+   "id": "EL-1620A",
+   "tag": "EL-1620A",
+   "location": "local_panel",
+   "name": "Grinder running",
+   "bbox": [
+    0.279,
+    0.313,
+    0.291,
+    0.328
+   ]
+  },
+  {
+   "id": "EL-1620B",
+   "tag": "EL-1620B",
+   "location": "local_panel",
+   "name": "Grinder power on",
+   "bbox": [
+    0.305,
+    0.313,
+    0.317,
+    0.328
+   ]
+  },
+  {
+   "id": "EL-1620C",
+   "tag": "EL-1620C",
+   "location": "local_panel",
+   "name": "Grinder jammed",
+   "bbox": [
+    0.253,
+    0.347,
+    0.264,
+    0.362
+   ]
+  },
+  {
+   "id": "EL-1620D",
+   "tag": "EL-1620D",
+   "location": "local_panel",
+   "name": "Grinder motor fault",
+   "bbox": [
+    0.279,
+    0.347,
+    0.291,
+    0.362
+   ]
+  },
+  {
+   "id": "HS-1640A",
+   "tag": "HS-1640A",
+   "location": "local_panel",
+   "name": "SEP-1640 H/O/A (CP-1640)",
+   "bbox": [
+    0.615,
+    0.298,
+    0.626,
+    0.313
+   ]
+  },
+  {
+   "id": "EL-1640",
+   "tag": "EL-1640",
+   "location": "local_panel",
+   "name": "SEP-1640 running",
+   "bbox": [
+    0.641,
+    0.298,
+    0.652,
+    0.313
+   ]
+  },
+  {
+   "id": "HS-1640B",
+   "tag": "HS-1640B",
+   "location": "local_panel",
+   "name": "SEP-1640 E-STOP",
+   "bbox": [
+    0.615,
+    0.353,
+    0.626,
+    0.368
+   ]
+  },
+  {
+   "id": "XAH-1621",
+   "tag": "XAH-1621",
+   "location": "local_panel",
+   "name": "Methane gas alarm high (LCP-8)",
+   "bbox": [
+    0.134,
+    0.325,
+    0.145,
+    0.34
+   ]
+  },
+  {
+   "id": "XAH-1622",
+   "tag": "XAH-1622",
+   "location": "local_panel",
+   "name": "H2S gas alarm high (LCP-8)",
+   "bbox": [
+    0.164,
+    0.333,
+    0.175,
+    0.348
+   ]
+  },
+  {
+   "id": "EL-1600",
+   "tag": "EL-1600",
+   "location": "local_panel",
+   "name": "Gas detection STROBE (LCP-8)",
+   "bbox": [
+    0.21,
+    0.331,
+    0.221,
+    0.346
+   ],
+   "confidence": 0.6,
+   "notes": "Strobe printed 'EL' without a number"
+  },
+  {
+   "id": "AI-1621",
+   "tag": "AI-1621",
+   "location": "plc",
+   "name": "Methane gas (AI)",
+   "bbox": [
+    0.115,
+    0.247,
+    0.127,
+    0.262
+   ]
+  },
+  {
+   "id": "XA-1621",
+   "tag": "XA-1621",
+   "location": "plc",
+   "name": "AIT-1621 fault",
+   "bbox": [
+    0.129,
+    0.247,
+    0.14,
+    0.262
+   ]
+  },
+  {
+   "id": "XAH-1621B",
+   "tag": "XAH-1621",
+   "location": "plc",
+   "name": "Gas alarm high",
+   "bbox": [
+    0.141,
+    0.247,
+    0.152,
+    0.262
+   ]
+  },
+  {
+   "id": "AI-1622",
+   "tag": "AI-1622",
+   "location": "plc",
+   "name": "H2S gas (AI)",
+   "bbox": [
+    0.165,
+    0.247,
+    0.177,
+    0.262
+   ]
+  },
+  {
+   "id": "XA-1622",
+   "tag": "XA-1622",
+   "location": "plc",
+   "name": "AIT-1622 fault",
+   "bbox": [
+    0.179,
+    0.247,
+    0.19,
+    0.262
+   ]
+  },
+  {
+   "id": "XAH-1622B",
+   "tag": "XAH-1622",
+   "location": "plc",
+   "name": "Gas alarm high",
+   "bbox": [
+    0.192,
+    0.247,
+    0.203,
+    0.262
+   ]
+  },
+  {
+   "id": "XA-1620",
+   "tag": "XA-1620",
+   "location": "plc",
+   "name": "GRD-1620 fault",
+   "bbox": [
+    0.263,
+    0.247,
+    0.274,
+    0.262
+   ]
+  },
+  {
+   "id": "YO-1600",
+   "tag": "YO-1600",
+   "location": "plc",
+   "name": "Station opened",
+   "bbox": [
+    0.304,
+    0.247,
+    0.315,
+    0.262
+   ]
+  },
+  {
+   "id": "YC-1600",
+   "tag": "YC-1600",
+   "location": "plc",
+   "name": "Station closed",
+   "bbox": [
+    0.316,
+    0.247,
+    0.328,
+    0.262
+   ]
+  },
+  {
+   "id": "ZIO-1611",
+   "tag": "ZIO-1611",
+   "location": "plc",
+   "name": "PLV-1611 opened",
+   "bbox": [
+    0.329,
+    0.247,
+    0.341,
+    0.262
+   ]
+  },
+  {
+   "id": "ZIC-1611",
+   "tag": "ZIC-1611",
+   "location": "plc",
+   "name": "PLV-1611 closed",
+   "bbox": [
+    0.342,
+    0.247,
+    0.353,
+    0.262
+   ]
+  },
+  {
+   "id": "ZAO-1611",
+   "tag": "ZAO-1611",
+   "location": "plc",
+   "name": "PLV-1611 open fail",
+   "bbox": [
+    0.355,
+    0.247,
+    0.366,
+    0.262
+   ]
+  },
+  {
+   "id": "ZAC-1611",
+   "tag": "ZAC-1611",
+   "location": "plc",
+   "name": "PLV-1611 close fail",
+   "bbox": [
+    0.366,
+    0.247,
+    0.378,
+    0.262
+   ]
+  },
+  {
+   "id": "YI-1600",
+   "tag": "YI-1600",
+   "location": "plc",
+   "name": "Sample requested",
+   "bbox": [
+    0.379,
+    0.247,
+    0.39,
+    0.262
+   ]
+  },
+  {
+   "id": "FQI-1601",
+   "tag": "FQI-1601",
+   "location": "plc",
+   "name": "Totalized flow (AI)",
+   "bbox": [
+    0.392,
+    0.247,
+    0.403,
+    0.262
+   ]
+  },
+  {
+   "id": "YI-1600B",
+   "tag": "YI-1600",
+   "location": "plc",
+   "name": "Hauler number (string)",
+   "bbox": [
+    0.404,
+    0.247,
+    0.416,
+    0.262
+   ]
+  },
+  {
+   "id": "ZH-1600",
+   "tag": "ZH-1600",
+   "location": "plc",
+   "name": "Flushing valve opened",
+   "bbox": [
+    0.417,
+    0.247,
+    0.429,
+    0.262
+   ]
+  },
+  {
+   "id": "XA-1600",
+   "tag": "XA-1600",
+   "location": "plc",
+   "name": "CP-1600 common alarm",
+   "bbox": [
+    0.43,
+    0.247,
+    0.441,
+    0.262
+   ]
+  },
+  {
+   "id": "LI-1631",
+   "tag": "LI-1631",
+   "location": "plc",
+   "name": "TK-1630 level (AI)",
+   "bbox": [
+    0.452,
+    0.247,
+    0.464,
+    0.262
+   ]
+  },
+  {
+   "id": "LAL-1631",
+   "tag": "LAL-1631",
+   "location": "plc",
+   "name": "Low level alarm",
+   "bbox": [
+    0.469,
+    0.247,
+    0.48,
+    0.262
+   ]
+  },
+  {
+   "id": "LAH-1632",
+   "tag": "LAH-1632",
+   "location": "plc",
+   "name": "High level alarm",
+   "bbox": [
+    0.484,
+    0.247,
+    0.496,
+    0.262
+   ]
+  },
+  {
+   "id": "PAL-1641",
+   "tag": "PAL-1641",
+   "location": "plc",
+   "name": "Low pressure alarm",
+   "bbox": [
+    0.533,
+    0.247,
+    0.545,
+    0.262
+   ]
+  },
+  {
+   "id": "HSI-1640",
+   "tag": "HSI-1640",
+   "location": "plc",
+   "name": "P-1640 auto mode",
+   "bbox": [
+    0.602,
+    0.247,
+    0.614,
+    0.262
+   ]
+  },
+  {
+   "id": "XI-1640",
+   "tag": "XI-1640",
+   "location": "plc",
+   "name": "P-1640 running",
+   "bbox": [
+    0.615,
+    0.247,
+    0.626,
+    0.262
+   ]
+  },
+  {
+   "id": "XA-1640",
+   "tag": "XA-1640",
+   "location": "plc",
+   "name": "P-1640 overload",
+   "bbox": [
+    0.628,
+    0.247,
+    0.639,
+    0.262
+   ]
+  },
+  {
+   "id": "XS-1640",
+   "tag": "XS-1640",
+   "location": "plc",
+   "name": "P-1640 start/stop (DO)",
+   "bbox": [
+    0.64,
+    0.247,
+    0.652,
+    0.262
+   ]
+  },
+  {
+   "id": "PAH-1642",
+   "tag": "PAH-1642",
+   "location": "plc",
+   "name": "High pressure alarm",
+   "bbox": [
+    0.699,
+    0.247,
+    0.71,
+    0.262
+   ]
+  },
+  {
+   "id": "FI-1641",
+   "tag": "FI-1641",
+   "location": "plc",
+   "name": "Flow (AI)",
+   "bbox": [
+    0.732,
+    0.247,
+    0.744,
+    0.262
+   ]
+  },
+  {
+   "id": "FQI-1641",
+   "tag": "FQI-1641",
+   "location": "plc",
+   "name": "Flow totalizer (HART)",
+   "bbox": [
+    0.746,
+    0.247,
+    0.757,
+    0.262
+   ]
+  },
+  {
+   "id": "XS-1620",
+   "tag": "XS-1620",
+   "location": "plc",
+   "name": "Grinder start (DO, CP-1620/CP-1600)",
+   "bbox": [
+    0.344,
+    0.327,
+    0.355,
+    0.342
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_IN",
+   "from": "SEPTAGE TRUCK",
+   "to": "RT-1610",
+   "path": [
+    "BAV-1602",
+    "PLV-1611"
+   ],
+   "line_number": "100-SEPS-H1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_SAM1",
+   "from": {
+    "line": "L_IN",
+    "after": "BAV-1602"
+   },
+   "to": "B_SAMPLER",
+   "path": [],
+   "line_number": "50-SAM-H1",
+   "status": "future"
+  },
+  {
+   "id": "L_RT",
+   "from": "RT-1610",
+   "to": "GRD-1620",
+   "path": [],
+   "line_number": "100-SEPS-H1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_GRD",
+   "from": "GRD-1620",
+   "to": "TK-1630",
+   "path": [
+    "FE-1601",
+    "BAV-1605"
+   ],
+   "line_number": "100-SEPS-H1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_SAM2",
+   "from": {
+    "line": "L_GRD",
+    "after": "FE-1601"
+   },
+   "to": "B_SAMPLER",
+   "path": [],
+   "line_number": "50-SAM-H1",
+   "status": "future"
+  },
+  {
+   "id": "L_PSW",
+   "from": "B_PSW",
+   "to": "RT-1610",
+   "path": [
+    "BAV-1615"
+   ],
+   "line_number": "50-PSW-E1",
+   "service": "PLANT SERVICE WATER",
+   "notes": "Wash water into the receiving station package"
+  },
+  {
+   "id": "L_S40",
+   "from": "TK-1630",
+   "to": "SEP-1640",
+   "path": [
+    "PLV-1641",
+    "DS1641"
+   ],
+   "line_number": "100-SEPS-E1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_P40",
+   "from": "SEP-1640",
+   "to": "OPC_GRIT",
+   "path": [
+    "DS1642",
+    "CHV-1641",
+    "PLV-1642",
+    "RED_100x65",
+    "FE-1641",
+    "RED_65x100"
+   ],
+   "line_number": "100-SEPS-E1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_FLW",
+   "from": "B_PSW",
+   "to": {
+    "line": "L_P40",
+    "after": "PLV-1642"
+   },
+   "path": [
+    "PLV-1643"
+   ],
+   "line_number": "50-FLW-E1",
+   "service": "FLUSHING WATER",
+   "confidence": 0.7
+  },
+  {
+   "id": "L_ARV",
+   "from": {
+    "line": "L_P40",
+    "after": "PLV-1642"
+   },
+   "to": "B_VENT",
+   "path": [
+    "PLV-1645",
+    "ARV-1645"
+   ]
+  },
+  {
+   "id": "L_DR40",
+   "from": {
+    "line": "L_S40",
+    "after": "DS1641"
+   },
+   "to": "B_DRAIN",
+   "path": [],
+   "line_number": "50-DRN-E1"
+  },
+  {
+   "id": "L_DR50",
+   "from": {
+    "line": "L_S50",
+    "after": "DS1651"
+   },
+   "to": "B_DRAIN",
+   "path": [],
+   "line_number": "50-DRN-E1"
+  },
+  {
+   "id": "L_DR1",
+   "from": {
+    "line": "L_P40",
+    "after": "PLV-1642"
+   },
+   "to": "B_DRAIN",
+   "path": [],
+   "line_number": "50-DRN-E1"
+  },
+  {
+   "id": "L_S50",
+   "from": {
+    "line": "L_S40"
+   },
+   "to": "SEP-1650",
+   "path": [
+    "PLV-1651",
+    "DS1651"
+   ],
+   "line_number": "100-SEPS-E1",
+   "service": "SEPTAGE"
+  },
+  {
+   "id": "L_P50",
+   "from": "SEP-1650",
+   "to": {
+    "line": "L_P40",
+    "after": "PLV-1642"
+   },
+   "path": [
+    "DS1652",
+    "CHV-1651",
+    "PLV-1652"
+   ],
+   "line_number": "100-SEPS-E1",
+   "service": "SEPTAGE"
+  }
+ ],
+ "signals": [
+  {
+   "from": "ZT-1611",
+   "to": "ZC-1611",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "ZC-1611",
+   "to": "PLV-1611",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "ZS-1611",
+   "to": "ZIO-1611",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "ZS-1611",
+   "to": "ZIC-1611",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "FE-1601",
+   "to": "FIT-1601",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1601",
+   "to": "FQI-1601",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LE-1631",
+   "to": "LIT-1631",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-1631",
+   "to": "LI-1631",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LSL-1631",
+   "to": "LAL-1631",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "LSH-1632",
+   "to": "LAH-1632",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSL-1641",
+   "to": "PAL-1641",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSL-1651",
+   "to": "PAL-1641",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSH-1642",
+   "to": "PAH-1642",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSH-1652",
+   "to": "PAH-1642",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSL-1641",
+   "to": "SEP-1640",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSH-1642",
+   "to": "SEP-1640",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "TS-1640",
+   "to": "SEP-1640",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSL-1651",
+   "to": "SEP-1650",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSH-1652",
+   "to": "SEP-1650",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "TS-1650",
+   "to": "SEP-1650",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "XS-1640",
+   "to": "SEP-1640",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1640A",
+   "to": "SEP-1640",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1640B",
+   "to": "SEP-1640",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "SEP-1640",
+   "to": "XI-1640",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SEP-1640",
+   "to": "XA-1640",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "SEP-1640",
+   "to": "HSI-1640",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "FE-1641",
+   "to": "FIT-1641",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1641",
+   "to": "FI-1641",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1641",
+   "to": "FQI-1641",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AE-1621",
+   "to": "AIT-1621",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1621",
+   "to": "AI-1621",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1621",
+   "to": "XA-1621",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AIT-1621",
+   "to": "XAH-1621",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AE-1622",
+   "to": "AIT-1622",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1622",
+   "to": "AI-1622",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1622",
+   "to": "XA-1622",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AIT-1622",
+   "to": "XAH-1622",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XAH-1621",
+   "to": "EL-1600",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XAH-1622",
+   "to": "EL-1600",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XS-1620",
+   "to": "GRD-1620",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1620",
+   "to": "GRD-1620",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "GRD-1620",
+   "to": "XA-1620",
+   "type": "electrical",
+   "purpose": "alarm"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_GRIT",
+   "direction": "out",
+   "name": "SEPS 1 D-009 GRIT CHAMBER",
+   "other_drawing": "D-009",
+   "bbox": [
+    0.743,
+    0.633,
+    0.768,
+    0.666
+   ],
+   "line_number": "100-SEPS-E1"
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_SAMPLER",
+   "name": "FOR SAMPLER (FUTURE)",
+   "direction": "sink",
+   "bbox": [
+    0.172,
+    0.631,
+    0.198,
+    0.664
+   ],
+   "status": "future"
+  },
+  {
+   "id": "B_PSW",
+   "name": "PSW PLANT SERVICE WATER",
+   "direction": "source",
+   "bbox": [
+    0.124,
+    0.479,
+    0.15,
+    0.512
+   ]
+  },
+  {
+   "id": "B_VENT",
+   "name": "VENT TO ROOF",
+   "direction": "sink",
+   "bbox": [
+    0.491,
+    0.524,
+    0.517,
+    0.557
+   ]
+  },
+  {
+   "id": "B_DRAIN",
+   "name": "DRAIN",
+   "direction": "sink",
+   "bbox": [
+    0.58,
+    0.677,
+    0.606,
+    0.71
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "B_ROOM",
+   "name": "SEPTAGE RECEIVING ROOM (atmosphere)",
+   "direction": "area",
+   "bbox": [
+    0.242,
+    0.421,
+    0.268,
+    0.454
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "LCP-8 devices SF-5 and EF-7 (supply/exhaust fans) not modelled as process items"
+ ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "page": 11,
+  "sheet": {
+    "drawing_number": "660-PI-209",
+    "title": "Phase 0 1200 GPM Water Treatment P&ID - Treated Water Discharge Pump Box",
+    "revision": "0",
+    "drawing_type": "pid",
+    "rotation": 90
+  },
+  "equipment": [
+    {"id": "660-BX-002", "tag": "660-BX-002", "kind": "box", "name": "TREATED WATER DISCHARGE PUMP BOX", "bbox": [0.195, 0.29, 0.315, 0.375]},
+    {"id": "660-PP-018", "tag": "660-PP-018", "kind": "centrifugal_pump", "name": "Treated water discharge pump", "bbox": [0.418, 0.265, 0.433, 0.285]},
+    {"id": "660-PP-017", "tag": "660-PP-017", "kind": "centrifugal_pump", "name": "Treated water discharge pump", "bbox": [0.418, 0.363, 0.433, 0.383]}
+  ],
+  "components": [
+    {"id": "V_O18", "kind": "manual_valve", "bbox": [0.316, 0.333, 0.326, 0.345], "confidence": 0.8},
+    {"id": "V_O17", "kind": "manual_valve", "bbox": [0.316, 0.345, 0.326, 0.357], "confidence": 0.8},
+    {"id": "V_BXD", "kind": "manual_valve", "bbox": [0.316, 0.357, 0.326, 0.37], "confidence": 0.8, "notes": "Box drain outlet"},
+    {"id": "V_SD18", "kind": "manual_valve", "bbox": [0.385, 0.28, 0.395, 0.295], "confidence": 0.75},
+    {"id": "V_SD17", "kind": "manual_valve", "bbox": [0.385, 0.378, 0.395, 0.393], "confidence": 0.75},
+    {"id": "R_S18", "kind": "reducer", "bbox": [0.4, 0.268, 0.407, 0.278]},
+    {"id": "R_S17", "kind": "reducer", "bbox": [0.4, 0.365, 0.407, 0.375]},
+    {"id": "R_D18", "kind": "reducer", "bbox": [0.437, 0.263, 0.444, 0.273]},
+    {"id": "R_D17", "kind": "reducer", "bbox": [0.437, 0.36, 0.444, 0.37]},
+    {"id": "V_VT18", "kind": "vent", "bbox": [0.46, 0.245, 0.47, 0.26], "confidence": 0.7},
+    {"id": "V_DD18", "kind": "drain", "bbox": [0.452, 0.27, 0.462, 0.29], "confidence": 0.7},
+    {"id": "V_VT17", "kind": "vent", "bbox": [0.46, 0.343, 0.47, 0.358], "confidence": 0.7},
+    {"id": "V_DD17", "kind": "drain", "bbox": [0.452, 0.368, 0.462, 0.388], "confidence": 0.7},
+    {"id": "V_D18", "kind": "manual_valve", "bbox": [0.575, 0.263, 0.585, 0.276], "confidence": 0.8},
+    {"id": "V_D17", "kind": "manual_valve", "bbox": [0.575, 0.36, 0.585, 0.373], "confidence": 0.8},
+    {"id": "V_1804", "kind": "manual_valve", "bbox": [0.71, 0.263, 0.72, 0.276], "confidence": 0.8},
+    {"id": "V_1803", "kind": "manual_valve", "bbox": [0.71, 0.338, 0.72, 0.35], "confidence": 0.8},
+    {"id": "V_1802", "kind": "manual_valve", "bbox": [0.71, 0.408, 0.72, 0.42], "confidence": 0.8},
+    {"id": "V_1801", "kind": "manual_valve", "bbox": [0.71, 0.477, 0.72, 0.49], "confidence": 0.8},
+    {"id": "V_1805", "kind": "manual_valve", "bbox": [0.71, 0.546, 0.72, 0.558], "confidence": 0.8}
+  ],
+  "instruments": [
+    {"id": "FE-1804", "tag": "FE-1804", "location": "field", "bbox": [0.725, 0.24, 0.74, 0.258]},
+    {"id": "FIT-1804", "tag": "FIT-1804", "location": "field", "bbox": [0.725, 0.222, 0.74, 0.24]},
+    {"id": "FE-1803", "tag": "FE-1803", "location": "field", "bbox": [0.725, 0.315, 0.74, 0.333]},
+    {"id": "FIT-1803", "tag": "FIT-1803", "location": "field", "bbox": [0.725, 0.297, 0.74, 0.315]},
+    {"id": "FE-1802", "tag": "FE-1802", "location": "field", "bbox": [0.725, 0.385, 0.74, 0.402]},
+    {"id": "FIT-1802", "tag": "FIT-1802", "location": "field", "bbox": [0.725, 0.367, 0.74, 0.385]},
+    {"id": "FE-1801", "tag": "FE-1801", "location": "field", "bbox": [0.725, 0.454, 0.74, 0.472]},
+    {"id": "FIT-1801", "tag": "FIT-1801", "location": "field", "bbox": [0.725, 0.436, 0.74, 0.454]},
+    {"id": "FE-1805", "tag": "FE-1805", "location": "field", "bbox": [0.725, 0.523, 0.74, 0.541]},
+    {"id": "FIT-1805", "tag": "FIT-1805", "location": "field", "bbox": [0.725, 0.505, 0.74, 0.523]}
+  ],
+  "lines": [
+    {"id": "L_IN", "line_number": "12\"-TW-660-031-PLA-NA", "service": "TW", "from": "OPC_IN", "to": "660-BX-002"},
+    {"id": "L_OVF", "line_number": "12\"-TW-660-039-PLA-NA", "from": "660-BX-002", "to": "B_DRAIN", "confidence": 0.7, "notes": "Overflow; destination not shown"},
+    {"id": "L_BXD", "from": "660-BX-002", "to": "B_DRAIN", "path": ["V_BXD"], "confidence": 0.75},
+    {"id": "L_S18", "line_number": "12\"-TW-660-033-SSB-NA", "from": "660-BX-002", "to": "660-PP-018", "path": ["V_O18", "R_S18"]},
+    {"id": "L_SD18", "from": {"line": "L_S18", "after": "V_O18"}, "to": "B_DRAIN", "path": ["V_SD18"], "confidence": 0.75},
+    {"id": "L_S17", "line_number": "12\"-TW-660-032-SSB-NA", "from": "660-BX-002", "to": "660-PP-017", "path": ["V_O17", "R_S17"]},
+    {"id": "L_SD17", "from": {"line": "L_S17", "after": "V_O17"}, "to": "B_DRAIN", "path": ["V_SD17"], "confidence": 0.75},
+    {"id": "L_HDR", "service": "TREATED WATER (discharge header)", "from": "660-PP-018", "to": "OPC_650TK002", "path": ["R_D18", "V_D18", "V_1804", "FE-1804"]},
+    {"id": "L_VT18", "from": {"line": "L_HDR", "after": "R_D18"}, "to": "V_VT18", "confidence": 0.7},
+    {"id": "L_DD18", "from": {"line": "L_HDR", "after": "R_D18"}, "to": "V_DD18", "confidence": 0.7},
+    {"id": "L_P17", "from": "660-PP-017", "to": {"line": "L_HDR", "after": "V_D18"}, "path": ["R_D17", "V_D17"]},
+    {"id": "L_VT17", "from": {"line": "L_P17", "after": "R_D17"}, "to": "V_VT17", "confidence": 0.7},
+    {"id": "L_DD17", "from": {"line": "L_P17", "after": "R_D17"}, "to": "V_DD17", "confidence": 0.7},
+    {"id": "L_1803", "line_number": "10\"-TW-660-037-CSG-NA", "service": "TREATED WATER", "from": {"line": "L_HDR", "after": "V_D18"}, "to": "OPC_600BX001", "path": ["V_1803", "FE-1803"]},
+    {"id": "L_1802", "line_number": "10\"-TW-660-036-PEA11-NA", "service": "TREATED WATER", "from": {"line": "L_HDR", "after": "V_D18"}, "to": "B_NPDES", "path": ["V_1802", "FE-1802"]},
+    {"id": "L_1801", "line_number": "8\"-TW-660-038-PEA11-NA", "service": "TREATED WATER (DISCHARGE BY-PASS)", "from": {"line": "L_HDR", "after": "V_D18"}, "to": "OPC_BYPASS", "path": ["V_1801", "FE-1801"]},
+    {"id": "L_1805", "line_number": "10\"-TW-660-045-PEA11-NA", "service": "TREATED WATER", "from": {"line": "L_HDR", "after": "V_D18"}, "to": "OPC_050BX001", "path": ["V_1805", "FE-1805"]}
+  ],
+  "signals": [
+    {"from": "FE-1801", "to": "FIT-1801", "purpose": "measurement"},
+    {"from": "FE-1802", "to": "FIT-1802", "purpose": "measurement"},
+    {"from": "FE-1803", "to": "FIT-1803", "purpose": "measurement"},
+    {"from": "FE-1804", "to": "FIT-1804", "purpose": "measurement"},
+    {"from": "FE-1805", "to": "FIT-1805", "purpose": "measurement"}
+  ],
+  "off_page_connectors": [
+    {"id": "OPC_IN", "direction": "in", "name": "TW 660-TK-007", "other_drawing": "660-PI-208", "other_item": "660-TK-007", "line_number": "12\"-TW-660-031-PLA-NA", "bbox": [0.03, 0.348, 0.075, 0.365]},
+    {"id": "OPC_650TK002", "direction": "out", "name": "TREATED WATER INTERNAL RECLAIM WATER TANK 650-TK-002", "other_drawing": "650-PI-002", "other_item": "650-TK-002", "line_number": "10\"-TW-660-044-CSG-NA", "bbox": [0.865, 0.262, 0.915, 0.295]},
+    {"id": "OPC_600BX001", "direction": "out", "name": "TREATED WATER CYANIDE RECOVERY THICKENER FEED BOX 600-BX-001", "other_drawing": "600-PI-001", "other_item": "600-BX-001", "line_number": "10\"-TW-660-037-CSG-NA", "bbox": [0.865, 0.337, 0.92, 0.37]},
+    {"id": "OPC_BYPASS", "direction": "out", "name": "TREATED WATER TRAIN A REACTION TANK 650-TK-001 (DISCHARGE BY-PASS)", "other_drawing": "660-PI-001", "other_item": "650-TK-001", "line_number": "8\"-TW-660-038-PEA11-NA", "bbox": [0.865, 0.476, 0.915, 0.51]},
+    {"id": "OPC_050BX001", "direction": "out", "name": "TREATED WATER 19 POND FLOW DISTRIBUTION BOX 050-BX-001", "other_drawing": "050-PI-004", "other_item": "050-BX-001", "line_number": "10\"-TW-660-045-PEA11-NA", "bbox": [0.865, 0.546, 0.92, 0.58]}
+  ],
+  "boundaries": [
+    {"id": "B_NPDES", "name": "TREATED WATER NPDES APPROVED DISCHARGE", "direction": "sink", "bbox": [0.865, 0.405, 0.915, 0.43]},
+    {"id": "B_DRAIN", "name": "DRAIN (unlabelled)", "direction": "sink", "confidence": 0.7, "bbox": [0.17, 0.27, 0.47, 0.4]}
+  ],
+  "tiles_reviewed": ["r1c1", "r1c2", "r1c3", "r1c4", "r2c1", "r2c2", "r2c3", "r2c4", "r3c1", "r3c2", "r3c3", "r3c4"],
+  "unreadable": []
+}

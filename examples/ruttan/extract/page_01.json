@@ -1,0 +1,1785 @@
+{
+ "schema_version": "1.0",
+ "page": 1,
+ "sheet": {
+  "drawing_number": "M701",
+  "title": "P&ID Water Treatment Plant (Ruttan Mine Site Remediation, Contract C-700)",
+  "revision": "0",
+  "drawing_type": "pid",
+  "rotation": 90,
+  "legend_notes": [
+   "As-built revision based on field observations 2023/07/11",
+   "Legend on sheet: RW raw water, L lime, CTW contaminated water, LS lime slurry, TW treated water",
+   "Instrument tags written without hyphen (e.g. 'HS R21', 'LT 1')"
+  ],
+  "issue_status": "as-built"
+ },
+ "equipment": [
+  {
+   "id": "REACTOR 2",
+   "tag": "REACTOR 2",
+   "kind": "agitated_tank",
+   "name": "REACTOR 2 (V=20,000 USGAL)",
+   "bbox": [
+    0.137,
+    0.316,
+    0.303,
+    0.377
+   ],
+   "attributes": {
+    "volume": "20,000 USgal",
+    "liquid_level": "EL. 302.55 m",
+    "agitators": 4
+   }
+  },
+  {
+   "id": "REACTOR 1",
+   "tag": "REACTOR 1",
+   "kind": "agitated_tank",
+   "name": "REACTOR 1 (V=20,000 USGAL)",
+   "bbox": [
+    0.137,
+    0.553,
+    0.303,
+    0.615
+   ],
+   "attributes": {
+    "volume": "20,000 USgal",
+    "liquid_level": "EL. 302.55 m",
+    "agitators": 4
+   }
+  },
+  {
+   "id": "STORAGE 1",
+   "tag": "STORAGE 1",
+   "kind": "agitated_tank",
+   "name": "Lime slurry STORAGE 1 (V=25,000 USGAL)",
+   "bbox": [
+    0.445,
+    0.188,
+    0.489,
+    0.262
+   ],
+   "attributes": {
+    "volume": "25,000 USgal",
+    "agitator": "AG-1"
+   }
+  },
+  {
+   "id": "STORAGE 2",
+   "tag": "STORAGE 2",
+   "kind": "agitated_tank",
+   "name": "Lime slurry STORAGE 2 (V=25,000 USGAL)",
+   "bbox": [
+    0.51,
+    0.559,
+    0.552,
+    0.634
+   ],
+   "attributes": {
+    "volume": "25,000 USgal",
+    "agitator": "AG-2"
+   }
+  },
+  {
+   "id": "S-1",
+   "tag": "S-1",
+   "kind": "mixer",
+   "name": "PORTABLE SLAKER S-1 (V=23,200 USGAL)",
+   "bbox": [
+    0.555,
+    0.384,
+    0.689,
+    0.429
+   ],
+   "attributes": {
+    "volume": "23,200 USgal",
+    "portable": true
+   }
+  },
+  {
+   "id": "SILO",
+   "kind": "silo",
+   "name": "Lime SILO with vibratory bin discharger",
+   "bbox": [
+    0.542,
+    0.272,
+    0.596,
+    0.342
+   ]
+  },
+  {
+   "id": "SCREW",
+   "kind": "conveyor",
+   "name": "Lime screw conveyor (silo to slaker)",
+   "bbox": [
+    0.555,
+    0.322,
+    0.612,
+    0.334
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "LIME TRUCK",
+   "kind": "other",
+   "name": "LIME TRUCK (pneumatic unloading)",
+   "bbox": [
+    0.606,
+    0.116,
+    0.67,
+    0.149
+   ]
+  },
+  {
+   "id": "INJECTION PUMP 2",
+   "kind": "positive_displacement_pump",
+   "name": "INJECTION PUMP 2 (progressive cavity)",
+   "bbox": [
+    0.343,
+    0.38,
+    0.389,
+    0.404
+   ]
+  },
+  {
+   "id": "INJECTION PUMP 1",
+   "kind": "positive_displacement_pump",
+   "name": "INJECTION PUMP 1 (progressive cavity)",
+   "bbox": [
+    0.343,
+    0.619,
+    0.389,
+    0.644
+   ]
+  },
+  {
+   "id": "SLAKER TRANSFER PUMP",
+   "kind": "positive_displacement_pump",
+   "name": "SLAKER TRANSFER PUMP (progressive cavity)",
+   "bbox": [
+    0.577,
+    0.499,
+    0.609,
+    0.518
+   ]
+  },
+  {
+   "id": "PU-9",
+   "tag": "PU-9",
+   "kind": "positive_displacement_pump",
+   "name": "STORAGE TRANSFER PUMP (progressive cavity)",
+   "bbox": [
+    0.615,
+    0.623,
+    0.666,
+    0.644
+   ]
+  },
+  {
+   "id": "ANNEX TANK",
+   "kind": "tank",
+   "name": "ANNEX TANK",
+   "bbox": [
+    0.807,
+    0.668,
+    0.824,
+    0.701
+   ]
+  },
+  {
+   "id": "ANNEX PUMP",
+   "kind": "centrifugal_pump",
+   "name": "Annex booster pump (untagged)",
+   "bbox": [
+    0.765,
+    0.672,
+    0.791,
+    0.689
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "EXPANSION TANK",
+   "kind": "vessel",
+   "name": "EXPANSION TANK",
+   "bbox": [
+    0.684,
+    0.738,
+    0.702,
+    0.771
+   ]
+  },
+  {
+   "id": "ANNEX S.N.V.",
+   "kind": "other",
+   "name": "ANNEX S.N.V.",
+   "bbox": [
+    0.638,
+    0.747,
+    0.666,
+    0.759
+   ],
+   "confidence": 0.6,
+   "notes": "Box symbol labelled ANNEX S.N.V.; meaning of S.N.V. not given in legend"
+  },
+  {
+   "id": "R1-1",
+   "tag": "R1-1",
+   "kind": "agitator",
+   "name": "Reactor 1 agitator 1",
+   "bbox": [
+    0.194,
+    0.517,
+    0.204,
+    0.547
+   ],
+   "part_of": "REACTOR 1"
+  },
+  {
+   "id": "R1-2",
+   "tag": "R1-2",
+   "kind": "agitator",
+   "name": "Reactor 1 agitator 2",
+   "bbox": [
+    0.219,
+    0.517,
+    0.229,
+    0.547
+   ],
+   "part_of": "REACTOR 1"
+  },
+  {
+   "id": "R1-3",
+   "tag": "R1-3",
+   "kind": "agitator",
+   "name": "Reactor 1 agitator 3",
+   "bbox": [
+    0.244,
+    0.517,
+    0.254,
+    0.547
+   ],
+   "part_of": "REACTOR 1"
+  },
+  {
+   "id": "R1-4",
+   "tag": "R1-4",
+   "kind": "agitator",
+   "name": "Reactor 1 agitator 4",
+   "bbox": [
+    0.268,
+    0.517,
+    0.279,
+    0.547
+   ],
+   "part_of": "REACTOR 1"
+  },
+  {
+   "id": "R2-1",
+   "tag": "R2-1",
+   "kind": "agitator",
+   "name": "Reactor 2 agitator 1",
+   "bbox": [
+    0.194,
+    0.282,
+    0.204,
+    0.312
+   ],
+   "part_of": "REACTOR 2"
+  },
+  {
+   "id": "R2-2",
+   "tag": "R2-2",
+   "kind": "agitator",
+   "name": "Reactor 2 agitator 2",
+   "bbox": [
+    0.219,
+    0.282,
+    0.229,
+    0.312
+   ],
+   "part_of": "REACTOR 2"
+  },
+  {
+   "id": "R2-3",
+   "tag": "R2-3",
+   "kind": "agitator",
+   "name": "Reactor 2 agitator 3",
+   "bbox": [
+    0.244,
+    0.282,
+    0.254,
+    0.312
+   ],
+   "part_of": "REACTOR 2"
+  },
+  {
+   "id": "R2-4",
+   "tag": "R2-4",
+   "kind": "agitator",
+   "name": "Reactor 2 agitator 4",
+   "bbox": [
+    0.268,
+    0.282,
+    0.279,
+    0.312
+   ],
+   "part_of": "REACTOR 2"
+  },
+  {
+   "id": "AG-1",
+   "tag": "AG-1",
+   "kind": "agitator",
+   "name": "AGITATOR AG-1 (Storage 1)",
+   "bbox": [
+    0.473,
+    0.153,
+    0.482,
+    0.177
+   ],
+   "part_of": "STORAGE 1"
+  },
+  {
+   "id": "AG-2",
+   "tag": "AG-2",
+   "kind": "agitator",
+   "name": "AGITATOR AG-2 (Storage 2)",
+   "bbox": [
+    0.538,
+    0.524,
+    0.547,
+    0.549
+   ],
+   "part_of": "STORAGE 2"
+  }
+ ],
+ "components": [
+  {
+   "id": "RED_CTW3",
+   "kind": "reducer",
+   "size": "14\"x10\"",
+   "bbox": [
+    0.42,
+    0.752,
+    0.427,
+    0.761
+   ]
+  },
+  {
+   "id": "RED_CTW4",
+   "kind": "reducer",
+   "size": "14\"x10\"",
+   "bbox": [
+    0.474,
+    0.752,
+    0.482,
+    0.761
+   ]
+  },
+  {
+   "id": "BFV_IP2",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.401,
+    0.381,
+    0.408,
+    0.391
+   ]
+  },
+  {
+   "id": "RED_IP2",
+   "kind": "reducer",
+   "size": "4\"x5\"",
+   "bbox": [
+    0.365,
+    0.355,
+    0.372,
+    0.363
+   ]
+  },
+  {
+   "id": "CK_IP2",
+   "kind": "check_valve",
+   "size": "1/2\"",
+   "bbox": [
+    0.372,
+    0.363,
+    0.378,
+    0.371
+   ],
+   "confidence": 0.6,
+   "notes": "1/2\" check on a small branch"
+  },
+  {
+   "id": "SP_LS012_1",
+   "kind": "sample_point",
+   "size": "4\"x3\"",
+   "bbox": [
+    0.319,
+    0.304,
+    0.327,
+    0.314
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "SP_LS012_2",
+   "kind": "sample_point",
+   "size": "4\"x3\"",
+   "bbox": [
+    0.34,
+    0.304,
+    0.348,
+    0.314
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "SP_LS012_3",
+   "kind": "sample_point",
+   "size": "4\"x3\"",
+   "bbox": [
+    0.361,
+    0.304,
+    0.369,
+    0.314
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "BFV_IP1",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.401,
+    0.619,
+    0.408,
+    0.629
+   ]
+  },
+  {
+   "id": "RED_IP1",
+   "kind": "reducer",
+   "size": "4\"x5\"",
+   "bbox": [
+    0.365,
+    0.59,
+    0.372,
+    0.598
+   ]
+  },
+  {
+   "id": "BV_LS011",
+   "kind": "other",
+   "name": "Breather vent",
+   "bbox": [
+    0.323,
+    0.553,
+    0.331,
+    0.563
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "CK_LS011",
+   "kind": "check_valve",
+   "size": "4\"",
+   "bbox": [
+    0.332,
+    0.553,
+    0.339,
+    0.563
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "BFV_ST1_BOT",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.449,
+    0.272,
+    0.457,
+    0.282
+   ]
+  },
+  {
+   "id": "BFV_ST1_SIDE",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.499,
+    0.216,
+    0.507,
+    0.226
+   ]
+  },
+  {
+   "id": "BFV_ST2_BOT",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.514,
+    0.644,
+    0.522,
+    0.653
+   ]
+  },
+  {
+   "id": "BFV_ST2_IN",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.624,
+    0.59,
+    0.631,
+    0.6
+   ]
+  },
+  {
+   "id": "RED_SL_IN",
+   "kind": "reducer",
+   "size": "5\"x4\"",
+   "bbox": [
+    0.585,
+    0.353,
+    0.593,
+    0.363
+   ]
+  },
+  {
+   "id": "RED_SL_OUT",
+   "kind": "reducer",
+   "size": "8\"x4\"",
+   "bbox": [
+    0.663,
+    0.404,
+    0.67,
+    0.413
+   ]
+  },
+  {
+   "id": "BFV_SL_OUT",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.676,
+    0.404,
+    0.684,
+    0.413
+   ]
+  },
+  {
+   "id": "BFV_SL_RW",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.654,
+    0.477,
+    0.661,
+    0.487
+   ]
+  },
+  {
+   "id": "RED_STP_IN",
+   "kind": "reducer",
+   "size": "5\"x4\"",
+   "bbox": [
+    0.644,
+    0.495,
+    0.651,
+    0.505
+   ]
+  },
+  {
+   "id": "RED_STP_OUT",
+   "kind": "reducer",
+   "size": "4\"x6\"",
+   "bbox": [
+    0.555,
+    0.47,
+    0.561,
+    0.479
+   ]
+  },
+  {
+   "id": "CK_LS005",
+   "kind": "check_valve",
+   "size": "4\"",
+   "bbox": [
+    0.523,
+    0.437,
+    0.529,
+    0.447
+   ]
+  },
+  {
+   "id": "BFV_LS005",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.523,
+    0.46,
+    0.529,
+    0.469
+   ]
+  },
+  {
+   "id": "BFV_LS006",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.523,
+    0.487,
+    0.529,
+    0.497
+   ]
+  },
+  {
+   "id": "CK_LS006",
+   "kind": "check_valve",
+   "size": "4\"",
+   "bbox": [
+    0.523,
+    0.512,
+    0.529,
+    0.521
+   ]
+  },
+  {
+   "id": "RED_PU9_IN",
+   "kind": "reducer",
+   "size": "6\"x4\"",
+   "bbox": [
+    0.676,
+    0.623,
+    0.682,
+    0.633
+   ]
+  },
+  {
+   "id": "RED_PU9_OUT",
+   "kind": "reducer",
+   "size": "5\"x4\"",
+   "bbox": [
+    0.641,
+    0.612,
+    0.647,
+    0.62
+   ]
+  },
+  {
+   "id": "CK_PU9",
+   "kind": "check_valve",
+   "size": "4\"",
+   "bbox": [
+    0.628,
+    0.59,
+    0.636,
+    0.6
+   ]
+  },
+  {
+   "id": "BV_RW_FLUSH",
+   "kind": "ball_valve",
+   "size": "2\"",
+   "bbox": [
+    0.807,
+    0.422,
+    0.813,
+    0.431
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "BFV_RW",
+   "kind": "butterfly_valve",
+   "size": "4\"",
+   "bbox": [
+    0.802,
+    0.433,
+    0.809,
+    0.441
+   ]
+  },
+  {
+   "id": "STR_RW",
+   "kind": "strainer",
+   "size": "4\"",
+   "bbox": [
+    0.802,
+    0.446,
+    0.81,
+    0.455
+   ]
+  },
+  {
+   "id": "CK_RW",
+   "kind": "check_valve",
+   "size": "1/2\"",
+   "bbox": [
+    0.804,
+    0.472,
+    0.811,
+    0.48
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "RED_RW007",
+   "kind": "reducer",
+   "size": "2\"x4\"",
+   "bbox": [
+    0.751,
+    0.483,
+    0.758,
+    0.492
+   ]
+  },
+  {
+   "id": "BV_RW007_A",
+   "kind": "ball_valve",
+   "size": "2\"",
+   "bbox": [
+    0.74,
+    0.483,
+    0.746,
+    0.492
+   ]
+  },
+  {
+   "id": "HOSE_RW007",
+   "kind": "flexible_hose",
+   "bbox": [
+    0.724,
+    0.483,
+    0.739,
+    0.492
+   ]
+  },
+  {
+   "id": "BV_RW007_B",
+   "kind": "ball_valve",
+   "size": "2\"",
+   "bbox": [
+    0.717,
+    0.483,
+    0.724,
+    0.492
+   ]
+  },
+  {
+   "id": "RED_RW_DR",
+   "kind": "reducer",
+   "size": "4\"x2\"",
+   "bbox": [
+    0.794,
+    0.587,
+    0.8,
+    0.596
+   ]
+  },
+  {
+   "id": "BV_RW_DR",
+   "kind": "ball_valve",
+   "size": "2\"",
+   "bbox": [
+    0.794,
+    0.602,
+    0.8,
+    0.612
+   ]
+  },
+  {
+   "id": "BV_RW008",
+   "kind": "ball_valve",
+   "size": "2\"",
+   "bbox": [
+    0.81,
+    0.635,
+    0.816,
+    0.644
+   ]
+  },
+  {
+   "id": "HOSE_RW008",
+   "kind": "flexible_hose",
+   "bbox": [
+    0.81,
+    0.645,
+    0.816,
+    0.664
+   ]
+  },
+  {
+   "id": "RED_ANX_1",
+   "kind": "reducer",
+   "size": "2\"x1 1/4\"",
+   "bbox": [
+    0.791,
+    0.677,
+    0.797,
+    0.686
+   ]
+  },
+  {
+   "id": "V_ANX_1",
+   "kind": "needle_valve",
+   "size": "1/2\"",
+   "bbox": [
+    0.743,
+    0.677,
+    0.749,
+    0.686
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "RED_ANX_2",
+   "kind": "reducer",
+   "size": "1 1/4\"x3/4\"",
+   "bbox": [
+    0.721,
+    0.677,
+    0.727,
+    0.686
+   ]
+  },
+  {
+   "id": "GV_ANX",
+   "kind": "gate_valve",
+   "size": "3/4\"",
+   "bbox": [
+    0.663,
+    0.683,
+    0.671,
+    0.691
+   ]
+  },
+  {
+   "id": "CK_ANX",
+   "kind": "check_valve",
+   "size": "1/2\"",
+   "bbox": [
+    0.692,
+    0.693,
+    0.698,
+    0.701
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "V_EXP",
+   "kind": "gate_valve",
+   "size": "1/2\"",
+   "bbox": [
+    0.689,
+    0.705,
+    0.696,
+    0.715
+   ]
+  },
+  {
+   "id": "HOSE_EXP",
+   "kind": "flexible_hose",
+   "bbox": [
+    0.689,
+    0.716,
+    0.696,
+    0.736
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "id": "AE-22",
+   "tag": "AE-22",
+   "location": "field",
+   "name": "pH (with temperature sensor)",
+   "measures": {
+    "item": "REACTOR 2"
+   },
+   "bbox": [
+    0.173,
+    0.322,
+    0.186,
+    0.338
+   ]
+  },
+  {
+   "id": "AE-12",
+   "tag": "AE-12",
+   "location": "field",
+   "name": "pH (with temperature sensor)",
+   "measures": {
+    "item": "REACTOR 1"
+   },
+   "bbox": [
+    0.173,
+    0.559,
+    0.186,
+    0.575
+   ]
+  },
+  {
+   "id": "LT-1",
+   "tag": "LT-1",
+   "location": "field",
+   "name": "Guided wave radar level",
+   "measures": {
+    "item": "STORAGE 1"
+   },
+   "bbox": [
+    0.445,
+    0.167,
+    0.456,
+    0.183
+   ]
+  },
+  {
+   "id": "LT-2",
+   "tag": "LT-2",
+   "location": "field",
+   "name": "Guided wave radar level",
+   "measures": {
+    "item": "STORAGE 2"
+   },
+   "bbox": [
+    0.508,
+    0.538,
+    0.519,
+    0.554
+   ]
+  },
+  {
+   "id": "FE-1",
+   "tag": "FE-1",
+   "location": "field",
+   "name": "Magnetic flow meter",
+   "bbox": [
+    0.445,
+    0.67,
+    0.457,
+    0.686
+   ]
+  },
+  {
+   "id": "FIT-1",
+   "tag": "FIT-1",
+   "location": "main_panel",
+   "bbox": [
+    0.445,
+    0.635,
+    0.457,
+    0.652
+   ]
+  },
+  {
+   "id": "FE-2",
+   "tag": "FE-2",
+   "location": "field",
+   "name": "Magnetic flow meter",
+   "bbox": [
+    0.445,
+    0.696,
+    0.457,
+    0.712
+   ]
+  },
+  {
+   "id": "FIT-2",
+   "tag": "FIT-2",
+   "location": "main_panel",
+   "bbox": [
+    0.445,
+    0.73,
+    0.457,
+    0.747
+   ]
+  },
+  {
+   "id": "PI-A1",
+   "tag": "PI-A1",
+   "location": "field",
+   "measures": {
+    "line": "L_ANX_P",
+    "after": "RED_ANX_2"
+   },
+   "bbox": [
+    0.696,
+    0.66,
+    0.708,
+    0.677
+   ]
+  },
+  {
+   "id": "PI-A2",
+   "tag": "PI-A2",
+   "location": "field",
+   "measures": {
+    "line": "L_ANX_P",
+    "after": "RED_ANX_2"
+   },
+   "bbox": [
+    0.676,
+    0.644,
+    0.688,
+    0.66
+   ]
+  },
+  {
+   "id": "HS-R11",
+   "tag": "HS-R11",
+   "location": "field",
+   "name": "Start/stop, agitator R1-1",
+   "bbox": [
+    0.193,
+    0.493,
+    0.205,
+    0.509
+   ]
+  },
+  {
+   "id": "HS-R12",
+   "tag": "HS-R12",
+   "location": "field",
+   "name": "Start/stop, agitator R1-2",
+   "bbox": [
+    0.217,
+    0.493,
+    0.23,
+    0.509
+   ]
+  },
+  {
+   "id": "HS-R13",
+   "tag": "HS-R13",
+   "location": "field",
+   "name": "Start/stop, agitator R1-3",
+   "bbox": [
+    0.242,
+    0.493,
+    0.255,
+    0.509
+   ]
+  },
+  {
+   "id": "HS-R14",
+   "tag": "HS-R14",
+   "location": "field",
+   "name": "Start/stop, agitator R1-4",
+   "bbox": [
+    0.267,
+    0.493,
+    0.28,
+    0.509
+   ]
+  },
+  {
+   "id": "HS-R21",
+   "tag": "HS-R21",
+   "location": "field",
+   "name": "Start/stop, agitator R2-1",
+   "bbox": [
+    0.193,
+    0.256,
+    0.205,
+    0.272
+   ]
+  },
+  {
+   "id": "HS-R22",
+   "tag": "HS-R22",
+   "location": "field",
+   "name": "Start/stop, agitator R2-2",
+   "bbox": [
+    0.217,
+    0.256,
+    0.23,
+    0.272
+   ]
+  },
+  {
+   "id": "HS-R23",
+   "tag": "HS-R23",
+   "location": "field",
+   "name": "Start/stop, agitator R2-3",
+   "bbox": [
+    0.242,
+    0.256,
+    0.255,
+    0.272
+   ]
+  },
+  {
+   "id": "HS-R24",
+   "tag": "HS-R24",
+   "location": "field",
+   "name": "Start/stop, agitator R2-4",
+   "bbox": [
+    0.267,
+    0.256,
+    0.28,
+    0.272
+   ]
+  },
+  {
+   "id": "HS-A1",
+   "tag": "HS-A1",
+   "location": "field",
+   "name": "Start/stop, agitator AG-1",
+   "bbox": [
+    0.471,
+    0.125,
+    0.483,
+    0.142
+   ]
+  },
+  {
+   "id": "HS-A2",
+   "tag": "HS-A2",
+   "location": "field",
+   "name": "Start/stop, agitator AG-2",
+   "bbox": [
+    0.536,
+    0.495,
+    0.548,
+    0.512
+   ]
+  },
+  {
+   "id": "HS-S1",
+   "tag": "HS-S1",
+   "location": "field",
+   "name": "Injection pump 1 switch",
+   "bbox": [
+    0.325,
+    0.601,
+    0.338,
+    0.617
+   ]
+  },
+  {
+   "id": "HS-S2",
+   "tag": "HS-S2",
+   "location": "field",
+   "name": "Injection pump 2 switch",
+   "bbox": [
+    0.325,
+    0.365,
+    0.338,
+    0.381
+   ]
+  },
+  {
+   "id": "HS-S2B",
+   "tag": "HS-S2",
+   "location": "field",
+   "name": "Slaker transfer pump switch",
+   "bbox": [
+    0.561,
+    0.48,
+    0.574,
+    0.497
+   ],
+   "notes": "Printed HS S2, same tag as the Injection Pump 2 switch"
+  },
+  {
+   "id": "HS-5",
+   "tag": "HS-5",
+   "location": "field",
+   "name": "Slaker drive switch",
+   "bbox": [
+    0.551,
+    0.437,
+    0.564,
+    0.454
+   ]
+  },
+  {
+   "id": "HS-9",
+   "tag": "HS-9",
+   "location": "field",
+   "name": "PU-9 switch",
+   "bbox": [
+    0.601,
+    0.602,
+    0.614,
+    0.619
+   ]
+  },
+  {
+   "id": "HS-V1",
+   "tag": "HS-V1",
+   "location": "field",
+   "name": "Vibratory bin discharger switch",
+   "bbox": [
+    0.582,
+    0.299,
+    0.594,
+    0.315
+   ]
+  },
+  {
+   "id": "HS-C1",
+   "tag": "HS-C1",
+   "location": "field",
+   "name": "Screw conveyor switch",
+   "bbox": [
+    0.615,
+    0.32,
+    0.628,
+    0.337
+   ]
+  },
+  {
+   "id": "HS-A5",
+   "tag": "HS-A5",
+   "location": "field",
+   "name": "Annex pump switch",
+   "bbox": [
+    0.777,
+    0.644,
+    0.79,
+    0.66
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_CTW3",
+   "line_number": "10\"-CTW-003",
+   "service": "CONTAMINATED WATER",
+   "from": "OPC_CTW3",
+   "to": "REACTOR 1",
+   "path": [
+    "RED_CTW3",
+    "FE-1"
+   ],
+   "notes": "14\"-CTW-003 outside the building, 10\" inside"
+  },
+  {
+   "id": "L_CTW4",
+   "line_number": "10\"-CTW-004",
+   "service": "CONTAMINATED WATER",
+   "from": "OPC_CTW4",
+   "to": "REACTOR 2",
+   "path": [
+    "RED_CTW4",
+    "FE-2"
+   ],
+   "notes": "14\"-CTW-004 outside the building, 10\" inside"
+  },
+  {
+   "id": "L_TW1",
+   "line_number": "14\"-TW-001",
+   "service": "TREATED WATER",
+   "from": "REACTOR 1",
+   "to": "OPC_TW1"
+  },
+  {
+   "id": "L_TW2",
+   "line_number": "14\"-TW-002",
+   "service": "TREATED WATER",
+   "from": "REACTOR 2",
+   "to": "OPC_TW2"
+  },
+  {
+   "id": "L_L001",
+   "line_number": "4\"-L-001",
+   "service": "LIME (pneumatic)",
+   "from": "LIME TRUCK",
+   "to": "S-1",
+   "notes": "Truck unloading hose to slaker; 1/2\" connection on line"
+  },
+  {
+   "id": "L_SILO",
+   "service": "LIME",
+   "from": "SILO",
+   "to": "SCREW"
+  },
+  {
+   "id": "L_SCREW",
+   "service": "LIME",
+   "from": "SCREW",
+   "to": "S-1",
+   "path": [
+    "RED_SL_IN"
+   ]
+  },
+  {
+   "id": "L_SL_VENT",
+   "from": "S-1",
+   "to": "B_VENT_OUT"
+  },
+  {
+   "id": "L_RW006",
+   "line_number": "4\"-RW-006",
+   "service": "RAW WATER",
+   "from": "OPC_RW",
+   "to": "B_RW_SPARE",
+   "path": [
+    "BFV_RW",
+    "STR_RW",
+    "CK_RW",
+    "RED_RW_DR",
+    "BV_RW_DR"
+   ],
+   "notes": "Raw water header; ends at a 2\" capped connection"
+  },
+  {
+   "id": "L_RW_FLUSH",
+   "from": {
+    "line": "L_RW006"
+   },
+   "to": "B_RW_SPARE",
+   "path": [
+    "BV_RW_FLUSH"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "L_RW007",
+   "line_number": "4\"-RW-007",
+   "service": "RAW WATER (flush)",
+   "from": {
+    "line": "L_RW006",
+    "after": "CK_RW"
+   },
+   "to": {
+    "line": "L_LS013"
+   },
+   "path": [
+    "RED_RW007",
+    "BV_RW007_A",
+    "HOSE_RW007",
+    "BV_RW007_B"
+   ]
+  },
+  {
+   "id": "L_RWXXX",
+   "line_number": "4\"-RW-XXX",
+   "service": "RAW WATER (slaker make-up)",
+   "from": {
+    "line": "L_RW006",
+    "after": "CK_RW"
+   },
+   "to": "S-1",
+   "path": [
+    "BFV_SL_RW"
+   ]
+  },
+  {
+   "id": "L_RW008",
+   "line_number": "1 1/2\"-RW-008",
+   "service": "RAW WATER",
+   "from": {
+    "line": "L_RW006",
+    "after": "CK_RW"
+   },
+   "to": "ANNEX TANK",
+   "path": [
+    "BV_RW008",
+    "HOSE_RW008"
+   ]
+  },
+  {
+   "id": "L_LS013",
+   "line_number": "4\"-LS-013",
+   "service": "LIME SLURRY",
+   "from": "S-1",
+   "to": "SLAKER TRANSFER PUMP",
+   "path": [
+    "RED_SL_OUT",
+    "BFV_SL_OUT",
+    "RED_STP_IN"
+   ]
+  },
+  {
+   "id": "L_STP",
+   "service": "LIME SLURRY",
+   "from": "SLAKER TRANSFER PUMP",
+   "to": "STORAGE 1",
+   "path": [
+    "RED_STP_OUT",
+    "BFV_LS005",
+    "CK_LS005"
+   ],
+   "line_number": "4\"-LS-005"
+  },
+  {
+   "id": "L_LS006",
+   "line_number": "4\"-LS-006",
+   "service": "LIME SLURRY",
+   "from": {
+    "line": "L_STP",
+    "after": "RED_STP_OUT"
+   },
+   "to": "STORAGE 2",
+   "path": [
+    "BFV_LS006",
+    "CK_LS006"
+   ]
+  },
+  {
+   "id": "L_LS007",
+   "line_number": "4\"-LS-007",
+   "service": "LIME SLURRY",
+   "from": "STORAGE 1",
+   "to": "PU-9",
+   "path": [
+    "BFV_ST1_SIDE",
+    "RED_PU9_IN"
+   ]
+  },
+  {
+   "id": "L_LS008",
+   "line_number": "4\"-LS-008",
+   "service": "LIME SLURRY",
+   "from": "PU-9",
+   "to": "STORAGE 2",
+   "path": [
+    "RED_PU9_OUT",
+    "CK_PU9",
+    "BFV_ST2_IN"
+   ]
+  },
+  {
+   "id": "L_LS009",
+   "line_number": "4\"-LS-009",
+   "service": "LIME SLURRY",
+   "from": "STORAGE 1",
+   "to": "INJECTION PUMP 1",
+   "path": [
+    "BFV_ST1_BOT",
+    "BFV_IP1"
+   ]
+  },
+  {
+   "id": "L_LS010",
+   "line_number": "4\"-LS-010",
+   "service": "LIME SLURRY",
+   "from": "STORAGE 2",
+   "to": "INJECTION PUMP 2",
+   "path": [
+    "BFV_ST2_BOT",
+    "BFV_IP2"
+   ]
+  },
+  {
+   "id": "L_LS011",
+   "line_number": "4\"-LS-011",
+   "service": "LIME SLURRY",
+   "from": "INJECTION PUMP 1",
+   "to": "REACTOR 1",
+   "path": [
+    "RED_IP1",
+    "CK_LS011",
+    "BV_LS011"
+   ]
+  },
+  {
+   "id": "L_LS012",
+   "line_number": "4\"-LS-012",
+   "service": "LIME SLURRY",
+   "from": "INJECTION PUMP 2",
+   "to": "REACTOR 2",
+   "path": [
+    "RED_IP2",
+    "SP_LS012_3",
+    "SP_LS012_2",
+    "SP_LS012_1"
+   ]
+  },
+  {
+   "id": "L_CK_IP2",
+   "from": {
+    "line": "L_LS012",
+    "after": "RED_IP2"
+   },
+   "to": "CK_IP2",
+   "confidence": 0.6
+  },
+  {
+   "id": "L_LS017",
+   "line_number": "4\"-LS-017",
+   "service": "LIME SLURRY (overflow)",
+   "from": "STORAGE 1",
+   "to": "REACTOR 1"
+  },
+  {
+   "id": "L_LS018",
+   "line_number": "4\"-LS-018",
+   "service": "LIME SLURRY (overflow)",
+   "from": "STORAGE 2",
+   "to": "REACTOR 2"
+  },
+  {
+   "id": "L_ANX_S",
+   "from": "ANNEX TANK",
+   "to": "ANNEX PUMP",
+   "path": [
+    "RED_ANX_1"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "L_ANX_P",
+   "from": "ANNEX PUMP",
+   "to": "ANNEX S.N.V.",
+   "path": [
+    "V_ANX_1",
+    "RED_ANX_2",
+    "GV_ANX"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "L_EXP",
+   "from": {
+    "line": "L_ANX_P",
+    "after": "RED_ANX_2"
+   },
+   "to": "EXPANSION TANK",
+   "path": [
+    "CK_ANX",
+    "V_EXP",
+    "HOSE_EXP"
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "signals": [
+  {
+   "from": "FE-1",
+   "to": "FIT-1",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FE-2",
+   "to": "FIT-2",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "HS-R11",
+   "to": "R1-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R12",
+   "to": "R1-2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R13",
+   "to": "R1-3",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R14",
+   "to": "R1-4",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R21",
+   "to": "R2-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R22",
+   "to": "R2-2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R23",
+   "to": "R2-3",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-R24",
+   "to": "R2-4",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-A1",
+   "to": "AG-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-A2",
+   "to": "AG-2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-S1",
+   "to": "INJECTION PUMP 1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-S2",
+   "to": "INJECTION PUMP 2",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-S2B",
+   "to": "SLAKER TRANSFER PUMP",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-5",
+   "to": "S-1",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-9",
+   "to": "PU-9",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-V1",
+   "to": "SILO",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-C1",
+   "to": "SCREW",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-A5",
+   "to": "ANNEX PUMP",
+   "type": "electrical",
+   "purpose": "control"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_TW2",
+   "direction": "out",
+   "name": "TREATED WATER M702",
+   "other_drawing": "M702",
+   "line_number": "14\"-TW-002",
+   "bbox": [
+    0.048,
+    0.116,
+    0.105,
+    0.134
+   ]
+  },
+  {
+   "id": "OPC_TW1",
+   "direction": "out",
+   "name": "TREATED WATER M702",
+   "other_drawing": "M702",
+   "line_number": "14\"-TW-001",
+   "bbox": [
+    0.048,
+    0.152,
+    0.105,
+    0.17
+   ]
+  },
+  {
+   "id": "OPC_CTW3",
+   "direction": "in",
+   "name": "CONTAMINATED WATER M702 FROM OPEN PIT SUBMERSIBLE PUMPS",
+   "other_drawing": "M702",
+   "line_number": "14\"-CTW-003",
+   "bbox": [
+    0.048,
+    0.78,
+    0.105,
+    0.798
+   ]
+  },
+  {
+   "id": "OPC_CTW4",
+   "direction": "in",
+   "name": "CONTAMINATED WATER M702 FROM OPEN PIT SUBMERSIBLE PUMPS",
+   "other_drawing": "M702",
+   "line_number": "14\"-CTW-004",
+   "bbox": [
+    0.048,
+    0.835,
+    0.105,
+    0.853
+   ]
+  },
+  {
+   "id": "OPC_RW",
+   "direction": "in",
+   "name": "RAW WATER M702",
+   "other_drawing": "M702",
+   "bbox": [
+    0.81,
+    0.32,
+    0.864,
+    0.342
+   ]
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_VENT_OUT",
+   "name": "VENT TO OUTDOORS (slaker)",
+   "direction": "sink",
+   "bbox": [
+    0.612,
+    0.356,
+    0.638,
+    0.37
+   ]
+  },
+  {
+   "id": "B_RW_SPARE",
+   "name": "Raw water spare/drain connection",
+   "direction": "sink",
+   "confidence": 0.6,
+   "bbox": [
+    0.791,
+    0.606,
+    0.804,
+    0.619
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Purpose of 'ANNEX S.N.V.' device",
+  "Destination of the 'NO BLIND' 4\" spare nozzles on Storage 1, Storage 2 and the raw water header"
+ ]
+}

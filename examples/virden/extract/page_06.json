@@ -1,0 +1,1949 @@
+{
+ "schema_version": "1.0",
+ "page": 6,
+ "sheet": {
+  "drawing_number": "D-012-0",
+  "title": "Process UV and Plant Service Water Station P&ID",
+  "revision": "0",
+  "drawing_type": "pid",
+  "issue_status": "issued for tender",
+  "rotation": 0,
+  "legend_notes": [
+   "Virden WWTF Phase 2 upgrades (MWSB #1302)",
+   "Greyed items are existing",
+   "CP-3800 panel shared between PSWP-3810 and PSWP-3820; pump I/O shown once 'TYP OF 2'",
+   "CP-3200 UV system control panel by UV vendor"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "UV-3200",
+   "tag": "UV-3200",
+   "kind": "uv_unit",
+   "name": "UV CHANNEL (UV package)",
+   "bbox": [
+    0.454,
+    0.464,
+    0.477,
+    0.493
+   ]
+  },
+  {
+   "id": "UV-3201",
+   "tag": "UV-3201",
+   "kind": "uv_unit",
+   "name": "UV bank 1",
+   "bbox": [
+    0.39,
+    0.455,
+    0.413,
+    0.485
+   ],
+   "part_of": "UV-3200"
+  },
+  {
+   "id": "UV-3202",
+   "tag": "UV-3202",
+   "kind": "uv_unit",
+   "name": "UV bank 2",
+   "bbox": [
+    0.419,
+    0.455,
+    0.442,
+    0.485
+   ],
+   "part_of": "UV-3200"
+  },
+  {
+   "id": "UV-3203",
+   "tag": "UV-3203",
+   "kind": "uv_unit",
+   "name": "UV bank 3",
+   "bbox": [
+    0.453,
+    0.455,
+    0.476,
+    0.485
+   ],
+   "part_of": "UV-3200"
+  },
+  {
+   "id": "PSF-3300",
+   "tag": "PSF-3300",
+   "kind": "other",
+   "name": "PARSHALL FLUME",
+   "bbox": [
+    0.636,
+    0.464,
+    0.659,
+    0.493
+   ]
+  },
+  {
+   "id": "SMP-3310",
+   "tag": "SMP-3310",
+   "kind": "sampler",
+   "name": "EFFLUENT COMPOSITE SAMPLER",
+   "bbox": [
+    0.693,
+    0.527,
+    0.716,
+    0.557
+   ]
+  },
+  {
+   "id": "TK-3800",
+   "tag": "TK-3800",
+   "kind": "sump",
+   "name": "Plant service water wet well",
+   "bbox": [
+    0.425,
+    0.765,
+    0.448,
+    0.795
+   ]
+  },
+  {
+   "id": "PSWP-3810",
+   "tag": "PSWP-3810",
+   "kind": "sump_pump",
+   "name": "Plant service water pump (VFD)",
+   "bbox": [
+    0.253,
+    0.777,
+    0.276,
+    0.807
+   ]
+  },
+  {
+   "id": "PSWP-3820",
+   "tag": "PSWP-3820",
+   "kind": "sump_pump",
+   "name": "Plant service water pump (VFD)",
+   "bbox": [
+    0.357,
+    0.777,
+    0.38,
+    0.807
+   ]
+  },
+  {
+   "id": "TK-3840",
+   "tag": "TK-3840",
+   "kind": "pressure_vessel",
+   "name": "PLANT SERVICE WATER PRESSURE TANK",
+   "bbox": [
+    0.534,
+    0.736,
+    0.557,
+    0.766
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "RED_400x300",
+   "kind": "reducer",
+   "bbox": [
+    0.219,
+    0.453,
+    0.23,
+    0.466
+   ],
+   "size": "400x300"
+  },
+  {
+   "id": "BUV-3201",
+   "kind": "motor_operated_valve",
+   "tag": "BUV-3201",
+   "bbox": [
+    0.304,
+    0.453,
+    0.314,
+    0.466
+   ],
+   "actuator": "electric",
+   "name": "UV channel inlet butterfly (modulating)",
+   "loop": "Z-3201"
+  },
+  {
+   "id": "BAV-3311",
+   "kind": "ball_valve",
+   "tag": "BAV-3311",
+   "bbox": [
+    0.626,
+    0.535,
+    0.636,
+    0.549
+   ]
+  },
+  {
+   "id": "RED_25x15",
+   "kind": "reducer",
+   "bbox": [
+    0.649,
+    0.535,
+    0.659,
+    0.549
+   ],
+   "size": "25x15"
+  },
+  {
+   "id": "SNV-3312",
+   "kind": "solenoid_valve",
+   "tag": "SNV-3312",
+   "bbox": [
+    0.669,
+    0.535,
+    0.679,
+    0.549
+   ],
+   "actuator": "solenoid"
+  },
+  {
+   "id": "BUV-3851",
+   "kind": "motor_operated_valve",
+   "tag": "BUV-3851",
+   "bbox": [
+    0.604,
+    0.563,
+    0.614,
+    0.576
+   ],
+   "actuator": "electric",
+   "loop": "Z-3851"
+  },
+  {
+   "id": "BUV-3831",
+   "kind": "motor_operated_valve",
+   "tag": "BUV-3831",
+   "bbox": [
+    0.604,
+    0.645,
+    0.614,
+    0.658
+   ],
+   "actuator": "electric"
+  },
+  {
+   "id": "RED_100x65",
+   "kind": "reducer",
+   "bbox": [
+    0.653,
+    0.645,
+    0.663,
+    0.658
+   ],
+   "size": "100x65"
+  },
+  {
+   "id": "RED_65x100",
+   "kind": "reducer",
+   "bbox": [
+    0.687,
+    0.645,
+    0.697,
+    0.658
+   ],
+   "size": "65x100"
+  },
+  {
+   "id": "BUV-3833",
+   "kind": "check_valve",
+   "tag": "BUV-3833",
+   "bbox": [
+    0.701,
+    0.645,
+    0.711,
+    0.658
+   ],
+   "name": "Butterfly check on PSW network supply",
+   "confidence": 0.7
+  },
+  {
+   "id": "STR-3831",
+   "kind": "strainer",
+   "tag": "STR-3831",
+   "bbox": [
+    0.446,
+    0.645,
+    0.457,
+    0.658
+   ],
+   "name": "DUPLEX BASKET STRAINER"
+  },
+  {
+   "id": "BAV-3832",
+   "kind": "ball_valve",
+   "tag": "BAV-3832",
+   "bbox": [
+    0.459,
+    0.666,
+    0.469,
+    0.679
+   ]
+  },
+  {
+   "id": "SRV-3832",
+   "kind": "relief_valve",
+   "tag": "SRV-3832",
+   "bbox": [
+    0.459,
+    0.682,
+    0.469,
+    0.696
+   ]
+  },
+  {
+   "id": "BAV-3841",
+   "kind": "ball_valve",
+   "tag": "BAV-3841",
+   "bbox": [
+    0.473,
+    0.666,
+    0.483,
+    0.679
+   ]
+  },
+  {
+   "id": "BAV-3844",
+   "kind": "ball_valve",
+   "tag": "BAV-3844",
+   "bbox": [
+    0.503,
+    0.729,
+    0.513,
+    0.743
+   ]
+  },
+  {
+   "id": "PRV-3841",
+   "kind": "relief_valve",
+   "tag": "PRV-3841",
+   "bbox": [
+    0.536,
+    0.697,
+    0.546,
+    0.71
+   ]
+  },
+  {
+   "id": "RED_25x32",
+   "kind": "reducer",
+   "bbox": [
+    0.505,
+    0.74,
+    0.515,
+    0.753
+   ],
+   "size": "25x32"
+  },
+  {
+   "id": "BAV-3843",
+   "kind": "ball_valve",
+   "tag": "BAV-3843",
+   "bbox": [
+    0.5,
+    0.763,
+    0.51,
+    0.776
+   ]
+  },
+  {
+   "id": "BUV-3801",
+   "kind": "motor_operated_valve",
+   "tag": "BUV-3801",
+   "bbox": [
+    0.336,
+    0.68,
+    0.346,
+    0.693
+   ],
+   "actuator": "electric",
+   "name": "Recirculation to wet well"
+  },
+  {
+   "id": "BAV-3811",
+   "kind": "ball_valve",
+   "tag": "BAV-3811",
+   "bbox": [
+    0.276,
+    0.748,
+    0.286,
+    0.762
+   ]
+  },
+  {
+   "id": "CAV-3811",
+   "kind": "relief_valve",
+   "tag": "CAV-3811",
+   "bbox": [
+    0.276,
+    0.708,
+    0.286,
+    0.721
+   ],
+   "name": "Combination air valve"
+  },
+  {
+   "id": "CHV-3811",
+   "kind": "check_valve",
+   "tag": "CHV-3811",
+   "bbox": [
+    0.318,
+    0.68,
+    0.328,
+    0.693
+   ]
+  },
+  {
+   "id": "BUV-3811",
+   "kind": "butterfly_valve",
+   "tag": "BUV-3811",
+   "bbox": [
+    0.318,
+    0.663,
+    0.328,
+    0.677
+   ]
+  },
+  {
+   "id": "BAV-3821",
+   "kind": "ball_valve",
+   "tag": "BAV-3821",
+   "bbox": [
+    0.379,
+    0.748,
+    0.39,
+    0.762
+   ]
+  },
+  {
+   "id": "CAV-3821",
+   "kind": "relief_valve",
+   "tag": "CAV-3821",
+   "bbox": [
+    0.379,
+    0.708,
+    0.39,
+    0.721
+   ],
+   "name": "Combination air valve"
+  },
+  {
+   "id": "CHV-3821",
+   "kind": "check_valve",
+   "tag": "CHV-3821",
+   "bbox": [
+    0.422,
+    0.68,
+    0.432,
+    0.693
+   ]
+  },
+  {
+   "id": "BUV-3821",
+   "kind": "butterfly_valve",
+   "tag": "BUV-3821",
+   "bbox": [
+    0.422,
+    0.663,
+    0.432,
+    0.677
+   ]
+  },
+  {
+   "id": "BAV-3812",
+   "kind": "ball_valve",
+   "tag": "BAV-3812",
+   "bbox": [
+    0.291,
+    0.733,
+    0.302,
+    0.747
+   ],
+   "name": "Gauge isolation valve"
+  },
+  {
+   "id": "BAV-3822",
+   "kind": "ball_valve",
+   "tag": "BAV-3822",
+   "bbox": [
+    0.395,
+    0.733,
+    0.406,
+    0.747
+   ],
+   "name": "Gauge isolation valve"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "FE-3201",
+   "tag": "FE-3201",
+   "location": "field",
+   "bbox": [
+    0.281,
+    0.438,
+    0.293,
+    0.453
+   ]
+  },
+  {
+   "id": "FIT-3201",
+   "tag": "FIT-3201",
+   "location": "field",
+   "bbox": [
+    0.281,
+    0.403,
+    0.293,
+    0.417
+   ]
+  },
+  {
+   "id": "AE-3201",
+   "tag": "AE-3201",
+   "location": "field",
+   "name": "UV transmittance",
+   "bbox": [
+    0.365,
+    0.436,
+    0.377,
+    0.45
+   ],
+   "measures": {
+    "item": "UV-3200"
+   }
+  },
+  {
+   "id": "AIT-3201",
+   "tag": "AIT-3201",
+   "location": "field",
+   "name": "UVT",
+   "bbox": [
+    0.365,
+    0.412,
+    0.377,
+    0.427
+   ]
+  },
+  {
+   "id": "AE-3202",
+   "tag": "AE-3202",
+   "location": "field",
+   "name": "UV intensity",
+   "bbox": [
+    0.41,
+    0.436,
+    0.422,
+    0.45
+   ],
+   "measures": {
+    "item": "UV-3200"
+   }
+  },
+  {
+   "id": "AIT-3202",
+   "tag": "AIT-3202",
+   "location": "field",
+   "name": "UVI",
+   "bbox": [
+    0.41,
+    0.412,
+    0.422,
+    0.427
+   ]
+  },
+  {
+   "id": "LSL-3201",
+   "tag": "LSL-3201",
+   "location": "field",
+   "bbox": [
+    0.466,
+    0.426,
+    0.478,
+    0.441
+   ],
+   "measures": {
+    "item": "UV-3200"
+   }
+  },
+  {
+   "id": "FE-3301",
+   "tag": "FE-3301",
+   "location": "field",
+   "name": "Parshall flume flow element",
+   "bbox": [
+    0.643,
+    0.436,
+    0.655,
+    0.451
+   ],
+   "measures": {
+    "item": "PSF-3300"
+   }
+  },
+  {
+   "id": "FIT-3301",
+   "tag": "FIT-3301",
+   "location": "plc",
+   "name": "Flume flow",
+   "bbox": [
+    0.643,
+    0.24,
+    0.655,
+    0.255
+   ]
+  },
+  {
+   "id": "LE-3302",
+   "tag": "LE-3302",
+   "location": "field",
+   "bbox": [
+    0.673,
+    0.436,
+    0.685,
+    0.45
+   ],
+   "measures": {
+    "item": "PSF-3300"
+   }
+  },
+  {
+   "id": "LIT-3302",
+   "tag": "LIT-3302",
+   "location": "field",
+   "bbox": [
+    0.673,
+    0.419,
+    0.685,
+    0.434
+   ]
+  },
+  {
+   "id": "LE-3801",
+   "tag": "LE-3801",
+   "location": "field",
+   "bbox": [
+    0.163,
+    0.742,
+    0.174,
+    0.757
+   ],
+   "measures": {
+    "item": "TK-3800"
+   }
+  },
+  {
+   "id": "LIT-3801",
+   "tag": "LIT-3801",
+   "location": "field",
+   "bbox": [
+    0.163,
+    0.723,
+    0.174,
+    0.738
+   ]
+  },
+  {
+   "id": "LSH-3801",
+   "tag": "LSH-3801",
+   "location": "field",
+   "bbox": [
+    0.184,
+    0.739,
+    0.195,
+    0.754
+   ],
+   "measures": {
+    "item": "TK-3800"
+   }
+  },
+  {
+   "id": "LSL-3802",
+   "tag": "LSL-3802",
+   "location": "field",
+   "bbox": [
+    0.205,
+    0.739,
+    0.216,
+    0.754
+   ],
+   "measures": {
+    "item": "TK-3800"
+   }
+  },
+  {
+   "id": "LSLL-3803",
+   "tag": "LSLL-3803",
+   "location": "field",
+   "bbox": [
+    0.227,
+    0.739,
+    0.239,
+    0.754
+   ],
+   "measures": {
+    "item": "TK-3800"
+   }
+  },
+  {
+   "id": "PI-3811",
+   "tag": "PI-3811",
+   "location": "field",
+   "bbox": [
+    0.289,
+    0.702,
+    0.3,
+    0.717
+   ],
+   "measures": {
+    "line": "L_D1"
+   }
+  },
+  {
+   "id": "PSH-3812",
+   "tag": "PSH-3812",
+   "location": "field",
+   "bbox": [
+    0.305,
+    0.702,
+    0.316,
+    0.717
+   ],
+   "measures": {
+    "line": "L_D1"
+   }
+  },
+  {
+   "id": "PI-3821",
+   "tag": "PI-3821",
+   "location": "field",
+   "bbox": [
+    0.393,
+    0.702,
+    0.404,
+    0.717
+   ],
+   "measures": {
+    "line": "L_D2"
+   }
+  },
+  {
+   "id": "PSH-3822",
+   "tag": "PSH-3822",
+   "location": "field",
+   "bbox": [
+    0.409,
+    0.702,
+    0.42,
+    0.717
+   ],
+   "measures": {
+    "line": "L_D2"
+   }
+  },
+  {
+   "id": "DP-3831",
+   "tag": "DP-3831",
+   "location": "field",
+   "name": "Strainer differential pressure",
+   "bbox": [
+    0.446,
+    0.626,
+    0.457,
+    0.641
+   ],
+   "measures": {
+    "item": "STR-3831"
+   }
+  },
+  {
+   "id": "DPT-3831",
+   "tag": "DPT-3831",
+   "location": "field",
+   "bbox": [
+    0.446,
+    0.61,
+    0.457,
+    0.625
+   ],
+   "measures": {
+    "item": "STR-3831"
+   }
+  },
+  {
+   "id": "PIT-3831",
+   "tag": "PIT-3831",
+   "location": "field",
+   "bbox": [
+    0.465,
+    0.611,
+    0.476,
+    0.626
+   ],
+   "measures": {
+    "line": "L_D1",
+    "after": "STR-3831"
+   }
+  },
+  {
+   "id": "FE-3831",
+   "tag": "FE-3831",
+   "location": "field",
+   "bbox": [
+    0.669,
+    0.628,
+    0.68,
+    0.643
+   ]
+  },
+  {
+   "id": "FIT-3831",
+   "tag": "FIT-3831",
+   "location": "field",
+   "bbox": [
+    0.669,
+    0.607,
+    0.68,
+    0.622
+   ]
+  },
+  {
+   "id": "PI-3841",
+   "tag": "PI-3841",
+   "location": "field",
+   "bbox": [
+    0.506,
+    0.69,
+    0.517,
+    0.705
+   ],
+   "measures": {
+    "item": "TK-3840"
+   }
+  },
+  {
+   "id": "HS-3820A",
+   "tag": "HS-3820A",
+   "location": "local_panel",
+   "name": "Pump H/O/A (CP-3800, shared PSWP-3810/3820)",
+   "bbox": [
+    0.145,
+    0.296,
+    0.157,
+    0.311
+   ]
+  },
+  {
+   "id": "HS-3820B",
+   "tag": "HS-3820B",
+   "location": "local_panel",
+   "name": "Pump E-STOP (CP-3800)",
+   "bbox": [
+    0.145,
+    0.353,
+    0.157,
+    0.368
+   ]
+  },
+  {
+   "id": "LALL-3803-CP",
+   "tag": "LALL-3803",
+   "location": "plc",
+   "name": "Low-low level (to CP-3800)",
+   "bbox": [
+    0.112,
+    0.327,
+    0.124,
+    0.342
+   ]
+  },
+  {
+   "id": "HSI-3820",
+   "tag": "HSI-3820",
+   "location": "plc",
+   "name": "P-3820 auto mode",
+   "bbox": [
+    0.114,
+    0.246,
+    0.126,
+    0.261
+   ]
+  },
+  {
+   "id": "XI-3820",
+   "tag": "XI-3820",
+   "location": "plc",
+   "name": "P-3820 running",
+   "bbox": [
+    0.127,
+    0.246,
+    0.138,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-3820",
+   "tag": "XA-3820",
+   "location": "plc",
+   "name": "P-3820 overload",
+   "bbox": [
+    0.14,
+    0.246,
+    0.151,
+    0.261
+   ]
+  },
+  {
+   "id": "XS-3820",
+   "tag": "XS-3820",
+   "location": "plc",
+   "name": "P-3820 start/stop (DO)",
+   "bbox": [
+    0.152,
+    0.246,
+    0.164,
+    0.261
+   ]
+  },
+  {
+   "id": "SI-3820",
+   "tag": "SI-3820",
+   "location": "plc",
+   "name": "P-3820 speed indication",
+   "bbox": [
+    0.165,
+    0.246,
+    0.177,
+    0.261
+   ]
+  },
+  {
+   "id": "SC-3820",
+   "tag": "SC-3820",
+   "location": "plc",
+   "name": "P-3820 speed control (AO)",
+   "bbox": [
+    0.178,
+    0.246,
+    0.189,
+    0.261
+   ]
+  },
+  {
+   "id": "PAH-3822",
+   "tag": "PAH-3822",
+   "location": "plc",
+   "name": "High pressure alarm",
+   "bbox": [
+    0.202,
+    0.246,
+    0.213,
+    0.261
+   ]
+  },
+  {
+   "id": "LI-3801",
+   "tag": "LI-3801",
+   "location": "plc",
+   "name": "PSW wet well level",
+   "bbox": [
+    0.232,
+    0.246,
+    0.244,
+    0.261
+   ]
+  },
+  {
+   "id": "LAL-3802",
+   "tag": "LAL-3802",
+   "location": "plc",
+   "name": "Low level alarm",
+   "bbox": [
+    0.249,
+    0.246,
+    0.261,
+    0.261
+   ]
+  },
+  {
+   "id": "FI-3201",
+   "tag": "FI-3201",
+   "location": "plc",
+   "name": "UV influent flow",
+   "bbox": [
+    0.283,
+    0.246,
+    0.295,
+    0.261
+   ]
+  },
+  {
+   "id": "FQI-3201",
+   "tag": "FQI-3201",
+   "location": "plc",
+   "name": "UV influent flow totalizer",
+   "bbox": [
+    0.296,
+    0.246,
+    0.307,
+    0.261
+   ]
+  },
+  {
+   "id": "ZI-3201",
+   "tag": "ZI-3201",
+   "location": "plc",
+   "name": "BUV-3201 position",
+   "bbox": [
+    0.313,
+    0.246,
+    0.325,
+    0.261
+   ],
+   "loop": "Z-3201"
+  },
+  {
+   "id": "ZIC-3201",
+   "tag": "ZIC-3201",
+   "location": "plc",
+   "name": "BUV-3201 closed",
+   "bbox": [
+    0.325,
+    0.246,
+    0.336,
+    0.261
+   ],
+   "loop": "Z-3201"
+  },
+  {
+   "id": "ZIO-3201",
+   "tag": "ZIO-3201",
+   "location": "plc",
+   "name": "BUV-3201 opened",
+   "bbox": [
+    0.336,
+    0.246,
+    0.348,
+    0.261
+   ],
+   "loop": "Z-3201"
+  },
+  {
+   "id": "ZC-3201",
+   "tag": "ZC-3201",
+   "location": "plc",
+   "name": "BUV-3201 position control (AO)",
+   "bbox": [
+    0.349,
+    0.246,
+    0.36,
+    0.261
+   ],
+   "loop": "Z-3201"
+  },
+  {
+   "id": "AI-3201",
+   "tag": "AI-3201",
+   "location": "plc",
+   "name": "UV transmittance",
+   "bbox": [
+    0.365,
+    0.246,
+    0.377,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-3200A",
+   "tag": "XA-3200A",
+   "location": "plc",
+   "name": "UV minor alarm",
+   "bbox": [
+    0.441,
+    0.246,
+    0.452,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-3200B",
+   "tag": "XA-3200B",
+   "location": "plc",
+   "name": "UV major alarm",
+   "bbox": [
+    0.453,
+    0.246,
+    0.465,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-3200C",
+   "tag": "XA-3200C",
+   "location": "plc",
+   "name": "UV critical alarm",
+   "bbox": [
+    0.466,
+    0.246,
+    0.478,
+    0.261
+   ]
+  },
+  {
+   "id": "AI-3202",
+   "tag": "AI-3202",
+   "location": "plc",
+   "name": "UV intensity",
+   "bbox": [
+    0.492,
+    0.246,
+    0.503,
+    0.261
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "PI-3831",
+   "tag": "PI-3831",
+   "location": "plc",
+   "name": "PSW header pressure",
+   "bbox": [
+    0.547,
+    0.246,
+    0.559,
+    0.261
+   ]
+  },
+  {
+   "id": "ZIO-3851",
+   "tag": "ZIO-3851",
+   "location": "plc",
+   "name": "BUV-3851 opened",
+   "bbox": [
+    0.576,
+    0.246,
+    0.587,
+    0.261
+   ],
+   "loop": "Z-3851"
+  },
+  {
+   "id": "ZIC-3851",
+   "tag": "ZIC-3851",
+   "location": "plc",
+   "name": "BUV-3851 closed",
+   "bbox": [
+    0.587,
+    0.246,
+    0.599,
+    0.261
+   ],
+   "loop": "Z-3851"
+  },
+  {
+   "id": "XSO-3851",
+   "tag": "XSO-3851",
+   "location": "plc",
+   "name": "BUV-3851 open (DO)",
+   "bbox": [
+    0.6,
+    0.246,
+    0.612,
+    0.261
+   ],
+   "loop": "Z-3851"
+  },
+  {
+   "id": "XSC-3851",
+   "tag": "XSC-3851",
+   "location": "plc",
+   "name": "BUV-3851 close (DO)",
+   "bbox": [
+    0.613,
+    0.246,
+    0.624,
+    0.261
+   ],
+   "loop": "Z-3851"
+  },
+  {
+   "id": "FI-3301",
+   "tag": "FI-3301",
+   "location": "plc",
+   "name": "Final effluent flow",
+   "bbox": [
+    0.638,
+    0.246,
+    0.65,
+    0.261
+   ]
+  },
+  {
+   "id": "FQI-3301",
+   "tag": "FQI-3301",
+   "location": "plc",
+   "name": "Final effluent flow totalizer",
+   "bbox": [
+    0.651,
+    0.246,
+    0.663,
+    0.261
+   ]
+  },
+  {
+   "id": "LI-3302",
+   "tag": "LI-3302",
+   "location": "plc",
+   "name": "Flume level",
+   "bbox": [
+    0.668,
+    0.246,
+    0.68,
+    0.261
+   ]
+  },
+  {
+   "id": "XSO-3312",
+   "tag": "XSO-3312",
+   "location": "plc",
+   "name": "SNV-3312 open (DO)",
+   "bbox": [
+    0.689,
+    0.246,
+    0.701,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-3310",
+   "tag": "XA-3310",
+   "location": "plc",
+   "name": "Sampler alarm",
+   "bbox": [
+    0.705,
+    0.246,
+    0.717,
+    0.261
+   ]
+  },
+  {
+   "id": "FI-3831",
+   "tag": "FI-3831",
+   "location": "plc",
+   "name": "PSW flow",
+   "bbox": [
+    0.734,
+    0.246,
+    0.746,
+    0.261
+   ]
+  },
+  {
+   "id": "FQI-3831",
+   "tag": "FQI-3831",
+   "location": "plc",
+   "name": "PSW flow totalizer",
+   "bbox": [
+    0.747,
+    0.246,
+    0.758,
+    0.261
+   ]
+  },
+  {
+   "id": "DPI-3831",
+   "tag": "DPI-3831",
+   "location": "plc",
+   "name": "Strainer DP",
+   "bbox": [
+    0.767,
+    0.246,
+    0.779,
+    0.261
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_SE",
+   "from": "OPC_SE",
+   "to": "UV-3200",
+   "path": [
+    "RED_400x300",
+    "FE-3201",
+    "BUV-3201"
+   ],
+   "line_number": "300-SE-H1",
+   "service": "SECONDARY EFFLUENT"
+  },
+  {
+   "id": "L_UV",
+   "from": "UV-3200",
+   "to": "PSF-3300",
+   "path": [],
+   "service": "DISINFECTED EFFLUENT (over level control weir)"
+  },
+  {
+   "id": "L_OV10",
+   "from": "OPC_OV10",
+   "to": "PSF-3300",
+   "path": [],
+   "line_number": "400-OV-E1",
+   "service": "OVERFLOW (UV bypass)"
+  },
+  {
+   "id": "L_OV11",
+   "from": "OPC_OV11",
+   "to": {
+    "line": "L_OV10"
+   },
+   "path": [],
+   "line_number": "400-OV-E1",
+   "service": "OVERFLOW"
+  },
+  {
+   "id": "L_PE",
+   "from": "PSF-3300",
+   "to": "B_OUTFALL",
+   "path": [],
+   "line_number": "400-PE-H1",
+   "service": "FINAL EFFLUENT"
+  },
+  {
+   "id": "L_SAM",
+   "from": "PSF-3300",
+   "to": "SMP-3310",
+   "path": [
+    "BAV-3311",
+    "RED_25x15",
+    "SNV-3312"
+   ],
+   "line_number": "25-SAM-E1"
+  },
+  {
+   "id": "L_PSWIN",
+   "from": "PSF-3300",
+   "to": "TK-3800",
+   "path": [],
+   "line_number": "150-PSW-H1",
+   "service": "EFFLUENT TO PLANT SERVICE WATER"
+  },
+  {
+   "id": "L_D1",
+   "from": "PSWP-3810",
+   "to": "B_PSWNET",
+   "path": [
+    "CHV-3811",
+    "BUV-3811",
+    "STR-3831",
+    "BUV-3831",
+    "RED_100x65",
+    "FE-3831",
+    "RED_65x100",
+    "BUV-3833"
+   ],
+   "line_number": "100-PSW-E1",
+   "service": "PLANT SERVICE WATER"
+  },
+  {
+   "id": "L_D2",
+   "from": "PSWP-3820",
+   "to": {
+    "line": "L_D1",
+    "after": "BUV-3811"
+   },
+   "path": [
+    "CHV-3821",
+    "BUV-3821"
+   ],
+   "line_number": "100-ARL-H1"
+  },
+  {
+   "id": "L_CAV1",
+   "from": {
+    "line": "L_D1"
+   },
+   "to": "B_VENT",
+   "path": [
+    "BAV-3811",
+    "CAV-3811"
+   ],
+   "line_number": "25-ARL-E1"
+  },
+  {
+   "id": "L_CAV2",
+   "from": {
+    "line": "L_D2"
+   },
+   "to": "B_VENT",
+   "path": [
+    "BAV-3821",
+    "CAV-3821"
+   ],
+   "line_number": "25-ARL-E1"
+  },
+  {
+   "id": "L_PW",
+   "from": "B_PW",
+   "to": {
+    "line": "L_D1",
+    "after": "BUV-3831"
+   },
+   "path": [
+    "BUV-3851"
+   ],
+   "line_number": "100-PW-E1",
+   "service": "ALTERNATIVE PROCESS SERVICE WATER (potable)"
+  },
+  {
+   "id": "L_RECIRC",
+   "from": {
+    "line": "L_D1",
+    "after": "BUV-3811"
+   },
+   "to": "TK-3800",
+   "path": [
+    "BUV-3801"
+   ]
+  },
+  {
+   "id": "L_SRV",
+   "from": {
+    "line": "L_D1",
+    "after": "STR-3831"
+   },
+   "to": "TK-3800",
+   "path": [
+    "BAV-3832",
+    "SRV-3832"
+   ],
+   "line_number": "50-SRL-E1",
+   "service": "Relief to wet well"
+  },
+  {
+   "id": "L_PT",
+   "from": {
+    "line": "L_D1",
+    "after": "STR-3831"
+   },
+   "to": "TK-3840",
+   "path": [
+    "BAV-3841",
+    "BAV-3844",
+    "RED_25x32"
+   ],
+   "line_number": "32-PSW-H1"
+  },
+  {
+   "id": "L_PTDR",
+   "from": "TK-3840",
+   "to": "TK-3800",
+   "path": [
+    "BAV-3843"
+   ],
+   "line_number": "25-DR-E1"
+  },
+  {
+   "id": "L_PTRV",
+   "from": "TK-3840",
+   "to": "TK-3800",
+   "path": [
+    "PRV-3841"
+   ]
+  },
+  {
+   "id": "L_DEW",
+   "from": "TK-3800",
+   "to": "OPC_DEW",
+   "path": [],
+   "line_number": "80-PSW-H1",
+   "service": "PLANT SERVICE WATER"
+  },
+  {
+   "id": "L_G1",
+   "from": {
+    "line": "L_D1"
+   },
+   "to": "BAV-3812",
+   "path": [],
+   "confidence": 0.7,
+   "notes": "Instrument tap for PI-3811/PSH-3812"
+  },
+  {
+   "id": "L_G2",
+   "from": {
+    "line": "L_D2"
+   },
+   "to": "BAV-3822",
+   "path": [],
+   "confidence": 0.7,
+   "notes": "Instrument tap for PI-3821/PSH-3822"
+  }
+ ],
+ "signals": [
+  {
+   "from": "FE-3201",
+   "to": "FIT-3201",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3201",
+   "to": "FI-3201",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3201",
+   "to": "FQI-3201",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "ZC-3201",
+   "to": "BUV-3201",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "BUV-3201",
+   "to": "ZI-3201",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "BUV-3201",
+   "to": "ZIO-3201",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "BUV-3201",
+   "to": "ZIC-3201",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "AE-3201",
+   "to": "AIT-3201",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-3201",
+   "to": "AI-3201",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AE-3202",
+   "to": "AIT-3202",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-3202",
+   "to": "AI-3202",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "UV-3200",
+   "to": "XA-3200A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "UV-3200",
+   "to": "XA-3200B",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "UV-3200",
+   "to": "XA-3200C",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "FE-3301",
+   "to": "FIT-3301",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3301",
+   "to": "FI-3301",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3301",
+   "to": "FQI-3301",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3301",
+   "to": "SMP-3310",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "LE-3302",
+   "to": "LIT-3302",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-3302",
+   "to": "LI-3302",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "XSO-3312",
+   "to": "SNV-3312",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SMP-3310",
+   "to": "XA-3310",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "LE-3801",
+   "to": "LIT-3801",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-3801",
+   "to": "LI-3801",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LSL-3802",
+   "to": "LAL-3802",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "LSLL-3803",
+   "to": "LALL-3803-CP",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSH-3812",
+   "to": "PAH-3822",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSH-3822",
+   "to": "PAH-3822",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "DP-3831",
+   "to": "DPT-3831",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "DPT-3831",
+   "to": "DPI-3831",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "PIT-3831",
+   "to": "PI-3831",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FE-3831",
+   "to": "FIT-3831",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3831",
+   "to": "FI-3831",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-3831",
+   "to": "FQI-3831",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "XSO-3851",
+   "to": "BUV-3851",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XSC-3851",
+   "to": "BUV-3851",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "BUV-3851",
+   "to": "ZIO-3851",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "BUV-3851",
+   "to": "ZIC-3851",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SC-3820",
+   "to": "PSWP-3810",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XS-3820",
+   "to": "PSWP-3810",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-3820A",
+   "to": "PSWP-3810",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-3820B",
+   "to": "PSWP-3810",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "LALL-3803-CP",
+   "to": "PSWP-3810",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSWP-3810",
+   "to": "XI-3820",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "PSWP-3810",
+   "to": "XA-3820",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSWP-3810",
+   "to": "SI-3820",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SC-3820",
+   "to": "PSWP-3820",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XS-3820",
+   "to": "PSWP-3820",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-3820A",
+   "to": "PSWP-3820",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-3820B",
+   "to": "PSWP-3820",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "LALL-3803-CP",
+   "to": "PSWP-3820",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSWP-3820",
+   "to": "XI-3820",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "PSWP-3820",
+   "to": "XA-3820",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSWP-3820",
+   "to": "SI-3820",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "PSH-3812",
+   "to": "PSWP-3810",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "PSH-3822",
+   "to": "PSWP-3820",
+   "type": "electrical",
+   "purpose": "trip"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_SE",
+   "direction": "in",
+   "name": "SE 1 D-011 FROM EQUALIZATION TANK",
+   "other_drawing": "D-011",
+   "bbox": [
+    0.128,
+    0.447,
+    0.153,
+    0.48
+   ],
+   "line_number": "400-SE-E1"
+  },
+  {
+   "id": "OPC_OV10",
+   "direction": "in",
+   "name": "OV 3 D-010 PLANT LIFT STATION",
+   "other_drawing": "D-010",
+   "bbox": [
+    0.128,
+    0.481,
+    0.153,
+    0.514
+   ],
+   "line_number": "400-OV-E1"
+  },
+  {
+   "id": "OPC_OV11",
+   "direction": "in",
+   "name": "OV 3 D-011 FROM EQUALIZATION TANK",
+   "other_drawing": "D-011",
+   "bbox": [
+    0.128,
+    0.514,
+    0.153,
+    0.547
+   ],
+   "line_number": "400-OV-E1"
+  },
+  {
+   "id": "OPC_DEW",
+   "direction": "out",
+   "name": "PSW 1 D-015 TO DEWATERING SYSTEM",
+   "other_drawing": "D-015",
+   "bbox": [
+    0.74,
+    0.806,
+    0.765,
+    0.839
+   ],
+   "line_number": "80-PSW-H1"
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_OUTFALL",
+   "name": "PE TO OUTFALL",
+   "direction": "sink",
+   "bbox": [
+    0.74,
+    0.481,
+    0.765,
+    0.514
+   ]
+  },
+  {
+   "id": "B_PSWNET",
+   "name": "PSW TO PSW NETWORK",
+   "direction": "sink",
+   "bbox": [
+    0.74,
+    0.635,
+    0.765,
+    0.668
+   ]
+  },
+  {
+   "id": "B_PW",
+   "name": "ALTERNATIVE PROCESS SERVICE WATER FROM POTABLE WATER SYSTEM",
+   "direction": "source",
+   "bbox": [
+    0.128,
+    0.553,
+    0.153,
+    0.586
+   ]
+  },
+  {
+   "id": "B_VENT",
+   "name": "Air valve vent",
+   "direction": "sink",
+   "bbox": [
+    0.268,
+    0.685,
+    0.293,
+    0.718
+   ],
+   "confidence": 0.6
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5",
+  "r4c1",
+  "r4c2",
+  "r4c3",
+  "r4c4",
+  "r4c5"
+ ],
+ "unreadable": [
+  "Exact tee points of the PSWP-3810/3820 discharges and of the recirculation line BUV-3801 are approximate"
+ ]
+}

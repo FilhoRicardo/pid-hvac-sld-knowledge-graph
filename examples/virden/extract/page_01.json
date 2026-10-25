@@ -1,0 +1,2082 @@
+{
+ "schema_version": "1.0",
+ "page": 1,
+ "sheet": {
+  "drawing_number": "D-007-0",
+  "title": "Process Headworks P&ID (Virden Phase 2 Wastewater Treatment Facility Upgrades)",
+  "revision": "0",
+  "drawing_type": "pid",
+  "issue_status": "issued for tender",
+  "rotation": 0,
+  "legend_notes": [
+   "Greyed items are existing",
+   "I/O band across the top: SCADA / local PLC control panel / control panel-MCC",
+   "Scan resolution is low (~190 dpi); small greyed text read with reduced confidence"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "SB-1200",
+   "tag": "SB-1200",
+   "kind": "box",
+   "name": "SCREEN SPLITTER BOX",
+   "bbox": [
+    0.258,
+    0.627,
+    0.274,
+    0.78
+   ]
+  },
+  {
+   "id": "SCR-1201",
+   "tag": "SCR-1201",
+   "kind": "screen",
+   "name": "SPIRAL SCREEN (No. 2)",
+   "bbox": [
+    0.336,
+    0.627,
+    0.402,
+    0.693
+   ]
+  },
+  {
+   "id": "SCR-1001",
+   "tag": "SCR-1001",
+   "kind": "screen",
+   "name": "Spiral screen No. 1",
+   "status": "existing",
+   "bbox": [
+    0.336,
+    0.738,
+    0.402,
+    0.813
+   ]
+  },
+  {
+   "id": "BIN-1201",
+   "tag": "BIN-1201",
+   "kind": "bin",
+   "name": "Screenings bin",
+   "bbox": [
+    0.39,
+    0.701,
+    0.407,
+    0.726
+   ]
+  },
+  {
+   "id": "BIN-1001",
+   "tag": "BIN-1001",
+   "kind": "bin",
+   "name": "Screenings bin",
+   "status": "existing",
+   "bbox": [
+    0.39,
+    0.813,
+    0.407,
+    0.837
+   ]
+  },
+  {
+   "id": "FIL-1101",
+   "tag": "FIL-1101",
+   "kind": "filter",
+   "name": "EXISTING SALSNES FILTER PACKAGE",
+   "status": "existing",
+   "bbox": [
+    0.644,
+    0.545,
+    0.711,
+    0.631
+   ]
+  },
+  {
+   "id": "BLO-1101",
+   "tag": "BLO-1101",
+   "kind": "blower",
+   "name": "BLOWER (Salsnes air knife)",
+   "status": "existing",
+   "bbox": [
+    0.631,
+    0.437,
+    0.644,
+    0.458
+   ]
+  },
+  {
+   "id": "FN-1101",
+   "tag": "FN-1101",
+   "kind": "fan",
+   "name": "BLOWER COOLING FAN",
+   "status": "existing",
+   "part_of": "BLO-1101",
+   "bbox": [
+    0.628,
+    0.421,
+    0.638,
+    0.433
+   ]
+  },
+  {
+   "id": "SCP-1101",
+   "tag": "SCP-1101",
+   "kind": "conveyor",
+   "name": "SLUDGE SCREW",
+   "status": "existing",
+   "bbox": [
+    0.7,
+    0.635,
+    0.727,
+    0.648
+   ]
+  },
+  {
+   "id": "BIN-1102",
+   "tag": "BIN-1102",
+   "kind": "bin",
+   "name": "Sludge bin",
+   "status": "existing",
+   "bbox": [
+    0.713,
+    0.677,
+    0.73,
+    0.697
+   ]
+  },
+  {
+   "id": "SMP-1001",
+   "tag": "SMP-1001",
+   "kind": "sampler",
+   "name": "INFLUENT COMPOSITE SAMPLER (OUTSIDE)",
+   "status": "existing",
+   "bbox": [
+    0.21,
+    0.759,
+    0.226,
+    0.78
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "BAV-1202",
+   "tag": "BAV-1202",
+   "kind": "ball_valve",
+   "bbox": [
+    0.182,
+    0.648,
+    0.198,
+    0.656
+   ]
+  },
+  {
+   "id": "KGV-1201",
+   "tag": "KGV-1201",
+   "kind": "knife_gate_valve",
+   "bbox": [
+    0.233,
+    0.631,
+    0.255,
+    0.639
+   ]
+  },
+  {
+   "id": "KGV-1001",
+   "tag": "KGV-1001",
+   "kind": "knife_gate_valve",
+   "status": "existing",
+   "bbox": [
+    0.235,
+    0.693,
+    0.255,
+    0.701
+   ]
+  },
+  {
+   "id": "KGV-1207",
+   "tag": "KGV-1207",
+   "kind": "knife_gate_valve",
+   "bbox": [
+    0.276,
+    0.685,
+    0.298,
+    0.693
+   ]
+  },
+  {
+   "id": "KGV-1007",
+   "tag": "KGV-1007",
+   "kind": "knife_gate_valve",
+   "bbox": [
+    0.276,
+    0.763,
+    0.298,
+    0.771
+   ]
+  },
+  {
+   "id": "KGV-1211",
+   "tag": "KGV-1211",
+   "kind": "knife_gate_valve",
+   "bbox": [
+    0.407,
+    0.682,
+    0.429,
+    0.69
+   ]
+  },
+  {
+   "id": "KGV-1011",
+   "tag": "KGV-1011",
+   "kind": "knife_gate_valve",
+   "bbox": [
+    0.407,
+    0.8,
+    0.429,
+    0.809
+   ]
+  },
+  {
+   "id": "RED_1211",
+   "kind": "reducer",
+   "size": "350x400",
+   "bbox": [
+    0.434,
+    0.67,
+    0.446,
+    0.681
+   ]
+  },
+  {
+   "id": "RED_350",
+   "kind": "reducer",
+   "size": "350x400",
+   "bbox": [
+    0.446,
+    0.686,
+    0.456,
+    0.701
+   ]
+  },
+  {
+   "id": "KGV-1002",
+   "tag": "KGV-1002",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "normal_position": "closed",
+   "status": "existing",
+   "bbox": [
+    0.501,
+    0.594,
+    0.51,
+    0.611
+   ],
+   "loop": "Z-1002"
+  },
+  {
+   "id": "KGV-1003",
+   "tag": "KGV-1003",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "normal_position": "open",
+   "status": "existing",
+   "bbox": [
+    0.497,
+    0.66,
+    0.51,
+    0.677
+   ]
+  },
+  {
+   "id": "BAV-1200",
+   "tag": "BAV-1200",
+   "kind": "ball_valve",
+   "bbox": [
+    0.274,
+    0.78,
+    0.293,
+    0.788
+   ]
+  },
+  {
+   "id": "BAV-1005",
+   "tag": "BAV-1005",
+   "kind": "ball_valve",
+   "bbox": [
+    0.237,
+    0.738,
+    0.254,
+    0.751
+   ]
+  },
+  {
+   "id": "RED_SMP",
+   "kind": "reducer",
+   "size": "15x25",
+   "bbox": [
+    0.233,
+    0.73,
+    0.239,
+    0.738
+   ]
+  },
+  {
+   "id": "SNV-1005",
+   "tag": "SNV-1005",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "status": "existing",
+   "bbox": [
+    0.21,
+    0.743,
+    0.226,
+    0.755
+   ]
+  },
+  {
+   "id": "BAV-1204",
+   "tag": "BAV-1204",
+   "kind": "ball_valve",
+   "bbox": [
+    0.316,
+    0.553,
+    0.348,
+    0.565
+   ]
+  },
+  {
+   "id": "BAV-1201",
+   "tag": "BAV-1201",
+   "kind": "ball_valve",
+   "bbox": [
+    0.311,
+    0.601,
+    0.33,
+    0.612
+   ]
+  },
+  {
+   "id": "SNV-1201",
+   "tag": "SNV-1201",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "bbox": [
+    0.354,
+    0.619,
+    0.376,
+    0.627
+   ]
+  },
+  {
+   "id": "BAV-1001",
+   "tag": "BAV-1001",
+   "kind": "ball_valve",
+   "status": "existing",
+   "bbox": [
+    0.321,
+    0.72,
+    0.341,
+    0.73
+   ]
+  },
+  {
+   "id": "SNV-1001",
+   "tag": "SNV-1001",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "status": "existing",
+   "bbox": [
+    0.354,
+    0.74,
+    0.376,
+    0.748
+   ]
+  },
+  {
+   "id": "BAV-1101",
+   "tag": "BAV-1101",
+   "kind": "ball_valve",
+   "status": "existing",
+   "bbox": [
+    0.539,
+    0.553,
+    0.561,
+    0.565
+   ]
+  },
+  {
+   "id": "STR-1101",
+   "tag": "STR-1101",
+   "kind": "strainer",
+   "status": "existing",
+   "bbox": [
+    0.561,
+    0.553,
+    0.58,
+    0.565
+   ]
+  },
+  {
+   "id": "TW-1101",
+   "tag": "TW-1101",
+   "kind": "three_way_valve",
+   "actuator": "solenoid",
+   "name": "4-WAY SOLENOID VALVE",
+   "status": "existing",
+   "bbox": [
+    0.574,
+    0.516,
+    0.596,
+    0.528
+   ]
+  },
+  {
+   "id": "NEV-1101",
+   "tag": "NEV-1101",
+   "kind": "needle_valve",
+   "status": "existing",
+   "bbox": [
+    0.585,
+    0.612,
+    0.606,
+    0.623
+   ]
+  },
+  {
+   "id": "BAV-1102",
+   "tag": "BAV-1102",
+   "kind": "ball_valve",
+   "status": "existing",
+   "bbox": [
+    0.539,
+    0.503,
+    0.561,
+    0.512
+   ]
+  },
+  {
+   "id": "STR-1102",
+   "tag": "STR-1102",
+   "kind": "strainer",
+   "status": "existing",
+   "bbox": [
+    0.561,
+    0.503,
+    0.58,
+    0.512
+   ]
+  },
+  {
+   "id": "NEV-1102",
+   "tag": "NEV-1102",
+   "kind": "needle_valve",
+   "status": "existing",
+   "bbox": [
+    0.622,
+    0.491,
+    0.641,
+    0.503
+   ]
+  },
+  {
+   "id": "CHV-1101",
+   "tag": "CHV-1101",
+   "kind": "check_valve",
+   "status": "existing",
+   "bbox": [
+    0.645,
+    0.46,
+    0.666,
+    0.47
+   ]
+  },
+  {
+   "id": "PRV-1101",
+   "tag": "PRV-1101",
+   "kind": "relief_valve",
+   "name": "Pressure relief, SP = 0.6 bar",
+   "status": "existing",
+   "bbox": [
+    0.645,
+    0.436,
+    0.666,
+    0.446
+   ]
+  },
+  {
+   "id": "BAV-1103",
+   "tag": "BAV-1103",
+   "kind": "ball_valve",
+   "status": "existing",
+   "bbox": [
+    0.689,
+    0.44,
+    0.708,
+    0.45
+   ]
+  },
+  {
+   "id": "BSTR-1101",
+   "kind": "strainer",
+   "name": "BASKET STRAINER",
+   "status": "existing",
+   "bbox": [
+    0.692,
+    0.47,
+    0.702,
+    0.483
+   ]
+  },
+  {
+   "id": "GAV-1101",
+   "tag": "GAV-1101",
+   "kind": "gate_valve",
+   "status": "existing",
+   "bbox": [
+    0.651,
+    0.648,
+    0.67,
+    0.66
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "PLV-1005",
+   "tag": "PLV-1005",
+   "kind": "plug_valve",
+   "status": "existing",
+   "bbox": [
+    0.713,
+    0.755,
+    0.733,
+    0.767
+   ]
+  },
+  {
+   "id": "PLV-1004",
+   "tag": "PLV-1004",
+   "kind": "plug_valve",
+   "status": "existing",
+   "bbox": [
+    0.713,
+    0.776,
+    0.733,
+    0.788
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "BAV-1006",
+   "tag": "BAV-1006",
+   "kind": "ball_valve",
+   "status": "existing",
+   "bbox": [
+    0.23,
+    0.743,
+    0.249,
+    0.752
+   ],
+   "confidence": 0.75,
+   "notes": "Faint greyed label; found on the QA re-check (OCR hint)"
+  },
+  {
+   "id": "BAV-1002",
+   "tag": "BAV-1002",
+   "kind": "ball_valve",
+   "status": "existing",
+   "bbox": [
+    0.185,
+    0.705,
+    0.204,
+    0.716
+   ],
+   "confidence": 0.7
+  }
+ ],
+ "instruments": [
+  {
+   "id": "AE-1221",
+   "tag": "AE-1221",
+   "location": "field",
+   "name": "Methane gas detector (headworks room)",
+   "bbox": [
+    0.126,
+    0.441,
+    0.139,
+    0.458
+   ],
+   "notes": "Area gas detector (room atmosphere), not a process stream",
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AIT-1221",
+   "tag": "AIT-1221",
+   "location": "field",
+   "name": "Methane",
+   "bbox": [
+    0.126,
+    0.413,
+    0.139,
+    0.429
+   ]
+  },
+  {
+   "id": "AE-1222",
+   "tag": "AE-1222",
+   "location": "field",
+   "name": "H2S gas detector (headworks room)",
+   "bbox": [
+    0.161,
+    0.441,
+    0.174,
+    0.458
+   ],
+   "notes": "Area gas detector (room atmosphere), not a process stream",
+   "measures": {
+    "item": "B_ROOM"
+   }
+  },
+  {
+   "id": "AIT-1222",
+   "tag": "AIT-1222",
+   "location": "field",
+   "name": "H2S",
+   "bbox": [
+    0.161,
+    0.413,
+    0.174,
+    0.429
+   ]
+  },
+  {
+   "id": "FE-1201",
+   "tag": "FE-1201",
+   "location": "field",
+   "name": "Magnetic flow meter",
+   "bbox": [
+    0.212,
+    0.619,
+    0.224,
+    0.635
+   ]
+  },
+  {
+   "id": "FIT-1201",
+   "tag": "FIT-1201",
+   "location": "field",
+   "bbox": [
+    0.212,
+    0.598,
+    0.224,
+    0.615
+   ]
+  },
+  {
+   "id": "FE-1001",
+   "tag": "FE-1001",
+   "location": "field",
+   "status": "existing",
+   "bbox": [
+    0.212,
+    0.693,
+    0.224,
+    0.71
+   ]
+  },
+  {
+   "id": "FIT-1001",
+   "tag": "FIT-1001",
+   "location": "field",
+   "status": "existing",
+   "bbox": [
+    0.212,
+    0.672,
+    0.224,
+    0.689
+   ]
+  },
+  {
+   "id": "LSH-1201",
+   "tag": "LSH-1201",
+   "location": "field",
+   "measures": {
+    "item": "SB-1200"
+   },
+   "bbox": [
+    0.254,
+    0.587,
+    0.267,
+    0.604
+   ]
+  },
+  {
+   "id": "LE-1201",
+   "tag": "LE-1201",
+   "location": "field",
+   "measures": {
+    "item": "SCR-1201"
+   },
+   "bbox": [
+    0.338,
+    0.652,
+    0.351,
+    0.668
+   ]
+  },
+  {
+   "id": "LIT-1201",
+   "tag": "LIT-1201",
+   "location": "field",
+   "bbox": [
+    0.338,
+    0.631,
+    0.351,
+    0.648
+   ]
+  },
+  {
+   "id": "LE-1001",
+   "tag": "LE-1001",
+   "location": "field",
+   "status": "existing",
+   "measures": {
+    "item": "SCR-1001"
+   },
+   "bbox": [
+    0.338,
+    0.771,
+    0.351,
+    0.788
+   ]
+  },
+  {
+   "id": "LIT-1001",
+   "tag": "LIT-1001",
+   "location": "field",
+   "status": "existing",
+   "bbox": [
+    0.338,
+    0.751,
+    0.351,
+    0.767
+   ]
+  },
+  {
+   "id": "HS-1201",
+   "tag": "HS-1201",
+   "location": "local_panel",
+   "name": "E/S (emergency stop) at screen",
+   "bbox": [
+    0.386,
+    0.615,
+    0.402,
+    0.634
+   ]
+  },
+  {
+   "id": "TSL-1101",
+   "tag": "TSL-1101",
+   "location": "field",
+   "status": "existing",
+   "measures": {
+    "line": "L_HW"
+   },
+   "bbox": [
+    0.497,
+    0.466,
+    0.51,
+    0.483
+   ]
+  },
+  {
+   "id": "PSL-1101",
+   "tag": "PSL-1101",
+   "location": "field",
+   "status": "existing",
+   "measures": {
+    "line": "L_HW"
+   },
+   "bbox": [
+    0.515,
+    0.466,
+    0.527,
+    0.483
+   ]
+  },
+  {
+   "id": "PIT-1101",
+   "tag": "PIT-1101",
+   "location": "field",
+   "status": "existing",
+   "measures": {
+    "line": "L_AIR",
+    "after": "CHV-1101"
+   },
+   "bbox": [
+    0.676,
+    0.425,
+    0.689,
+    0.441
+   ]
+  },
+  {
+   "id": "LIT-1101",
+   "tag": "LIT-1101",
+   "location": "field",
+   "status": "existing",
+   "measures": {
+    "item": "FIL-1101"
+   },
+   "bbox": [
+    0.654,
+    0.54,
+    0.666,
+    0.557
+   ]
+  },
+  {
+   "id": "HS-1200A",
+   "tag": "HS-1200A",
+   "location": "local_panel",
+   "name": "E-STOP (CP-1201)",
+   "bbox": [
+    0.308,
+    0.351,
+    0.322,
+    0.367
+   ]
+  },
+  {
+   "id": "HS-1200B",
+   "tag": "HS-1200B",
+   "location": "local_panel",
+   "name": "RESET (CP-1201)",
+   "bbox": [
+    0.328,
+    0.351,
+    0.342,
+    0.367
+   ]
+  },
+  {
+   "id": "HS-1200C",
+   "tag": "HS-1200C",
+   "location": "local_panel",
+   "name": "H/O/A SCREEN (CP-1201)",
+   "bbox": [
+    0.351,
+    0.351,
+    0.365,
+    0.367
+   ]
+  },
+  {
+   "id": "HS-1200D",
+   "tag": "HS-1200D",
+   "location": "local_panel",
+   "name": "H/O/A FLUSH VALVE (CP-1201)",
+   "bbox": [
+    0.373,
+    0.351,
+    0.387,
+    0.367
+   ]
+  },
+  {
+   "id": "AI-1221",
+   "tag": "AI-1221",
+   "location": "plc",
+   "name": "Methane gas (AI)",
+   "bbox": [
+    0.128,
+    0.243,
+    0.142,
+    0.26
+   ]
+  },
+  {
+   "id": "XA-1221",
+   "tag": "XA-1221",
+   "location": "plc",
+   "name": "AIT-1221 fault (DI)",
+   "bbox": [
+    0.142,
+    0.243,
+    0.156,
+    0.26
+   ]
+  },
+  {
+   "id": "AI-1222",
+   "tag": "AI-1222",
+   "location": "plc",
+   "name": "H2S gas (AI)",
+   "bbox": [
+    0.163,
+    0.243,
+    0.177,
+    0.26
+   ]
+  },
+  {
+   "id": "XA-1222",
+   "tag": "XA-1222",
+   "location": "plc",
+   "name": "AIT-1222 fault (DI)",
+   "bbox": [
+    0.177,
+    0.243,
+    0.191,
+    0.26
+   ]
+  },
+  {
+   "id": "FQI-1201",
+   "tag": "FQI-1201",
+   "location": "plc",
+   "name": "Flow totalizer (HART)",
+   "bbox": [
+    0.202,
+    0.243,
+    0.216,
+    0.26
+   ]
+  },
+  {
+   "id": "FI-1201",
+   "tag": "FI-1201",
+   "location": "plc",
+   "name": "Flow (AI)",
+   "bbox": [
+    0.216,
+    0.243,
+    0.23,
+    0.26
+   ]
+  },
+  {
+   "id": "FY-1200",
+   "tag": "FY-1200",
+   "location": "plc",
+   "name": "Flow summer (sigma) - total influent flow to sampler (AO)",
+   "bbox": [
+    0.23,
+    0.243,
+    0.246,
+    0.26
+   ],
+   "confidence": 0.5,
+   "notes": "Hexagon with sigma; no tag printed. Tag assigned by reader - check"
+  },
+  {
+   "id": "FI-1001",
+   "tag": "FI-1001",
+   "location": "plc",
+   "name": "Flow (AI)",
+   "bbox": [
+    0.246,
+    0.243,
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "id": "FQI-1001",
+   "tag": "FQI-1001",
+   "location": "plc",
+   "name": "Flow totalizer (HART)",
+   "bbox": [
+    0.26,
+    0.243,
+    0.274,
+    0.26
+   ]
+  },
+  {
+   "id": "XA-1001",
+   "tag": "XA-1001",
+   "location": "plc",
+   "name": "SMP-1001 sampler alarm (DI)",
+   "bbox": [
+    0.274,
+    0.243,
+    0.288,
+    0.26
+   ]
+  },
+  {
+   "id": "LI-1201",
+   "tag": "LI-1201",
+   "location": "plc",
+   "name": "Screen 2 level (AI)",
+   "bbox": [
+    0.311,
+    0.243,
+    0.324,
+    0.26
+   ]
+  },
+  {
+   "id": "HSI-1201",
+   "tag": "HSI-1201",
+   "location": "plc",
+   "name": "SCR-1201 remote (DI)",
+   "bbox": [
+    0.324,
+    0.243,
+    0.337,
+    0.26
+   ]
+  },
+  {
+   "id": "XI-1201",
+   "tag": "XI-1201",
+   "location": "plc",
+   "name": "SCR-1201 running (DI)",
+   "bbox": [
+    0.337,
+    0.243,
+    0.349,
+    0.26
+   ]
+  },
+  {
+   "id": "XA-1201",
+   "tag": "XA-1201",
+   "location": "plc",
+   "name": "SCR-1201 fault (DI)",
+   "bbox": [
+    0.349,
+    0.243,
+    0.362,
+    0.26
+   ]
+  },
+  {
+   "id": "LAH-1201",
+   "tag": "LAH-1201",
+   "location": "plc",
+   "name": "High level alarm (DI)",
+   "bbox": [
+    0.362,
+    0.243,
+    0.375,
+    0.26
+   ]
+  },
+  {
+   "id": "XS-1201A",
+   "tag": "XS-1201A",
+   "location": "plc",
+   "name": "SCR-1201 start (DO)",
+   "bbox": [
+    0.375,
+    0.243,
+    0.388,
+    0.26
+   ]
+  },
+  {
+   "id": "XS-1201B",
+   "tag": "XS-1201B",
+   "location": "plc",
+   "name": "SCR-1201 stop (DO)",
+   "bbox": [
+    0.388,
+    0.243,
+    0.401,
+    0.26
+   ]
+  },
+  {
+   "id": "LI-1001",
+   "tag": "LI-1001",
+   "location": "plc",
+   "status": "existing",
+   "name": "Screen 1 level (AI)",
+   "bbox": [
+    0.434,
+    0.243,
+    0.446,
+    0.26
+   ]
+  },
+  {
+   "id": "HSI-1001",
+   "tag": "HSI-1001",
+   "location": "plc",
+   "status": "existing",
+   "name": "SCR-1001 remote (DI)",
+   "bbox": [
+    0.446,
+    0.243,
+    0.459,
+    0.26
+   ]
+  },
+  {
+   "id": "XI-1001",
+   "tag": "XI-1001",
+   "location": "plc",
+   "status": "existing",
+   "name": "SCR-1001 running (DI)",
+   "bbox": [
+    0.459,
+    0.243,
+    0.472,
+    0.26
+   ]
+  },
+  {
+   "id": "XA-1001B",
+   "tag": "XA-1001",
+   "location": "plc",
+   "status": "existing",
+   "name": "SCR-1001 fault (DI)",
+   "bbox": [
+    0.472,
+    0.243,
+    0.485,
+    0.26
+   ],
+   "notes": "Same tag XA-1001 as the sampler alarm"
+  },
+  {
+   "id": "LAH-1001",
+   "tag": "LAH-1001",
+   "location": "plc",
+   "status": "existing",
+   "name": "High level alarm (DI)",
+   "bbox": [
+    0.485,
+    0.243,
+    0.497,
+    0.26
+   ]
+  },
+  {
+   "id": "XS-1001A",
+   "tag": "XS-1001A",
+   "location": "plc",
+   "status": "existing",
+   "name": "SCR-1001 start (DO)",
+   "bbox": [
+    0.497,
+    0.243,
+    0.51,
+    0.26
+   ]
+  },
+  {
+   "id": "XS-1001B",
+   "tag": "XS-1001B",
+   "location": "plc",
+   "status": "existing",
+   "name": "SCR-1001 stop (DO)",
+   "bbox": [
+    0.51,
+    0.243,
+    0.523,
+    0.26
+   ]
+  },
+  {
+   "id": "TAL-1101",
+   "tag": "TAL-1101",
+   "location": "plc",
+   "name": "Temperature low alarm (DI)",
+   "bbox": [
+    0.536,
+    0.243,
+    0.548,
+    0.26
+   ]
+  },
+  {
+   "id": "PAL-1101",
+   "tag": "PAL-1101",
+   "location": "plc",
+   "name": "Pressure low alarm (DI)",
+   "bbox": [
+    0.559,
+    0.243,
+    0.572,
+    0.26
+   ]
+  },
+  {
+   "id": "ZIO-1002",
+   "tag": "ZIO-1002",
+   "location": "plc",
+   "name": "KGV-1002 opened (DI)",
+   "bbox": [
+    0.582,
+    0.243,
+    0.594,
+    0.26
+   ],
+   "loop": "Z-1002"
+  },
+  {
+   "id": "ZIC-1002",
+   "tag": "ZIC-1002",
+   "location": "plc",
+   "name": "KGV-1002 closed (DI)",
+   "bbox": [
+    0.594,
+    0.243,
+    0.607,
+    0.26
+   ],
+   "loop": "Z-1002"
+  },
+  {
+   "id": "XSO-1002",
+   "tag": "XSO-1002",
+   "location": "plc",
+   "name": "KGV-1002 open (DO)",
+   "bbox": [
+    0.607,
+    0.243,
+    0.62,
+    0.26
+   ],
+   "loop": "Z-1002"
+  },
+  {
+   "id": "XSC-1002",
+   "tag": "XSC-1002",
+   "location": "plc",
+   "name": "KGV-1002 close (DO)",
+   "bbox": [
+    0.62,
+    0.243,
+    0.633,
+    0.26
+   ],
+   "loop": "Z-1002"
+  },
+  {
+   "id": "LAH-1201B",
+   "tag": "LAH-1201",
+   "location": "plc",
+   "name": "LSH-1201 high level alarm (DI)",
+   "bbox": [
+    0.737,
+    0.243,
+    0.749,
+    0.26
+   ],
+   "notes": "Second LAH-1201 box, for the splitter-box level switch"
+  },
+  {
+   "id": "XSO-1005",
+   "tag": "XSO-1005",
+   "location": "plc",
+   "name": "SNV-1005 open (DO)",
+   "bbox": [
+    0.759,
+    0.243,
+    0.772,
+    0.26
+   ]
+  },
+  {
+   "id": "EL-1200A",
+   "tag": "EL-1200A",
+   "location": "local_panel",
+   "name": "POWER light (CP-1201)",
+   "bbox": [
+    0.308,
+    0.305,
+    0.322,
+    0.323
+   ]
+  },
+  {
+   "id": "EL-1200B",
+   "tag": "EL-1200B",
+   "location": "local_panel",
+   "name": "RUNNING light (CP-1201)",
+   "bbox": [
+    0.33,
+    0.305,
+    0.344,
+    0.323
+   ]
+  },
+  {
+   "id": "EL-1200C",
+   "tag": "EL-1200C",
+   "location": "local_panel",
+   "name": "FAULT light (CP-1201)",
+   "bbox": [
+    0.351,
+    0.305,
+    0.365,
+    0.323
+   ]
+  },
+  {
+   "id": "EL-1200D",
+   "tag": "EL-1200D",
+   "location": "local_panel",
+   "name": "LEVEL HIGH light (CP-1201)",
+   "bbox": [
+    0.373,
+    0.305,
+    0.387,
+    0.323
+   ]
+  },
+  {
+   "id": "EL-1250",
+   "tag": "EL-1250",
+   "location": "local_panel",
+   "name": "Gas detection STROBE (CP-1250)",
+   "bbox": [
+    0.198,
+    0.326,
+    0.21,
+    0.342
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_LS2",
+   "line_number": "200-RWW-H1",
+   "service": "RAW WASTEWATER",
+   "from": "B_LS2",
+   "to": "SB-1200",
+   "path": [
+    "FE-1201",
+    "KGV-1201"
+   ]
+  },
+  {
+   "id": "L_LS2_DR",
+   "line_number": "25-DRN-H1",
+   "from": {
+    "line": "L_LS2"
+   },
+   "to": "B_DRAIN",
+   "path": [
+    "BAV-1202"
+   ]
+  },
+  {
+   "id": "L_LS1",
+   "line_number": "200-RWW-E1",
+   "service": "RAW WASTEWATER",
+   "from": "B_LS1",
+   "to": "SB-1200",
+   "path": [
+    "FE-1001",
+    "KGV-1001"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_SUMP",
+   "line_number": "30-RWW-E1",
+   "service": "RAW WASTEWATER",
+   "from": "B_SUMP",
+   "to": "SB-1200",
+   "status": "existing"
+  },
+  {
+   "id": "L_SB_S2",
+   "line_number": "250-RWW-H1",
+   "from": "SB-1200",
+   "to": "SCR-1201",
+   "path": [
+    "KGV-1207"
+   ]
+  },
+  {
+   "id": "L_SB_S1",
+   "line_number": "250-RWW-H1",
+   "from": "SB-1200",
+   "to": "SCR-1001",
+   "path": [
+    "KGV-1007"
+   ]
+  },
+  {
+   "id": "L_SB_DR",
+   "line_number": "50-DR-H1",
+   "from": "SB-1200",
+   "to": "B_DRAIN",
+   "path": [
+    "BAV-1200"
+   ],
+   "notes": "DRAIN W/ MALE CAMLOCK"
+  },
+  {
+   "id": "L_SMP",
+   "service": "SAMPLE",
+   "from": "SB-1200",
+   "to": "SMP-1001",
+   "path": [
+    "BAV-1005",
+    "RED_SMP",
+    "BAV-1006",
+    "SNV-1005"
+   ]
+  },
+  {
+   "id": "L_S2_OUT",
+   "line_number": "400-RWW-H1",
+   "service": "SCREENED WASTEWATER",
+   "from": "SCR-1201",
+   "to": "OPC_GRIT",
+   "path": [
+    "KGV-1211",
+    "RED_1211",
+    "KGV-1003"
+   ],
+   "notes": "Header continues as 400-RWW-E1 through normally-open KGV-1003 to grit removal"
+  },
+  {
+   "id": "L_S1_OUT",
+   "line_number": "350-RWW-H1",
+   "service": "SCREENED WASTEWATER",
+   "from": "SCR-1001",
+   "to": {
+    "line": "L_S2_OUT",
+    "after": "RED_1211"
+   },
+   "path": [
+    "KGV-1011",
+    "RED_350"
+   ]
+  },
+  {
+   "id": "L_FIL_IN",
+   "line_number": "400-RWW-H1",
+   "service": "SCREENED WASTEWATER",
+   "from": {
+    "line": "L_S2_OUT",
+    "after": "RED_1211"
+   },
+   "to": "FIL-1101",
+   "path": [
+    "KGV-1002"
+   ],
+   "status": "existing",
+   "notes": "Normally closed: filter bypassed"
+  },
+  {
+   "id": "L_FIL_OUT",
+   "line_number": "400-PPE-E1",
+   "service": "FILTRATE",
+   "from": "FIL-1101",
+   "to": {
+    "line": "L_S2_OUT",
+    "after": "KGV-1003"
+   },
+   "status": "existing"
+  },
+  {
+   "id": "L_FIL_OF",
+   "line_number": "400-OF-E1",
+   "service": "OVERFLOW",
+   "from": "FIL-1101",
+   "to": {
+    "line": "L_S2_OUT",
+    "after": "KGV-1003"
+   },
+   "status": "existing"
+  },
+  {
+   "id": "L_FIL_SL",
+   "from": "FIL-1101",
+   "to": "SCP-1101",
+   "status": "existing"
+  },
+  {
+   "id": "L_SCP",
+   "from": "SCP-1101",
+   "to": "BIN-1102",
+   "status": "existing"
+  },
+  {
+   "id": "L_BIN",
+   "service": "SLUDGE",
+   "from": "BIN-1102",
+   "to": "B_TRUCK",
+   "status": "existing"
+  },
+  {
+   "id": "L_FIL_DR1",
+   "line_number": "100-DRN-H1",
+   "from": "FIL-1101",
+   "to": "B_SUMP_PUMP",
+   "path": [
+    "GAV-1101",
+    "PLV-1004"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_FIL_DR2",
+   "line_number": "100-DRN-H1",
+   "from": "SCP-1101",
+   "to": "B_SUMP_PUMP",
+   "path": [
+    "PLV-1005"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_S2_SCREEN",
+   "from": "SCR-1201",
+   "to": "BIN-1201"
+  },
+  {
+   "id": "L_S1_SCREEN",
+   "from": "SCR-1001",
+   "to": "BIN-1001",
+   "status": "existing"
+  },
+  {
+   "id": "L_PSW",
+   "line_number": "50-PSW-E1",
+   "service": "PLANT SERVICE WATER",
+   "from": "B_PSW",
+   "to": "FIL-1101",
+   "path": [
+    "BAV-1101",
+    "STR-1101",
+    "TW-1101",
+    "NEV-1101"
+   ],
+   "notes": "Becomes 25-PSW-E1 and 15-PSW-E1 toward the filter"
+  },
+  {
+   "id": "L_HOSE",
+   "line_number": "25-PSW-E1",
+   "from": {
+    "line": "L_PSW"
+   },
+   "to": "B_HOSE_BIB"
+  },
+  {
+   "id": "L_PSW_S",
+   "line_number": "50-PSW-E1",
+   "from": {
+    "line": "L_PSW"
+   },
+   "to": "SCR-1201",
+   "path": [
+    "BAV-1204",
+    "BAV-1201",
+    "SNV-1201"
+   ],
+   "notes": "Screen wash water (25-HW-E1)"
+  },
+  {
+   "id": "L_PSW_S1",
+   "line_number": "25-PSW-H1",
+   "from": {
+    "line": "L_PSW_S",
+    "after": "BAV-1204"
+   },
+   "to": "SCR-1001",
+   "path": [
+    "BAV-1001",
+    "SNV-1001"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_HW",
+   "line_number": "15-HW-H1",
+   "service": "HOT WATER",
+   "from": "B_HW",
+   "to": "FIL-1101",
+   "path": [
+    "BAV-1102",
+    "STR-1102",
+    "NEV-1102"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_AIR",
+   "service": "AIR",
+   "from": "BLO-1101",
+   "to": "FIL-1101",
+   "path": [
+    "CHV-1101",
+    "BSTR-1101"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_AIR_PRV",
+   "from": {
+    "line": "L_AIR",
+    "after": "CHV-1101"
+   },
+   "to": "B_ATM",
+   "path": [
+    "PRV-1101"
+   ],
+   "status": "existing"
+  },
+  {
+   "id": "L_AIR_BAV",
+   "from": {
+    "line": "L_AIR",
+    "after": "CHV-1101"
+   },
+   "to": "B_ATM",
+   "path": [
+    "BAV-1103"
+   ],
+   "status": "existing",
+   "confidence": 0.6
+  },
+  {
+   "id": "L_LS1_DR",
+   "line_number": "25-DRN-H1",
+   "from": {
+    "line": "L_LS1"
+   },
+   "to": "B_DRAIN",
+   "path": [
+    "BAV-1002"
+   ],
+   "status": "existing"
+  }
+ ],
+ "signals": [
+  {
+   "from": "AE-1221",
+   "to": "AIT-1221",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AE-1222",
+   "to": "AIT-1222",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1221",
+   "to": "AI-1221",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1221",
+   "to": "XA-1221",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AIT-1222",
+   "to": "AI-1222",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "AIT-1222",
+   "to": "XA-1222",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "FE-1201",
+   "to": "FIT-1201",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1201",
+   "to": "FI-1201",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1201",
+   "to": "FQI-1201",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FE-1001",
+   "to": "FIT-1001",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1001",
+   "to": "FI-1001",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-1001",
+   "to": "FQI-1001",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FI-1201",
+   "to": "FY-1200",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FI-1001",
+   "to": "FY-1200",
+   "type": "software",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FY-1200",
+   "to": "SMP-1001",
+   "type": "electrical",
+   "purpose": "control",
+   "notes": "Flow-paced composite sampling"
+  },
+  {
+   "from": "SMP-1001",
+   "to": "XA-1001",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XSO-1005",
+   "to": "SNV-1005",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "LE-1201",
+   "to": "LIT-1201",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-1201",
+   "to": "LI-1201",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LE-1001",
+   "to": "LIT-1001",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-1001",
+   "to": "LI-1001",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LSH-1201",
+   "to": "LAH-1201B",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XS-1201A",
+   "to": "SCR-1201",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XS-1201B",
+   "to": "SCR-1201",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1200C",
+   "to": "SCR-1201",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-1200A",
+   "to": "SCR-1201",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "HS-1201",
+   "to": "SCR-1201",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "HS-1200D",
+   "to": "SNV-1201",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SCR-1201",
+   "to": "XI-1201",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SCR-1201",
+   "to": "XA-1201",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XS-1001A",
+   "to": "SCR-1001",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XS-1001B",
+   "to": "SCR-1001",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "SCR-1001",
+   "to": "XI-1001",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SCR-1001",
+   "to": "XA-1001B",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "TSL-1101",
+   "to": "TAL-1101",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "PSL-1101",
+   "to": "PAL-1101",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XSO-1002",
+   "to": "KGV-1002",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XSC-1002",
+   "to": "KGV-1002",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "KGV-1002",
+   "to": "ZIO-1002",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "KGV-1002",
+   "to": "ZIC-1002",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SCR-1201",
+   "to": "HSI-1201",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SCR-1001",
+   "to": "HSI-1001",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "AIT-1221",
+   "to": "EL-1250",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "AIT-1222",
+   "to": "EL-1250",
+   "type": "electrical",
+   "purpose": "alarm"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_GRIT",
+   "direction": "out",
+   "name": "RWW TO GRIT REMOVAL SYSTEM",
+   "other_drawing": "D-009",
+   "line_number": "400-RWW-H1",
+   "bbox": [
+    0.74,
+    0.796,
+    0.791,
+    0.817
+   ]
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_LS2",
+   "name": "RSW FROM LIFT STATION #2",
+   "direction": "source",
+   "bbox": [
+    0.107,
+    0.635,
+    0.153,
+    0.656
+   ]
+  },
+  {
+   "id": "B_LS1",
+   "name": "RSW FROM LIFT STATION #1",
+   "direction": "source",
+   "status": "existing",
+   "bbox": [
+    0.107,
+    0.705,
+    0.153,
+    0.726
+   ]
+  },
+  {
+   "id": "B_SUMP",
+   "name": "RWW SUMP PUMP",
+   "direction": "source",
+   "status": "existing",
+   "bbox": [
+    0.107,
+    0.821,
+    0.153,
+    0.842
+   ]
+  },
+  {
+   "id": "B_PSW",
+   "name": "PSW PLANT SERVICE WATER",
+   "direction": "source",
+   "bbox": [
+    0.107,
+    0.54,
+    0.153,
+    0.561
+   ]
+  },
+  {
+   "id": "B_HW",
+   "name": "HW HOT WATER SYSTEM",
+   "direction": "source",
+   "status": "existing",
+   "bbox": [
+    0.107,
+    0.487,
+    0.153,
+    0.507
+   ]
+  },
+  {
+   "id": "B_HOSE_BIB",
+   "name": "TO HOSE BIB",
+   "direction": "sink",
+   "bbox": [
+    0.204,
+    0.569,
+    0.223,
+    0.582
+   ]
+  },
+  {
+   "id": "B_DRAIN",
+   "name": "DRAIN",
+   "direction": "sink",
+   "confidence": 0.7,
+   "bbox": [
+    0.172,
+    0.656,
+    0.3,
+    0.804
+   ]
+  },
+  {
+   "id": "B_TRUCK",
+   "name": "SLD TRUCK OUT",
+   "direction": "sink",
+   "status": "existing",
+   "bbox": [
+    0.74,
+    0.681,
+    0.781,
+    0.693
+   ]
+  },
+  {
+   "id": "B_SUMP_PUMP",
+   "name": "DRN TO SUMP PUMP",
+   "direction": "sink",
+   "status": "existing",
+   "bbox": [
+    0.74,
+    0.747,
+    0.781,
+    0.784
+   ]
+  },
+  {
+   "id": "B_ATM",
+   "name": "Atmosphere (relief / vent)",
+   "direction": "sink",
+   "status": "existing",
+   "confidence": 0.6,
+   "bbox": [
+    0.645,
+    0.425,
+    0.708,
+    0.45
+   ]
+  },
+  {
+   "id": "B_ROOM",
+   "name": "HEADWORKS ROOM (atmosphere)",
+   "direction": "area",
+   "bbox": [
+    0.121,
+    0.396,
+    0.185,
+    0.487
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "CP-1250 gas detection panel devices MAU-XXX and EF-XXX have placeholder numbers",
+  "Some greyed existing tags near the Salsnes filter are faint"
+ ]
+}

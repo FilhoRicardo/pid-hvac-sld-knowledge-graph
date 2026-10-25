@@ -1,0 +1,7 @@
+pypdfium2>=4.30
+pillow>=10.0
+pydantic>=2.6
+duckdb>=1.1
+networkx>=3.2
+# Optional but recommended: OCR hints and automatic page orientation.
+rapidocr-onnxruntime>=1.3

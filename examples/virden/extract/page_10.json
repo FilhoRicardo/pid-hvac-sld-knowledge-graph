@@ -1,0 +1,1380 @@
+{
+ "schema_version": "1.0",
+ "page": 10,
+ "sheet": {
+  "drawing_number": "D-016-0",
+  "title": "Process Alum P&ID",
+  "revision": "0",
+  "drawing_type": "pid",
+  "issue_status": "issued for tender",
+  "rotation": 0,
+  "legend_notes": [
+   "Virden WWTF Phase 2 upgrades (MWSB #1302)",
+   "Greyed items are existing",
+   "SS 304L offloading line c/w male camlock connection (typ.)",
+   "Alum skid package; CP-5500 alum system control panel"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "ALUM TRUCK",
+   "tag": "ALUM TRUCK",
+   "kind": "other",
+   "name": "ALUM TRUCK (chemical loading area)",
+   "bbox": [
+    0.126,
+    0.616,
+    0.149,
+    0.646
+   ]
+  },
+  {
+   "id": "AT-5510",
+   "tag": "AT-5510",
+   "kind": "tank",
+   "name": "ALUM TANK #1",
+   "bbox": [
+    0.314,
+    0.575,
+    0.337,
+    0.605
+   ]
+  },
+  {
+   "id": "AT-5520",
+   "tag": "AT-5520",
+   "kind": "tank",
+   "name": "ALUM TANK #2",
+   "bbox": [
+    0.314,
+    0.748,
+    0.337,
+    0.778
+   ]
+  },
+  {
+   "id": "ASP-5550",
+   "tag": "ASP-5550",
+   "kind": "metering_pump",
+   "name": "Alum metering pump (peristaltic, alum skid package)",
+   "bbox": [
+    0.54,
+    0.573,
+    0.563,
+    0.602
+   ]
+  },
+  {
+   "id": "ASP-5560",
+   "tag": "ASP-5560",
+   "kind": "metering_pump",
+   "name": "Alum metering pump (peristaltic, alum skid package)",
+   "bbox": [
+    0.54,
+    0.668,
+    0.563,
+    0.698
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "CHV-5512",
+   "kind": "check_valve",
+   "tag": "CHV-5512",
+   "bbox": [
+    0.239,
+    0.586,
+    0.249,
+    0.599
+   ]
+  },
+  {
+   "id": "DIV-5511",
+   "kind": "other",
+   "tag": "DIV-5511",
+   "bbox": [
+    0.231,
+    0.596,
+    0.241,
+    0.609
+   ],
+   "name": "Offloading line valve",
+   "confidence": 0.6
+  },
+  {
+   "id": "BAV-5513",
+   "kind": "ball_valve",
+   "tag": "BAV-5513",
+   "bbox": [
+    0.231,
+    0.606,
+    0.241,
+    0.619
+   ]
+  },
+  {
+   "id": "BAV-5514",
+   "kind": "ball_valve",
+   "tag": "BAV-5514",
+   "bbox": [
+    0.255,
+    0.586,
+    0.265,
+    0.599
+   ]
+  },
+  {
+   "id": "CHV-5522",
+   "kind": "check_valve",
+   "tag": "CHV-5522",
+   "bbox": [
+    0.239,
+    0.633,
+    0.249,
+    0.646
+   ]
+  },
+  {
+   "id": "DIV-5521",
+   "kind": "other",
+   "tag": "DIV-5521",
+   "bbox": [
+    0.231,
+    0.641,
+    0.241,
+    0.654
+   ],
+   "name": "Offloading line valve",
+   "confidence": 0.6
+  },
+  {
+   "id": "BAV-5523",
+   "kind": "ball_valve",
+   "tag": "BAV-5523",
+   "bbox": [
+    0.246,
+    0.668,
+    0.256,
+    0.682
+   ]
+  },
+  {
+   "id": "BAV-5524",
+   "kind": "ball_valve",
+   "tag": "BAV-5524",
+   "bbox": [
+    0.255,
+    0.633,
+    0.265,
+    0.646
+   ]
+  },
+  {
+   "id": "BAV-5518",
+   "kind": "ball_valve",
+   "tag": "BAV-5518",
+   "bbox": [
+    0.288,
+    0.611,
+    0.298,
+    0.624
+   ]
+  },
+  {
+   "id": "BAV-5516",
+   "kind": "ball_valve",
+   "tag": "BAV-5516",
+   "bbox": [
+    0.355,
+    0.611,
+    0.365,
+    0.624
+   ]
+  },
+  {
+   "id": "SG-5510",
+   "kind": "sight_glass",
+   "tag": "SG-5510",
+   "bbox": [
+    0.365,
+    0.583,
+    0.375,
+    0.597
+   ]
+  },
+  {
+   "id": "BAV-5517",
+   "kind": "ball_valve",
+   "tag": "BAV-5517",
+   "bbox": [
+    0.365,
+    0.608,
+    0.375,
+    0.621
+   ]
+  },
+  {
+   "id": "RED5510",
+   "kind": "reducer",
+   "bbox": [
+    0.365,
+    0.62,
+    0.375,
+    0.634
+   ],
+   "size": "25x50"
+  },
+  {
+   "id": "BAV-5519",
+   "kind": "ball_valve",
+   "tag": "BAV-5519",
+   "bbox": [
+    0.372,
+    0.653,
+    0.383,
+    0.667
+   ]
+  },
+  {
+   "id": "BAV-5528",
+   "kind": "ball_valve",
+   "tag": "BAV-5528",
+   "bbox": [
+    0.288,
+    0.777,
+    0.298,
+    0.79
+   ]
+  },
+  {
+   "id": "BAV-5526",
+   "kind": "ball_valve",
+   "tag": "BAV-5526",
+   "bbox": [
+    0.355,
+    0.784,
+    0.365,
+    0.797
+   ]
+  },
+  {
+   "id": "SG-5520",
+   "kind": "sight_glass",
+   "tag": "SG-5520",
+   "bbox": [
+    0.365,
+    0.757,
+    0.375,
+    0.77
+   ]
+  },
+  {
+   "id": "BAV-5527",
+   "kind": "ball_valve",
+   "tag": "BAV-5527",
+   "bbox": [
+    0.365,
+    0.773,
+    0.375,
+    0.786
+   ]
+  },
+  {
+   "id": "RED5520",
+   "kind": "reducer",
+   "bbox": [
+    0.365,
+    0.79,
+    0.375,
+    0.803
+   ],
+   "size": "25x50"
+  },
+  {
+   "id": "BAV-5529",
+   "kind": "ball_valve",
+   "tag": "BAV-5529",
+   "bbox": [
+    0.372,
+    0.806,
+    0.383,
+    0.819
+   ]
+  },
+  {
+   "id": "BAV-5515",
+   "kind": "ball_valve",
+   "tag": "BAV-5515",
+   "bbox": [
+    0.406,
+    0.502,
+    0.416,
+    0.516
+   ]
+  },
+  {
+   "id": "BAV-5525",
+   "kind": "ball_valve",
+   "tag": "BAV-5525",
+   "bbox": [
+    0.406,
+    0.672,
+    0.416,
+    0.685
+   ]
+  },
+  {
+   "id": "RED5515",
+   "kind": "reducer",
+   "bbox": [
+    0.337,
+    0.511,
+    0.348,
+    0.524
+   ],
+   "size": "50x25"
+  },
+  {
+   "id": "RED5525",
+   "kind": "reducer",
+   "bbox": [
+    0.337,
+    0.682,
+    0.348,
+    0.696
+   ],
+   "size": "50x25"
+  },
+  {
+   "id": "BAV-5541",
+   "kind": "ball_valve",
+   "tag": "BAV-5541",
+   "bbox": [
+    0.455,
+    0.645,
+    0.466,
+    0.658
+   ]
+  },
+  {
+   "id": "STR-5541",
+   "kind": "strainer",
+   "tag": "STR-5541",
+   "bbox": [
+    0.473,
+    0.645,
+    0.483,
+    0.658
+   ]
+  },
+  {
+   "id": "BAV-5542",
+   "kind": "ball_valve",
+   "tag": "BAV-5542",
+   "bbox": [
+    0.486,
+    0.629,
+    0.496,
+    0.642
+   ]
+  },
+  {
+   "id": "CAL5542",
+   "kind": "other",
+   "bbox": [
+    0.486,
+    0.608,
+    0.496,
+    0.621
+   ],
+   "name": "Calibration column"
+  },
+  {
+   "id": "BAV-5551",
+   "kind": "ball_valve",
+   "tag": "BAV-5551",
+   "bbox": [
+    0.501,
+    0.571,
+    0.511,
+    0.584
+   ]
+  },
+  {
+   "id": "RED5550",
+   "kind": "reducer",
+   "bbox": [
+    0.529,
+    0.55,
+    0.539,
+    0.564
+   ],
+   "size": "15x8"
+  },
+  {
+   "id": "BAV-5561",
+   "kind": "ball_valve",
+   "tag": "BAV-5561",
+   "bbox": [
+    0.518,
+    0.653,
+    0.528,
+    0.667
+   ]
+  },
+  {
+   "id": "RED5560",
+   "kind": "reducer",
+   "bbox": [
+    0.529,
+    0.653,
+    0.539,
+    0.667
+   ],
+   "size": "15x8"
+  },
+  {
+   "id": "CHV-5551",
+   "kind": "check_valve",
+   "tag": "CHV-5551",
+   "bbox": [
+    0.569,
+    0.55,
+    0.579,
+    0.564
+   ]
+  },
+  {
+   "id": "BAV-5552",
+   "kind": "ball_valve",
+   "tag": "BAV-5552",
+   "bbox": [
+    0.582,
+    0.561,
+    0.592,
+    0.574
+   ]
+  },
+  {
+   "id": "CHV-5561",
+   "kind": "check_valve",
+   "tag": "CHV-5561",
+   "bbox": [
+    0.569,
+    0.645,
+    0.579,
+    0.658
+   ]
+  },
+  {
+   "id": "BAV-5562",
+   "kind": "ball_valve",
+   "tag": "BAV-5562",
+   "bbox": [
+    0.582,
+    0.625,
+    0.592,
+    0.638
+   ]
+  },
+  {
+   "id": "PRV-5551",
+   "kind": "relief_valve",
+   "tag": "PRV-5551",
+   "bbox": [
+    0.606,
+    0.55,
+    0.616,
+    0.564
+   ]
+  },
+  {
+   "id": "PRV-5561",
+   "kind": "relief_valve",
+   "tag": "PRV-5561",
+   "bbox": [
+    0.606,
+    0.645,
+    0.616,
+    0.658
+   ]
+  },
+  {
+   "id": "BAV-5553",
+   "kind": "ball_valve",
+   "tag": "BAV-5553",
+   "bbox": [
+    0.612,
+    0.571,
+    0.622,
+    0.584
+   ]
+  },
+  {
+   "id": "BAV-5563",
+   "kind": "ball_valve",
+   "tag": "BAV-5563",
+   "bbox": [
+    0.612,
+    0.625,
+    0.622,
+    0.638
+   ]
+  },
+  {
+   "id": "BAV-5583",
+   "kind": "ball_valve",
+   "tag": "BAV-5583",
+   "bbox": [
+    0.631,
+    0.571,
+    0.642,
+    0.584
+   ]
+  },
+  {
+   "id": "BPV-5581",
+   "kind": "pressure_regulator",
+   "tag": "BPV-5581",
+   "bbox": [
+    0.645,
+    0.577,
+    0.656,
+    0.59
+   ],
+   "actuator": "self",
+   "name": "Back-pressure valve"
+  },
+  {
+   "id": "BAV-5581",
+   "kind": "ball_valve",
+   "tag": "BAV-5581",
+   "bbox": [
+    0.673,
+    0.577,
+    0.683,
+    0.59
+   ]
+  },
+  {
+   "id": "BAV-5582",
+   "kind": "ball_valve",
+   "tag": "BAV-5582",
+   "bbox": [
+    0.687,
+    0.594,
+    0.697,
+    0.607
+   ]
+  },
+  {
+   "id": "BAV-5584",
+   "kind": "ball_valve",
+   "tag": "BAV-5584",
+   "bbox": [
+    0.711,
+    0.577,
+    0.721,
+    0.59
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LE-5511",
+   "tag": "LE-5511",
+   "location": "field",
+   "bbox": [
+    0.32,
+    0.504,
+    0.331,
+    0.519
+   ],
+   "measures": {
+    "item": "AT-5510"
+   }
+  },
+  {
+   "id": "LIT-5511",
+   "tag": "LIT-5511",
+   "location": "field",
+   "bbox": [
+    0.32,
+    0.481,
+    0.331,
+    0.496
+   ]
+  },
+  {
+   "id": "LE-5521",
+   "tag": "LE-5521",
+   "location": "field",
+   "bbox": [
+    0.32,
+    0.676,
+    0.331,
+    0.691
+   ],
+   "measures": {
+    "item": "AT-5520"
+   }
+  },
+  {
+   "id": "LIT-5521",
+   "tag": "LIT-5521",
+   "location": "field",
+   "bbox": [
+    0.32,
+    0.653,
+    0.331,
+    0.667
+   ]
+  },
+  {
+   "id": "TS-5550",
+   "tag": "TS-5550",
+   "location": "field",
+   "name": "Pump temperature switch",
+   "bbox": [
+    0.565,
+    0.574,
+    0.577,
+    0.589
+   ],
+   "measures": {
+    "item": "ASP-5550"
+   }
+  },
+  {
+   "id": "TS-5560",
+   "tag": "TS-5560",
+   "location": "field",
+   "name": "Pump temperature switch",
+   "bbox": [
+    0.565,
+    0.671,
+    0.577,
+    0.686
+   ],
+   "measures": {
+    "item": "ASP-5560"
+   }
+  },
+  {
+   "id": "PI-5581",
+   "tag": "PI-5581",
+   "location": "field",
+   "bbox": [
+    0.631,
+    0.556,
+    0.642,
+    0.571
+   ],
+   "measures": {
+    "line": "L_DIS",
+    "after": "PRV-5551"
+   }
+  },
+  {
+   "id": "LSHH-5501",
+   "tag": "LSHH-5501",
+   "location": "field",
+   "name": "Containment high-high level (capacitive)",
+   "bbox": [
+    0.591,
+    0.771,
+    0.602,
+    0.785
+   ],
+   "measures": {
+    "item": "B_CONT"
+   }
+  },
+  {
+   "id": "EL-5501A",
+   "tag": "EL-5501A",
+   "location": "local_panel",
+   "name": "Alum tank 1 full (CP-5501)",
+   "bbox": [
+    0.162,
+    0.314,
+    0.173,
+    0.329
+   ]
+  },
+  {
+   "id": "EL-5501B",
+   "tag": "EL-5501B",
+   "location": "local_panel",
+   "name": "Alum tank 2 full (CP-5501)",
+   "bbox": [
+    0.19,
+    0.314,
+    0.202,
+    0.329
+   ]
+  },
+  {
+   "id": "XS-5501",
+   "tag": "XS-5501",
+   "location": "local_panel",
+   "name": "Truck fill buzzer (CP-5501)",
+   "bbox": [
+    0.162,
+    0.347,
+    0.173,
+    0.362
+   ]
+  },
+  {
+   "id": "HS-5501",
+   "tag": "HS-5501",
+   "location": "local_panel",
+   "name": "Truck fill silence (CP-5501)",
+   "bbox": [
+    0.19,
+    0.347,
+    0.202,
+    0.362
+   ]
+  },
+  {
+   "id": "HS-5500A",
+   "tag": "HS-5500A",
+   "location": "local_panel",
+   "name": "Alum system E-STOP (CP-5500)",
+   "bbox": [
+    0.522,
+    0.314,
+    0.534,
+    0.329
+   ]
+  },
+  {
+   "id": "HS-5500B",
+   "tag": "HS-5500B",
+   "location": "local_panel",
+   "name": "Alum system H/O/A (CP-5500)",
+   "bbox": [
+    0.55,
+    0.314,
+    0.562,
+    0.329
+   ]
+  },
+  {
+   "id": "XS-5501A",
+   "tag": "XS-5501A",
+   "location": "plc",
+   "name": "Alum tank 1 full light (DO)",
+   "bbox": [
+    0.157,
+    0.246,
+    0.168,
+    0.261
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "XS-5501B",
+   "tag": "XS-5501B",
+   "location": "plc",
+   "name": "Alum tank 2 full light (DO)",
+   "bbox": [
+    0.17,
+    0.246,
+    0.181,
+    0.261
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "XS-5501C",
+   "tag": "XS-5501C",
+   "location": "plc",
+   "name": "Truck fill buzzer (DO)",
+   "bbox": [
+    0.182,
+    0.246,
+    0.194,
+    0.261
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "HSI-5501",
+   "tag": "HSI-5501",
+   "location": "plc",
+   "name": "Truck fill silence (DI)",
+   "bbox": [
+    0.195,
+    0.246,
+    0.207,
+    0.261
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "LI-5511",
+   "tag": "LI-5511",
+   "location": "plc",
+   "name": "Alum tank 1 level",
+   "bbox": [
+    0.321,
+    0.246,
+    0.332,
+    0.261
+   ]
+  },
+  {
+   "id": "LI-5521",
+   "tag": "LI-5521",
+   "location": "plc",
+   "name": "Alum tank 2 level",
+   "bbox": [
+    0.348,
+    0.246,
+    0.36,
+    0.261
+   ]
+  },
+  {
+   "id": "XS-5500",
+   "tag": "XS-5500",
+   "location": "plc",
+   "name": "Alum system on/off (DO)",
+   "bbox": [
+    0.518,
+    0.246,
+    0.53,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-5500A",
+   "tag": "XA-5500A",
+   "location": "plc",
+   "name": "Alum system duty fault",
+   "bbox": [
+    0.531,
+    0.246,
+    0.543,
+    0.261
+   ]
+  },
+  {
+   "id": "XA-5500B",
+   "tag": "XA-5500B",
+   "location": "plc",
+   "name": "Alum system system fault",
+   "bbox": [
+    0.544,
+    0.246,
+    0.555,
+    0.261
+   ]
+  },
+  {
+   "id": "XI-5500",
+   "tag": "XI-5500",
+   "location": "plc",
+   "name": "Alum system running",
+   "bbox": [
+    0.557,
+    0.246,
+    0.568,
+    0.261
+   ]
+  },
+  {
+   "id": "HSI-5500",
+   "tag": "HSI-5500",
+   "location": "plc",
+   "name": "Alum system remote",
+   "bbox": [
+    0.57,
+    0.246,
+    0.581,
+    0.261
+   ]
+  },
+  {
+   "id": "SC-5500",
+   "tag": "SC-5500",
+   "location": "plc",
+   "name": "Alum system speed control (AO)",
+   "bbox": [
+    0.581,
+    0.246,
+    0.592,
+    0.261
+   ]
+  },
+  {
+   "id": "LAHH-5501",
+   "tag": "LAHH-5501",
+   "location": "plc",
+   "name": "Containment high-high level alarm",
+   "bbox": [
+    0.726,
+    0.246,
+    0.737,
+    0.261
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_FILL1",
+   "from": "ALUM TRUCK",
+   "to": "AT-5510",
+   "path": [
+    "DIV-5511",
+    "CHV-5512",
+    "BAV-5514"
+   ],
+   "line_number": "50-AL-H1",
+   "service": "ALUM (truck offloading)"
+  },
+  {
+   "id": "L_FILL2",
+   "from": "ALUM TRUCK",
+   "to": "AT-5520",
+   "path": [
+    "DIV-5521",
+    "CHV-5522",
+    "BAV-5524"
+   ],
+   "line_number": "50-AL-H1",
+   "service": "ALUM (truck offloading)"
+  },
+  {
+   "id": "L_FDR1",
+   "from": {
+    "line": "L_FILL1",
+    "after": "CHV-5512"
+   },
+   "to": "B_SUMP",
+   "path": [
+    "BAV-5513"
+   ],
+   "line_number": "25-DR-H1"
+  },
+  {
+   "id": "L_FDR2",
+   "from": {
+    "line": "L_FILL2",
+    "after": "CHV-5522"
+   },
+   "to": "B_SUMP",
+   "path": [
+    "BAV-5523"
+   ],
+   "line_number": "25-DR-H1"
+  },
+  {
+   "id": "L_V1",
+   "from": "AT-5510",
+   "to": "B_VENT",
+   "path": [],
+   "line_number": "80-VE-E4"
+  },
+  {
+   "id": "L_V2",
+   "from": "AT-5520",
+   "to": "B_VENT",
+   "path": [],
+   "line_number": "80-VE-E4"
+  },
+  {
+   "id": "L_OV1",
+   "from": "AT-5510",
+   "to": "B_CONT",
+   "path": [],
+   "line_number": "100-OV-E4"
+  },
+  {
+   "id": "L_OV2",
+   "from": "AT-5520",
+   "to": "B_CONT",
+   "path": [],
+   "line_number": "100-OV-E4"
+  },
+  {
+   "id": "L_TD1",
+   "from": "AT-5510",
+   "to": "B_CONT",
+   "path": [
+    "BAV-5518"
+   ],
+   "line_number": "50-DR-E4"
+  },
+  {
+   "id": "L_TD2",
+   "from": "AT-5520",
+   "to": "B_CONT",
+   "path": [
+    "BAV-5528"
+   ],
+   "line_number": "50-DR-E4"
+  },
+  {
+   "id": "L_O1",
+   "from": "AT-5510",
+   "to": "B_CONT",
+   "path": [
+    "BAV-5516",
+    "SG-5510",
+    "BAV-5517",
+    "RED5510",
+    "BAV-5519"
+   ],
+   "line_number": "25-AL-E4",
+   "service": "ALUM",
+   "notes": "Tank outlet (sight glass SG-5510 on the riser); header 'TO SPILL CONTAINMENT' 25-AL-E4"
+  },
+  {
+   "id": "L_O2",
+   "from": "AT-5520",
+   "to": {
+    "line": "L_O1",
+    "after": "BAV-5519"
+   },
+   "path": [
+    "BAV-5526",
+    "SG-5520",
+    "BAV-5527",
+    "RED5520",
+    "BAV-5529"
+   ],
+   "line_number": "25-AL-E4",
+   "service": "ALUM"
+  },
+  {
+   "id": "L_SUC",
+   "from": {
+    "line": "L_O1",
+    "after": "BAV-5519"
+   },
+   "to": "ASP-5550",
+   "path": [
+    "BAV-5541",
+    "STR-5541",
+    "BAV-5551",
+    "RED5550"
+   ],
+   "line_number": "25-AL-E4",
+   "service": "ALUM"
+  },
+  {
+   "id": "L_SUC2",
+   "from": {
+    "line": "L_SUC",
+    "after": "STR-5541"
+   },
+   "to": "ASP-5560",
+   "path": [
+    "BAV-5561",
+    "RED5560"
+   ],
+   "line_number": "25-AL-E4",
+   "service": "ALUM"
+  },
+  {
+   "id": "L_CAL",
+   "from": {
+    "line": "L_SUC",
+    "after": "STR-5541"
+   },
+   "to": "CAL5542",
+   "path": [
+    "BAV-5542"
+   ],
+   "flow_direction": "inferred"
+  },
+  {
+   "id": "L_DIS",
+   "from": "ASP-5550",
+   "to": "OPC_LIFT",
+   "path": [
+    "CHV-5551",
+    "PRV-5551",
+    "BAV-5553",
+    "BAV-5583",
+    "BPV-5581",
+    "BAV-5581",
+    "BAV-5584"
+   ],
+   "line_number": "25-AL-E4",
+   "service": "ALUM"
+  },
+  {
+   "id": "L_DIS2",
+   "from": "ASP-5560",
+   "to": {
+    "line": "L_DIS",
+    "after": "BAV-5553"
+   },
+   "path": [
+    "CHV-5561",
+    "PRV-5561",
+    "BAV-5563"
+   ],
+   "line_number": "25-AL-E4",
+   "service": "ALUM"
+  },
+  {
+   "id": "L_X",
+   "from": {
+    "line": "L_DIS",
+    "after": "CHV-5551"
+   },
+   "to": {
+    "line": "L_DIS2",
+    "after": "CHV-5561"
+   },
+   "path": [
+    "BAV-5552",
+    "BAV-5562"
+   ],
+   "flow_direction": "inferred",
+   "notes": "Pump discharge cross-connection"
+  },
+  {
+   "id": "L_PRL",
+   "from": {
+    "line": "L_DIS",
+    "after": "PRV-5551"
+   },
+   "to": "AT-5510",
+   "path": [
+    "BAV-5515",
+    "RED5515"
+   ],
+   "line_number": "25-PRL-E4",
+   "service": "PRESSURE RELIEF RETURN"
+  },
+  {
+   "id": "L_PRL2",
+   "from": {
+    "line": "L_PRL",
+    "after": "BAV-5515"
+   },
+   "to": "AT-5520",
+   "path": [
+    "BAV-5525",
+    "RED5525"
+   ],
+   "line_number": "25-PRL-E4",
+   "service": "PRESSURE RELIEF RETURN"
+  },
+  {
+   "id": "L_ODR",
+   "from": {
+    "line": "L_DIS",
+    "after": "BAV-5581"
+   },
+   "to": "B_DRAIN",
+   "path": [
+    "BAV-5582"
+   ]
+  }
+ ],
+ "signals": [
+  {
+   "from": "LE-5511",
+   "to": "LIT-5511",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-5511",
+   "to": "LI-5511",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LE-5521",
+   "to": "LIT-5521",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LIT-5521",
+   "to": "LI-5521",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LSHH-5501",
+   "to": "LAHH-5501",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XS-5501A",
+   "to": "EL-5501A",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XS-5501B",
+   "to": "EL-5501B",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XS-5501C",
+   "to": "XS-5501",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "HS-5501",
+   "to": "HSI-5501",
+   "type": "electrical",
+   "purpose": "status"
+  },
+  {
+   "from": "SC-5500",
+   "to": "ASP-5550",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XS-5500",
+   "to": "ASP-5550",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-5500B",
+   "to": "ASP-5550",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-5500A",
+   "to": "ASP-5550",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "TS-5550",
+   "to": "ASP-5550",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "SC-5500",
+   "to": "ASP-5560",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "XS-5500",
+   "to": "ASP-5560",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-5500B",
+   "to": "ASP-5560",
+   "type": "electrical",
+   "purpose": "control"
+  },
+  {
+   "from": "HS-5500A",
+   "to": "ASP-5560",
+   "type": "electrical",
+   "purpose": "trip"
+  },
+  {
+   "from": "TS-5560",
+   "to": "ASP-5560",
+   "type": "electrical",
+   "purpose": "trip"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC_LIFT",
+   "direction": "out",
+   "name": "AL 3 D-010 PLANT LIFT STATION DISCHARGE HEADER",
+   "other_drawing": "D-010",
+   "bbox": [
+    0.749,
+    0.571,
+    0.775,
+    0.604
+   ],
+   "line_number": "25-AL-E4"
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B_VENT",
+   "name": "VENT (outside building)",
+   "direction": "sink",
+   "bbox": [
+    0.179,
+    0.446,
+    0.204,
+    0.479
+   ]
+  },
+  {
+   "id": "B_CONT",
+   "name": "ALUM SYSTEM SECONDARY CONTAINMENT AREA / TO SPILL CONTAINMENT",
+   "direction": "sink",
+   "bbox": [
+    0.497,
+    0.796,
+    0.523,
+    0.829
+   ]
+  },
+  {
+   "id": "B_SUMP",
+   "name": "SPILL CONTAINMENT SUMP (outside building)",
+   "direction": "sink",
+   "bbox": [
+    0.198,
+    0.66,
+    0.223,
+    0.693
+   ]
+  },
+  {
+   "id": "B_DRAIN",
+   "name": "DRAIN",
+   "direction": "sink",
+   "bbox": [
+    0.679,
+    0.598,
+    0.705,
+    0.631
+   ],
+   "confidence": 0.6
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Exact routing of the tank outlet header 'TO SPILL CONTAINMENT' vs. pump suction simplified",
+  "PLC tags in the CP-5501 I/O band partly illegible"
+ ]
+}

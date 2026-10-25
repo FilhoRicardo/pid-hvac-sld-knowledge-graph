@@ -1,0 +1,149 @@
+{
+  "plant": "ruttan",
+  "note": "Hand-checked against zoomed crops of M701 (lime slaking, storage and reactor area). Same annotator as the extraction.",
+  "sheets": [
+    "M701"
+  ],
+  "feeds_scope": "within_sheets",
+  "tags": [
+    "REACTOR 1",
+    "REACTOR 2",
+    "STORAGE 1",
+    "STORAGE 2",
+    "S-1",
+    "PU-9",
+    "R1-1",
+    "R1-2",
+    "R1-3",
+    "R1-4",
+    "R2-1",
+    "R2-2",
+    "R2-3",
+    "R2-4",
+    "AG-1",
+    "AG-2",
+    "AE-12",
+    "AE-22",
+    "LT-1",
+    "LT-2",
+    "FE-1",
+    "FE-2",
+    "FIT-1",
+    "FIT-2",
+    "PI-A1",
+    "PI-A2",
+    "HS-R11",
+    "HS-R12",
+    "HS-R13",
+    "HS-R14",
+    "HS-R21",
+    "HS-R22",
+    "HS-R23",
+    "HS-R24",
+    "HS-A1",
+    "HS-A2",
+    "HS-A5",
+    "HS-S1",
+    "HS-S2",
+    "HS-5",
+    "HS-9",
+    "HS-V1",
+    "HS-C1"
+  ],
+  "feeds": [
+    [
+      "Lime screw conveyor (silo to slaker)",
+      "S-1"
+    ],
+    [
+      "LIME TRUCK (pneumatic unloading)",
+      "S-1"
+    ],
+    [
+      "S-1",
+      "SLAKER TRANSFER PUMP (progressive cavity)"
+    ],
+    [
+      "SLAKER TRANSFER PUMP (progressive cavity)",
+      "STORAGE-1"
+    ],
+    [
+      "SLAKER TRANSFER PUMP (progressive cavity)",
+      "STORAGE-2"
+    ],
+    [
+      "STORAGE-1",
+      "PU-9"
+    ],
+    [
+      "PU-9",
+      "STORAGE-2"
+    ],
+    [
+      "STORAGE-1",
+      "INJECTION PUMP 1 (progressive cavity)"
+    ],
+    [
+      "STORAGE-2",
+      "INJECTION PUMP 2 (progressive cavity)"
+    ],
+    [
+      "INJECTION PUMP 1 (progressive cavity)",
+      "REACTOR-1"
+    ],
+    [
+      "INJECTION PUMP 2 (progressive cavity)",
+      "REACTOR-2"
+    ],
+    [
+      "STORAGE-1",
+      "REACTOR-1"
+    ],
+    [
+      "STORAGE-2",
+      "REACTOR-2"
+    ],
+    [
+      "ANNEX TANK",
+      "Annex booster pump (untagged)"
+    ],
+    [
+      "Lime SILO with vibratory bin discharger",
+      "Lime screw conveyor (silo to slaker)"
+    ],
+    [
+      "Annex booster pump (untagged)",
+      "ANNEX S.N.V."
+    ],
+    [
+      "Annex booster pump (untagged)",
+      "EXPANSION TANK"
+    ]
+  ],
+  "instrument_at": {
+    "LT-1": "STORAGE 1",
+    "LT-2": "STORAGE 2",
+    "AE-12": "REACTOR 1",
+    "AE-22": "REACTOR 2",
+    "FIT-1": "REACTOR 1",
+    "FIT-2": "REACTOR 2"
+  },
+  "loops": {
+    "F-1": [
+      "FE-1",
+      "FIT-1"
+    ],
+    "F-2": [
+      "FE-2",
+      "FIT-2"
+    ],
+    "H-A1": [
+      "HS-A1",
+      "AG-1"
+    ],
+    "H-9": [
+      "HS-9",
+      "PU-9"
+    ]
+  }
+}
