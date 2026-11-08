@@ -134,6 +134,8 @@ def main() -> int:
     ap.add_argument("gold", type=Path)
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     g = Graph.load(a.kg / "graph.json" if a.kg.is_dir() else a.kg)
     res = evaluate(g, json.loads(a.gold.read_text(encoding="utf-8")))
     if a.json:

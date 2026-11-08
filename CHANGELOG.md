@@ -5,6 +5,8 @@
 First release.
 
 - Page classification for vector (with or without a text layer), scanned and hybrid PDFs.
+- `--pages` on the probe picks the P&ID pages out of a longer document, such as a permit application; later steps use only those pages.
+- OCR is optional and installs only on Python 3.10–3.12, where its package is available; the skill runs without it on newer Python.
 - Rendering adapts to the drawing:
   - orientation is detected automatically;
   - resolution is chosen from the measured text size;

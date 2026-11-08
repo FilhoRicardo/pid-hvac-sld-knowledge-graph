@@ -102,6 +102,8 @@ def main() -> int:
     ap.add_argument("kg", type=Path, help="kg/ directory or graph.json")
     ap.add_argument("format", choices=["graphml", "neo4j"])
     a = ap.parse_args()
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     json_path = a.kg / "graph.json" if a.kg.is_dir() else a.kg
     g = Graph.load(json_path)
     if a.format == "graphml":

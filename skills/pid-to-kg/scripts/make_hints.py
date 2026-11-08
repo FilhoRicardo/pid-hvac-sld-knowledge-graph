@@ -56,7 +56,7 @@ def main() -> int:
         print(f"note: {ocr.maybe_import_error()}")
     (args.work / "hints").mkdir(exist_ok=True)
 
-    for page_no in parse_pages(args.pages, len(manifest["pages"])):
+    for page_no in parse_pages(args.pages, len(manifest["pages"]), manifest.get("selected_pages")):
         info = manifest["pages"][page_no - 1]
         cls = info["page_class"]
         page_dir = args.work / "pages" / f"page_{page_no:02d}"

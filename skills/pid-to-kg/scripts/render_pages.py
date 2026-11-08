@@ -42,9 +42,10 @@ MIN_EDGE, MAX_EDGE = 3000, 8000
 DEFAULT_VECTOR_EDGE, DEFAULT_RASTER_EDGE = 5000, 4000
 
 
-def parse_pages(spec: str | None, n: int) -> list[int]:
+def parse_pages(spec: str | None, n: int, default: list[int] | None = None) -> list[int]:
+    """Parse '1-3,5'. With no spec, use `default` (the pages chosen at probe time) or all pages."""
     if not spec:
-        return list(range(1, n + 1))
+        return [p for p in default if 1 <= p <= n] if default else list(range(1, n + 1))
     out: list[int] = []
     for part in spec.split(","):
         if "-" in part:
@@ -91,7 +92,7 @@ def draw_grid(overview, tiles, scale, width, height):
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("work", type=Path)
-    ap.add_argument("--pages", help="pages to render, e.g. '1-3,5' (default: all)")
+    ap.add_argument("--pages", help="pages to render, e.g. '1-3,5' (default: the pages chosen at probe time)")
     ap.add_argument("--rotation", type=int, choices=(0, 90, 180, 270),
                     help="clockwise rotation for the selected pages (overrides detection)")
     ap.add_argument("--no-auto-rotate", action="store_true", help="skip OCR orientation detection")
@@ -109,7 +110,7 @@ def main() -> int:
     manifest_path = args.work / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     pdf = manifest["source_pdf"]
-    pages = parse_pages(args.pages, len(manifest["pages"]))
+    pages = parse_pages(args.pages, len(manifest["pages"]), manifest.get("selected_pages"))
     can_ocr = ocr.available()
     if not can_ocr and not args.no_auto_rotate and args.rotation is None:
         print(f"note: {ocr.maybe_import_error()}")

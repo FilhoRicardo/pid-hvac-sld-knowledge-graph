@@ -117,3 +117,29 @@ def test_tile_grid_covers_image_with_overlap():
 ])
 def test_rotate_norm_bbox(rot, expected):
     assert rotate_norm_bbox([0.1, 0.2, 0.3, 0.4], rot) == pytest.approx(expected)
+
+
+def test_parse_pages_uses_probe_selection_by_default():
+    from render_pages import parse_pages
+
+    assert parse_pages(None, 5) == [1, 2, 3, 4, 5]
+    assert parse_pages(None, 70, default=[47, 48, 60]) == [47, 48, 60]
+    assert parse_pages("2-3,5", 5, default=[1]) == [2, 3, 5]
+    assert parse_pages("4-9", 5) == [4, 5]
+
+
+def test_probe_records_selected_pages(vector_outlined_pdf, tmp_path):
+    import json
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    script = Path(__file__).resolve().parents[1] / "skills" / "pid-to-kg" / "scripts" / "probe_pdf.py"
+    work = tmp_path / "work"
+    run = subprocess.run([sys.executable, str(script), str(vector_outlined_pdf), "--work", str(work),
+                          "--pages", "1"], capture_output=True, text=True)
+    assert run.returncode == 0, run.stderr
+    assert json.loads((work / "manifest.json").read_text(encoding="utf-8"))["selected_pages"] == [1]
+    bad = subprocess.run([sys.executable, str(script), str(vector_outlined_pdf), "--work", str(work),
+                          "--pages", "9"], capture_output=True, text=True)
+    assert bad.returncode == 2

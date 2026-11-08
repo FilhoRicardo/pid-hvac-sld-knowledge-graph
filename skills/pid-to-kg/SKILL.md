@@ -10,10 +10,13 @@ Work is split between deterministic scripts and you:
 - **Scripts** classify pages (vector vs scanned), render them into readable tiles, collect OCR/text hints, then build, check, store and query the graph.
 - **You** read the drawings and write one structured extraction file per sheet. Symbol recognition and line tracing are visual reasoning, and that is the part scripts cannot do well.
 
-All scripts are in `scripts/` (relative to this file). Run them with Python 3.10+. Before the first run, install the dependencies once: `pip install -r scripts/requirements.txt`.
+All scripts are in `scripts/` next to this file. Call them by their full path (the commands below abbreviate it as `scripts/`), and keep the work directory in the user's current folder, e.g. `work/<plant>`.
+
+**Setup.** Many users are engineers, not programmers, so handle setup yourself. The scripts need Python 3.10+. Before the first run, install the dependencies with `pip install -r <skill dir>/scripts/requirements.txt` (use a virtual environment if the user's Python is shared with other work). If Python is missing, tell the user to install it from python.org and stop there.
 
 ## Ground rules
 
+- **Only the P&ID pages.** Drawings often sit inside a long permit or design report. If the user names the pages, pass them with `--pages`. If not, and the PDF has more than a few pages, probe it, look at the page overviews or ask the user, then re-run the probe with `--pages` so later steps skip reports, legends and non-P&ID drawings.
 - **One plant, one work directory, one graph.** Never put sheets from different plants in the same work directory: tags would merge across unrelated plants. If the user supplies several plants, run the whole workflow separately for each.
 - **One configuration per graph.** If the PDF contains two revisions of the same drawing (same title or area, overlapping tags, e.g. an as-built and an older draft), do not merge them. Ask the user which revision to use, extract only that one, and record the excluded pages and the reason in the report. QA flags likely duplicates as `possible_duplicate_revision`. Record each sheet's `issue_status` from the title block or stamps.
 - **Record only what is drawn.** Never invent tags, connections or loops to make the graph look complete. Anything unclear goes in with a lower `confidence`, or into `unreadable`.
@@ -24,7 +27,7 @@ All scripts are in `scripts/` (relative to this file). Run them with Python 3.10
 Copy this checklist into your notes and tick it off:
 
 ```
-- [ ] 1. Probe:    python scripts/probe_pdf.py <pdf> --work <work> --plant-name "<name>"
+- [ ] 1. Probe:    python scripts/probe_pdf.py <pdf> --work <work> --plant-name "<name>" [--pages 47-60]
 - [ ] 2. Render:   python scripts/render_pages.py <work>
 - [ ] 3. Orient:   open each pages/page_NN/overview_grid.png; fix rotation if text is not upright
 - [ ] 4. Hints:    python scripts/make_hints.py <work>
@@ -35,7 +38,7 @@ Copy this checklist into your notes and tick it off:
 ```
 
 ### 1. Probe
-`probe_pdf.py` assigns each page a class and an extraction route, and writes `<work>/manifest.json`.
+`probe_pdf.py` assigns each page a class and an extraction route, and writes `<work>/manifest.json`. With `--pages`, the later steps render and read only those pages.
 
 | Class | What it means | Route |
 |---|---|---|
@@ -45,7 +48,7 @@ Copy this checklist into your notes and tick it off:
 | `raster_with_text` | Scan with an OCR text layer | As raster; text layer as (untrusted) hints |
 | `hybrid` | Vectors plus large images | Both routes |
 
-Read the probe output aloud to the user in one line, e.g. "14 vector sheets with outlined text."
+Report the probe result to the user in one line, e.g. "14 vector sheets with outlined text."
 
 Low scan resolution is flagged in the notes. Expect to record more items in `unreadable` on those sheets.
 
