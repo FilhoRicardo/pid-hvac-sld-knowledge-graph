@@ -16,9 +16,6 @@ build/
 dist/
 
 # Exports that can be regenerated from graph.json
-examples/**/graph.duckdb
-examples/**/graph.graphml
-examples/**/neo4j/
 
 # OS / editor
 .DS_Store

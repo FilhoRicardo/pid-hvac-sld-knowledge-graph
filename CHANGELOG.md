@@ -37,4 +37,4 @@ First release.
   - untagged gauges (`function`);
   - valve-type codes kept out of loops;
   - P&ID detail preferred over PFD shortcuts.
-- Example graphs for three test plants: two vector PDFs with outlined text and one scanned PDF.
+- Tested on three real plants: two vector drawing sets with outlined text and one scanned set.

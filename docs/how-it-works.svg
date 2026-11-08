@@ -1,12 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 390" width="1040" height="390" role="img" aria-labelledby="t d">
   <title id="t">How the P&amp;ID to Knowledge Graph skill works</title>
-  <desc id="d">Four steps: upload your P&amp;ID PDF; Claude reads each sheet; the scripts build and check the graph, sending anything doubtful back to Claude to re-check; then you ask questions about the plant.</desc>
+  <desc id="d">Four steps: upload your P&amp;ID PDF; Claude reads each sheet; the scripts build a knowledge graph from what Claude recorded and check it, sending anything doubtful back to Claude to re-check; then you ask questions about the plant.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
-    </marker>
-    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#d97706"/>
     </marker>
   </defs>
   <style>
@@ -66,10 +63,10 @@
   <circle cx="706" cy="66" r="14" fill="#16a34a"/>
   <path d="M699,66 l5,5 l9,-10" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <text class="title" x="650" y="182">Build &amp; check</text>
-  <text class="body" x="650" y="210">Sheets are joined into one</text>
-  <text class="body" x="650" y="230">plant. Flow, sensor</text>
-  <text class="body" x="650" y="250">locations and control</text>
-  <text class="body" x="650" y="270">loops are traced.</text>
+  <text class="body" x="650" y="210">Builds a knowledge graph</text>
+  <text class="body" x="650" y="230">of flow, sensors and</text>
+  <text class="body" x="650" y="250">control loops from what</text>
+  <text class="body" x="650" y="270">Claude recorded.</text>
 
   <line x1="764" y1="162" x2="796" y2="162" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
 
@@ -86,6 +83,7 @@
   <text class="body" x="910" y="270">line, and check the answer.</text>
 
   <!-- QA loop back from 3 to 2 -->
-  <path d="M650,304 C650,350 390,350 390,306" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arrow-amber)"/>
+  <path d="M390,314 C390,352 650,352 650,300" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <path d="M390,301 L382,317 L398,317 z" fill="#d97706"/>
   <text x="520" y="372" text-anchor="middle" style="font-size:14px;fill:#b45309">Anything doubtful goes back to Claude to re-check on the drawing</text>
 </svg>

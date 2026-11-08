@@ -51,14 +51,46 @@ The results are saved in `work/<plant name>/kg/` inside your project folder. `su
 
 ![How the skill works: your P&ID PDF, Claude reads it, build and check, ask questions](docs/how-it-works.svg)
 
-**Claude reads the drawings; Python scripts do everything else.** Recognising symbols and tracing lines on real drawings (rotated sheets, small text, low-resolution scans, greyed-out existing plant) needs visual reasoning, so that part is Claude's. Preparing the pages, joining the sheets, tracing loops, checking and storing the result is routine work, so it is done by tested Python scripts that give the same answer every time.
+**Claude reads the drawings; Python scripts do everything else.** Recognising symbols and tracing lines needs visual judgement, so that part is Claude's. Preparing pages, building the graph and checking it are routine, so tested scripts do them the same way every time.
 
-1. **Prepare the pages.** A script first works out what kind of PDF it has. Digital drawings are rendered straight from the vector data. Scanned drawings are cleaned up and enlarged. Many CAD exports have no searchable text at all, because every label is drawn as outlines, so the skill never relies on a text layer. Each sheet is turned the right way up, and the resolution is chosen from the size of its text. The sheet is then cut into overlapping tiles so that even small tags are legible.
-2. **Claude reads each sheet.** Working tile by tile, Claude records every piece of equipment, pipe run, valve, instrument, signal line and off-page connector, along with where on the sheet it found each one and how confident it is. Each sheet is saved to its own file before the next one starts. Text recognition (OCR) runs alongside as a cross-check, to catch tags Claude may have missed.
-3. **Build and check the graph.** The scripts join the sheets into one plant by matching tags and off-page connectors. They split each pipe into segments between its valves and fittings, so every instrument has an exact position in the flow. They then trace upstream and downstream connections, work out what each instrument measures, and assemble control loops from the instrument tags (per ISA-5.1) and the signal lines. A QA report lists anything doubtful: a sensor with no location, an off-page connector with no partner, a tag OCR saw but Claude did not. Claude re-checks each one on the drawing and rebuilds until the report is clean.
-4. **Ask questions.** The graph is saved in formats that suit different uses: a readable summary for an LLM's context, a JSON file any tool can read, and a small database file for precise queries. Nothing needs a server.
+### 1. Preparing the pages
 
-Every item in the graph records the sheet it came from, so any answer can be traced back to the drawing. Equipment and instruments also carry the closest [DEXPI](https://dexpi.org) class, the industry standard for exchanging P&ID data.
+A script first looks at every page and works out what kind of drawing it is. Digital and scanned P&IDs need different handling:
+
+| Page type | How to recognise it | What the skill does |
+|---|---|---|
+| **Digital, searchable text** | Exported from CAD; you can select the text in a PDF viewer | Renders the page straight from the vector data, so lines stay sharp at any zoom. The exact text in the PDF is used to cross-check the tags Claude reads. |
+| **Digital, outlined text** | Looks digital, but the text can't be selected: every letter was drawn as shapes. Common in CAD exports. | Renders from the vector data at high resolution. Since there is no text to pull out, OCR (text recognition) reads the tags for the cross-check. |
+| **Scanned** | Each page is a picture of a paper drawing | Takes the scanned image at its original resolution, enlarges it up to 2.5×, and boosts the contrast so faded lines and small text stand out. OCR reads the tags for the cross-check. Low-resolution scans are flagged, because small text may be lost. |
+| **Scanned with OCR text** | A scan with a searchable text layer added | Handled like a scan. The added text layer is only used as a hint, since it often contains errors. |
+
+Then, for every page:
+- **Orientation:** the page is turned so the text is upright, since drawings are often stored sideways in a PDF.
+- **Resolution:** chosen from the size of the drawing's text, so the smallest tags stay legible.
+- **Tiles:** the sheet is cut into overlapping tiles, and blank tiles (empty margins, border lines) are skipped.
+
+### 2. Claude reads each sheet
+
+- Claude reads the whole sheet first, then every tile up close.
+- It records equipment, pipe runs, valves, instruments, signal lines and off-page connectors.
+- Each item gets the place on the sheet where it was found and a confidence level. Anything unreadable is marked as such, never guessed.
+- Each sheet is saved to its own file before the next one starts, so large drawing sets don't overload Claude.
+
+### 3. Building and checking the knowledge graph
+
+The scripts turn Claude's readings into one connected knowledge graph:
+- **Process flow:** each pipe is split into segments between its valves and fittings, and off-page connectors link the sheets, so flow can be traced upstream or downstream across the whole plant.
+- **Measurement:** every instrument is attached to the exact pipe segment or vessel it measures.
+- **Control:** loops are assembled from the instrument tags (per ISA-5.1) and the signal lines, from sensor to controller to valve or drive.
+
+A QA report then lists anything doubtful: a sensor with no location, an off-page connector with no partner, a tag OCR saw that Claude didn't record. Claude re-checks each one on the drawing and rebuilds until the report is clean.
+
+### 4. Asking questions
+
+- `summary.md` is a readable overview to give an LLM as context.
+- `graph.json` holds the full graph for any tool to read.
+- `graph.duckdb` is a small database file for precise queries. Nothing needs a server.
+- Every item records the sheet it came from, so any answer can be traced back to the drawing.
 
 ## Outputs
 
@@ -71,7 +103,7 @@ Every item in the graph records the sheet it came from, so any answer can be tra
 
 For larger projects, the graph can also be exported to Neo4j or to GraphML (for yEd, Gephi or NetworkX). Ask Claude to do it.
 
-The node and edge types are described in [`references/ontology.md`](skills/pid-to-kg/references/ontology.md). [`examples/`](examples/README.md) holds finished graphs for three real plants: two digital drawing sets and one scanned set.
+The node and edge types are described in [`references/ontology.md`](skills/pid-to-kg/references/ontology.md). Equipment and instruments also carry the closest [DEXPI](https://dexpi.org) class, the industry standard for exchanging P&ID data.
 
 ## Repository layout
 
@@ -83,7 +115,6 @@ skills/pid-to-kg/
   scripts/pidkg/              library: models, ISA parsing, builder, loops, QA, storage, summary
 docs/                         README diagram
 tests/                        pytest suite with a synthetic two-sheet plant and synthetic PDFs
-examples/                     graphs, extractions and spot-check files for three test plants (source PDFs not redistributed)
 ```
 
 ## Limitations
