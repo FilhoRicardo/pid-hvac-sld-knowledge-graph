@@ -11,6 +11,8 @@ align the graph with DEXPI tooling but is not a certified DEXPI export.
 
 from __future__ import annotations
 
+from typing import NamedTuple
+
 # --------------------------------------------------------------------------
 # Node and edge types
 # --------------------------------------------------------------------------
@@ -112,7 +114,82 @@ EQUIPMENT_DEXPI = {
     "motor": "ElectricMotor",
     "other": "Equipment",
 }
-EQUIPMENT_KINDS = tuple(EQUIPMENT_DEXPI)
+
+# HVAC / air-side equipment (not in DEXPI P&ID exchange classes; dexpi_class stays Equipment).
+HVAC_EQUIPMENT_KINDS = (
+    "ahu",
+    "air_handling_unit",  # alias for ahu
+    "fcu",
+    "fan_coil",  # alias for fcu
+    "vav",
+    "cav",
+    "cooling_coil",
+    "heating_coil",
+    "damper",
+    "fire_damper",
+    "chiller",
+    "cooling_tower",
+    "heat_pump",
+    "diffuser",
+    "grille",
+)
+
+EQUIPMENT_KINDS = tuple(EQUIPMENT_DEXPI) + HVAC_EQUIPMENT_KINDS
+
+# Brick class names for equipment kinds (informative; for Brick TTL / BACnet alignment).
+EQUIPMENT_BRICK = {
+    # Obvious P&ID kinds
+    "pump": "Pump",
+    "fan": "Fan",
+    "boiler": "Boiler",
+    "heat_exchanger": "Heat_Exchanger",
+    # HVAC kinds
+    "ahu": "AHU",
+    "air_handling_unit": "AHU",
+    "fcu": "FCU",
+    "fan_coil": "FCU",
+    "vav": "VAV",
+    "cav": "CAV",
+    "cooling_coil": "Cooling_Coil",
+    "heating_coil": "Heating_Coil",
+    "damper": "Damper",
+    "fire_damper": "Fire_Damper",
+    "chiller": "Chiller",
+    "cooling_tower": "Cooling_Tower",
+    "heat_pump": "Heat_Pump",
+    "diffuser": "Terminal_Unit",
+    "grille": "Terminal_Unit",
+}
+
+
+class BrickEdgeMapping(NamedTuple):
+    """How a graph edge type maps to a Brick relationship."""
+
+    brick: str
+    # Graph direction may differ from Brick (e.g. MEASURES is instrument→equipment;
+    # Brick hasPoint is typically equipment→point).
+    invert_for_brick: bool = False
+
+
+BRICK_EDGE_RELATIONSHIPS: dict[str, BrickEdgeMapping] = {
+    "FEEDS": BrickEdgeMapping("feeds", invert_for_brick=False),
+    "MEASURES": BrickEdgeMapping("hasPoint", invert_for_brick=True),
+    "ACTUATES": BrickEdgeMapping("hasPoint", invert_for_brick=True),
+    "PART_OF": BrickEdgeMapping("hasPart", invert_for_brick=False),
+}
+
+# Line / duct / pipe service media vocabulary (HVAC and hydronics; not used by the builder yet).
+LINE_MEDIA = (
+    "supply_air",
+    "return_air",
+    "extract_air",
+    "outside_air",
+    "chw",
+    "lthw",
+    "dhws",
+    "refrigerant",
+    "condensate",
+)
 
 # --------------------------------------------------------------------------
 # In-line piping components

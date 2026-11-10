@@ -66,7 +66,22 @@ Every node has `label`, a short display name: the tag if present, otherwise the 
 
 `dexpi_class` gives the closest [DEXPI](https://dexpi.org) class, to help users align the graph with DEXPI tooling. It is informative, not a certified DEXPI export.
 
-**Equipment kinds:** tank, vessel, pressure_vessel, pump, centrifugal_pump, positive_displacement_pump, metering_pump, slurry_pump, sump_pump, compressor, blower, fan, heat_exchanger, cooler, heater, boiler, furnace, column, reactor, agitated_tank, agitator, mixer, static_mixer, filter, filter_press, membrane_filter, strainer_unit, screen, cyclone, hydrocyclone, separator, clarifier, thickener, flotation_cell, centrifuge, dryer, mill, crusher, conveyor, feeder, hopper, bin, silo, sump, pond, box, electrowinning_cell, kiln, scrubber, ion_exchange, uv_unit, sampler, package_unit, motor, other.
+**Equipment kinds (P&ID / DEXPI):** tank, vessel, pressure_vessel, pump, centrifugal_pump, positive_displacement_pump, metering_pump, slurry_pump, sump_pump, compressor, blower, fan, heat_exchanger, cooler, heater, boiler, furnace, column, reactor, agitated_tank, agitator, mixer, static_mixer, filter, filter_press, membrane_filter, strainer_unit, screen, cyclone, hydrocyclone, separator, clarifier, thickener, flotation_cell, centrifuge, dryer, mill, crusher, conveyor, feeder, hopper, bin, silo, sump, pond, box, electrowinning_cell, kiln, scrubber, ion_exchange, uv_unit, sampler, package_unit, motor, other.
+
+**Equipment kinds (HVAC, accepted in QA; no DEXPI class):** ahu (`air_handling_unit`), fcu (`fan_coil`), vav, cav, cooling_coil, heating_coil, damper, fire_damper, chiller, cooling_tower, heat_pump, diffuser, grille. These are members of `EQUIPMENT_KINDS` but not `EQUIPMENT_DEXPI`; the builder still sets `dexpi_class` to `Equipment` for them.
+
+**Brick equipment classes (`EQUIPMENT_BRICK`):** maps selected kinds to Brick class names (e.g. ahu→AHU, chiller→Chiller, damper→Damper). A few obvious P&ID kinds are included (pump, fan, boiler, heat_exchanger).
+
+**Brick edge mapping (`BRICK_EDGE_RELATIONSHIPS`):**
+
+| Graph edge | Brick relationship | Notes |
+|---|---|---|
+| `FEEDS` | `feeds` | Same direction as equipment-level flow |
+| `MEASURES` | `hasPoint` | Graph: instrument→sensed item. Brick: equipment→point — exporters must **invert** direction |
+| `ACTUATES` | `hasPoint` | Graph: controller→final element. Brick: equipment→command point — exporters typically **invert** |
+| `PART_OF` | `hasPart` | Mounted equipment→parent |
+
+**Line / medium vocabulary (`LINE_MEDIA`, optional):** supply_air, return_air, extract_air, outside_air, chw, lthw, dhws, refrigerant, condensate. Not enforced by the builder in the current schema.
 
 **Component kinds:** manual_valve, gate_valve, globe_valve, ball_valve, butterfly_valve, plug_valve, knife_gate_valve, diaphragm_valve, pinch_valve, needle_valve, three_way_valve, check_valve, control_valve, on_off_valve, solenoid_valve, motor_operated_valve, pressure_regulator, relief_valve, rupture_disc, vacuum_breaker, strainer, reducer, blind, spectacle_blind, flexible_hose, expansion_joint, sight_glass, steam_trap, flame_arrestor, sample_point, drain, vent, quick_connect, tee, other.
 
